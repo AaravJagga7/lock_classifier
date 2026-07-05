@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Console - Zoho Analytics Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-icon">L</div>
+                <div class="brand-text">LogConsole</div>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="menu-item active" data-target="dashboard">
+                        <span class="menu-icon">📊</span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" data-target="ingestion">
+                        <span class="menu-icon">📥</span>
+                        <span>Log Ingestion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" data-target="incidents">
+                        <span class="menu-icon">🚨</span>
+                        <span>Incidents</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" data-target="root-cause">
+                        <span class="menu-icon">🔍</span>
+                        <span>Root Cause</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <p>Zoho-style Interface</p>
+                <p>Version 2.4.0</p>
+            </div>
+        </aside>
+
+        <!-- Right Content Section -->
+        <main class="content-area">
+            <!-- Navbar Header -->
+            <header class="navbar">
+                <div id="navBreadcrumb" class="nav-breadcrumbs">Dashboard</div>
+                <div class="nav-status">
+                    <div class="status-badge">
+                        <div class="status-indicator"></div>
+                        <span>Server Live</span>
+                    </div>
+                    <div class="user-profile">
+                        <div class="user-avatar">A</div>
+                        <div style="font-size: 0.9rem; font-weight: 500;">Admin</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Scrollable Workspace -->
+            <div class="workspace">
+                
+                <!-- 1. Dashboard View -->
+                <section id="dashboard" class="view-section active">
+                    <!-- Metrics Row -->
+                    <div class="metrics-grid">
+                        <div class="metric-card m-total">
+                            <span class="metric-header">Total Logs Processed</span>
+                            <span id="dashTotal" class="metric-value">0</span>
+                            <div class="metric-trend trend-neutral">Upload logs in Ingestion to populate</div>
+                        </div>
+                        <div class="metric-card m-warning">
+                            <span class="metric-header">Warnings Detected</span>
+                            <span id="dashWarning" class="metric-value">0</span>
+                            <div id="dashWarningTrend" class="metric-trend trend-neutral">0% of total</div>
+                        </div>
+                        <div class="metric-card m-error">
+                            <span class="metric-header">Errors / Criticals</span>
+                            <span id="dashError" class="metric-value">0</span>
+                            <div id="dashErrorTrend" class="metric-trend trend-neutral">0% of total</div>
+                        </div>
+                        <div class="metric-card m-sources">
+                            <span class="metric-header">Active Sources</span>
+                            <span id="dashSources" class="metric-value">0</span>
+                            <div class="metric-trend trend-neutral">Unique log channels</div>
+                        </div>
+                    </div>
+
+                    <!-- Charts row -->
+                    <div class="charts-grid">
+                        <div class="card">
+                            <h3 class="card-title">Classification Distributions</h3>
+                            <div id="dashChartBars" class="bar-chart">
+                                <div class="empty-state" style="padding: 2rem 0;">
+                                    <div class="empty-state-icon">📊</div>
+                                    <p>No distribution data available. Upload log files in the Log Ingestion module.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Top Activity by Source</h3>
+                            <div id="dashSourceBars" class="bar-chart">
+                                <div class="empty-state" style="padding: 2rem 0;">
+                                    <div class="empty-state-icon">🏢</div>
+                                    <p>No activity data available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Log Ingestion View -->
+                <section id="ingestion" class="view-section">
+                    <div class="ingest-grid">
+                        <!-- Left Ingestion Card -->
+                        <div class="card" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                            <h3 class="card-title">Import Logs</h3>
+                            
+                            <!-- Source Switcher Tabs -->
+                            <div class="ingest-tabs">
+                                <button class="ingest-tab active" data-tab="upload">📁 Upload File</button>
+                                <button class="ingest-tab" data-tab="scrape">🌐 Web Scrape</button>
+                            </div>
+
+                            <!-- Upload Source Form -->
+                            <div id="uploadSourceForm" class="ingest-source-form">
+                                <div id="dropzone" class="upload-area">
+                                    <div class="upload-icon">📂</div>
+                                    <div class="upload-title">Drag and drop logs CSV</div>
+                                    <div class="upload-subtitle">Accepts .csv with 'source' and 'log_message' columns</div>
+                                    <button class="btn btn-secondary">Browse Local Files</button>
+                                    <input type="file" id="fileInput" accept=".csv" style="display: none;">
+                                </div>
+
+                                <div id="fileInfoBox" class="file-meta-box" style="display: none;">
+                                    <div class="file-meta-details">
+                                        <span style="font-size: 1.5rem;">📄</span>
+                                        <div>
+                                            <div id="fileName" class="file-meta-name">---</div>
+                                            <div id="fileSize" class="file-meta-size">---</div>
+                                        </div>
+                                    </div>
+                                    <button id="removeFileBtn" class="btn btn-danger" style="padding: 0.35rem 0.65rem;">✕ Remove</button>
+                                </div>
+                            </div>
+
+                            <!-- Scrape Source Form -->
+                            <div id="scrapeSourceForm" class="ingest-source-form" style="display: none; flex-direction: column; gap: 1rem;">
+                                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                                    Fetch logs directly from a webpage containing a log row table. You can test this using the system log stream URL:
+                                </div>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <input type="text" id="scrapeUrlInput" class="search-input" style="width: 100%; min-width: unset;" value="http://127.0.0.1:8000/mock-logs" placeholder="http://example.com/logs">
+                                    <a href="/mock-logs" target="_blank" style="font-size: 0.75rem; color: var(--primary); text-decoration: none; font-weight: 500; align-self: flex-end;">Open Log Stream ↗</a>
+                                </div>
+                                
+                                <button id="scrapeSubmitBtn" class="btn btn-secondary" style="width: 100%;">
+                                    <span>🔍 Scrape & Load Logs</span>
+                                </button>
+                                
+                                <div id="scrapeSuccessBox" class="file-meta-box" style="display: none; background-color: #eff6ff; border-color: #bfdbfe;">
+                                    <div class="file-meta-details">
+                                        <span style="font-size: 1.25rem;">🌐</span>
+                                        <div>
+                                            <div id="scrapeMsg" style="font-weight: 600; color: #1d4ed8; font-size: 0.85rem;">Scraped 0 logs</div>
+                                            <div id="scrapeUrlDisplay" class="file-meta-size" style="max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">http://localhost:8000</div>
+                                        </div>
+                                    </div>
+                                    <button id="removeScrapeBtn" class="btn-danger btn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">✕ Clear</button>
+                                </div>
+                            </div>
+
+                            <button id="classifyBtn" class="btn btn-primary btn-disabled" style="width: 100%;" disabled>
+                                <span>⚡ Start Classification</span>
+                            </button>
+                        </div>
+
+                        <!-- Right Preview Card -->
+                        <div class="card" style="display: flex; flex-direction: column; min-height: 400px;">
+                            <h3 class="card-title">
+                                <span>Preview Logs Ingest</span>
+                                <span id="ingestRowCount" class="badge badge-info" style="display: none;">0 rows</span>
+                            </h3>
+
+                            <!-- Empty preview state -->
+                            <div id="ingestEmptyState" class="empty-state">
+                                <div class="empty-state-icon">📝</div>
+                                <h3>No preview available</h3>
+                                <p>Upload a file to inspect columns and rows before classification.</p>
+                            </div>
+
+                            <!-- Loader View -->
+                            <div id="ingestLoaderView" class="loader-overlay" style="display: none;">
+                                <div class="spinner"></div>
+                                <div id="ingestLoaderStatus" class="loader-status">Processing dataset...</div>
+                            </div>
+
+                            <!-- Preview Table -->
+                            <div id="ingestTableWrapper" class="table-container" style="display: none; max-height: 350px; overflow-y: auto;">
+                                <table id="ingestTable">
+                                    <thead>
+                                        <tr id="ingestTableHeader">
+                                            <!-- Dynamically injected -->
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ingestTableBody">
+                                        <!-- Dynamically injected -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <!-- Post-Classify Action Row -->
+                            <div id="ingestSuccessBox" class="file-meta-box" style="display: none; margin-top: 1.25rem; background-color: #f0fdf4; border-color: #bbf7d0;">
+                                <div class="file-meta-details">
+                                    <span style="font-size: 1.5rem;">✅</span>
+                                    <div>
+                                        <div style="font-weight: 600; color: #166534;">Classification Complete!</div>
+                                        <div style="font-size: 0.8rem; color: #166534;">Target labels added successfully.</div>
+                                    </div>
+                                </div>
+                                <button id="downloadBtn" class="btn btn-primary">📥 Download CSV</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Incidents View -->
+                <section id="incidents" class="view-section">
+                    <!-- Filters bar -->
+                    <div class="card filter-bar">
+                        <input type="text" id="incidentSearch" class="search-input" placeholder="Search by source or message...">
+                        
+                        <select id="incidentSeverityFilter" class="select-input">
+                            <option value="ALL">All Severities</option>
+                            <option value="INCIDENT">All Incidents (Warn/Err/Crit)</option>
+                            <option value="CRITICAL">Critical</option>
+                            <option value="ERROR">Error</option>
+                            <option value="WARNING">Warning</option>
+                            <option value="INFO">Info</option>
+                        </select>
+                        
+                        <select id="incidentSourceFilter" class="select-input">
+                            <option value="ALL">All Sources</option>
+                        </select>
+                    </div>
+
+                    <!-- Layout split -->
+                    <div class="incidents-split">
+                        <!-- Master List Table -->
+                        <div class="card" style="overflow: hidden; display: flex; flex-direction: column;">
+                            <h3 class="card-title">Incidents Feed</h3>
+                            
+                            <div id="incidentsEmptyState" class="empty-state">
+                                <div class="empty-state-icon">🛡️</div>
+                                <h3>No Incidents Found</h3>
+                                <p>No logs match the selected filter. Try choosing another query or upload a file containing incident classifications.</p>
+                            </div>
+
+                            <div id="incidentsTableWrapper" class="table-container" style="display: none; max-height: 480px; overflow-y: auto;">
+                                <table id="incidentsTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Source</th>
+                                            <th>Log Message</th>
+                                            <th>Severity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="incidentsTableBody">
+                                        <!-- Dynamically loaded -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Detail Panel -->
+                        <div class="incident-detail-panel card">
+                            <h3 class="card-title">Incident Details</h3>
+                            <div id="incidentDetailContent">
+                                <div class="empty-state" style="padding: 2rem 0;">
+                                    <div class="empty-state-icon">🔍</div>
+                                    <p>Select an incident row from the feed to view full diagnostics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Root Cause Analysis View -->
+                <section id="root-cause" class="view-section">
+                    <div class="card" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                            <div>
+                                <h3 class="card-title" style="margin-bottom: 0.25rem;">AI Root Cause Diagnosis (RCA)</h3>
+                                <p style="color: var(--text-muted); font-size: 0.88rem;">Leverages the LLM engine to scan warnings and error clusters and generate remediation reports.</p>
+                            </div>
+                            <button id="runRcaBtn" class="btn btn-primary btn-disabled" disabled>
+                                <span>🧠 Generate AI Diagnosis</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Diagnosis Panel -->
+                        <div class="rca-diagnosis-panel">
+                            <!-- Empty RCA State -->
+                            <div id="rcaEmptyState" class="empty-state">
+                                <div class="empty-state-icon">🤖</div>
+                                <h3>No diagnosis generated</h3>
+                                <p id="rcaEmptyText">Please upload a log dataset in the Ingestion module first to enable diagnosis.</p>
+                            </div>
+
+                            <!-- Loader View -->
+                            <div id="rcaLoaderView" class="loader-overlay" style="display: none; min-height: 200px;">
+                                <div class="spinner"></div>
+                                <div id="rcaLoaderStatus" class="loader-status">AI is analyzing logs and calculating probable causes...</div>
+                            </div>
+
+                            <!-- Report Output -->
+                            <div id="rcaReport" class="rca-report" style="display: none;">
+                                <!-- Injected as Markdown HTML -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- JS Logic -->
+    <script src="/static/app.js"></script>
+</body>
+</html>
