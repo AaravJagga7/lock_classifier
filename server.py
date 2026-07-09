@@ -1071,7 +1071,7 @@ async def get_realtime_metrics():
 
 
 @app.post("/send-report-email/")
-async def send_report_email(request: EmailRequest):
+def send_report_email(request: EmailRequest):
     # Simulated dispatch logged to server console
     print("\n" + "📧" * 30)
     print(f"SIMULATED EMAIL DISPATCH TO: {request.email}")
@@ -1109,8 +1109,8 @@ async def send_report_email(request: EmailRequest):
                 part.add_header('Content-Disposition', f"attachment; filename= {request.attachment_name}")
                 msg.attach(part)
                 
-            # Connect to server via secure SSL
-            server = smtplib.SMTP_SSL(smtp_server, smtp_port)
+            # Connect to server via secure SSL (with 10s timeout to prevent freezing)
+            server = smtplib.SMTP_SSL(smtp_server, smtp_port, timeout=10.0)
             server.login(smtp_user, smtp_pass)
             server.sendmail(smtp_user, request.email, msg.as_string())
             server.quit()
