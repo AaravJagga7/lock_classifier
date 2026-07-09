@@ -31,7 +31,6 @@ def classify_csv(input_file):
     df.to_csv(output_file, index=False)
 
     return output_file
-
 if __name__ == '__main__':
     classify_csv("test.csv")
     # logs = [

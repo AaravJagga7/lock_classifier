@@ -1,0 +1,1001 @@
+source,log_message,target_label
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,Backup completed successfully.,System Notification
+LegacyCRM,Lead conversion failed for prospect ID 2943 due to missing contact information., Workflow Error 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,"nova.compute.claims [req-99a1ad4bb87c46d58b92864be9a8765d 63578d04a7654ee3822ba6dde10e831f da524e46e48e405d8a0cc8f5cfd0c44e - - -] [instance: 711df46a-f1a3-456a-8385-3ef8ef8545fa] Total memory: 62870 MB, used: 2015 MB",Resource Usage
+ModernCRM,File data_1629.csv uploaded successfully by user User291.,System Notification
+LegacyCRM,Lead conversion failed for prospect ID 6958 due to missing contact information., Workflow Error 
+ThirdPartyAPI,Multiple bad login attempts detected on user 7202 account,Security Alert
+AnalyticsEngine,Suspicious login activity detected from 192.168.98.31,Security Alert
+ThirdPartyAPI,User User415 logged in.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-80d28eeda89541cb9e1ca37e552079df 6fbc15d3e3dc409ea13f60abc0c94e1a 44480a96420849918a60f2520dbb57ea - - -] 192.168.126.50 ""GET /v2/b6ba6282ba554e4c905383d4ed21ed0d/servers/detail HTTP/1.1"" RCODE  200 len: 1544 time: 0.1017191",HTTP Status
+ModernHR,Data replication task for shard 6 did not complete,Error
+BillingSystem,Unexpected server 47 stoppage occurred during data conversion,Error
+LegacyCRM,Invoice generation process aborted for order ID 5511 due to invalid tax calculation module., Workflow Error 
+BillingSystem,System updated to version 3.9.1.,System Notification
+BillingSystem,Server 5 crashed unexpectedly while syncing data,Error
+ModernCRM,Multiple bad login attempts detected on user 3258 account,Security Alert
+ModernHR,User User151 logged in.,User Action
+ThirdPartyAPI,User User358 logged out.,User Action
+ModernHR,Account with ID 7828 created by User114.,User Action
+ModernHR,Denied access attempt on restricted account Account4204,Security Alert
+ModernCRM,Shard 11 replication task ended in failure,Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-3d2ff91a1b9146be84664ee65194a497 e6db45ea71544aba84df8120be890b4e f78fc036f6e548ee8dcce9b83e91a042 - - -] 192.168.242.38 ""GET /v2/f00c016d452a4e9b98d098fec235624c/servers/detail HTTP/1.1"" HTTP status code -  200 len: 330 time: 0.1338237",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-54cb251bad064ba0827ab3f4075b8550 fc236dc31f2b49a28ab34d03598b89e3 dfaae46e419e4ea184a877e7b680fce5 - - -] 192.168.201.72 ""GET /v2/34d853509e6941b7869a494215a0a822/servers/detail HTTP/1.1"" RCODE  200 len: 1171 time: 0.2348926",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-6bc3c83369d9451181a37339e50fc3f9 3f01e3c26f8c436db5f0874b189fe06f 0c3d24f1553c475aaefb828f78a53491 - - -] 192.168.74.176 ""POST /v2/ca0087690ad244e3b67abf435eefb2d3/os-server-external-events HTTP/1.1"" status: 404 len: 205 time: 0.0628712",HTTP Status
+ThirdPartyAPI,Backup completed successfully.,System Notification
+BillingSystem,Alert: brute force login attempt from 192.168.41.102 detected,Security Alert
+ModernCRM,Unexpected server 98 stoppage occurred during data conversion,Error
+BillingSystem,Email service experiencing issues with sending (Instance ID 7095),Unclassified
+AnalyticsEngine,File data_5518.csv uploaded successfully by user User524.,System Notification
+ModernCRM,Backup completed successfully.,System Notification
+ModernCRM,"nova.osapi_compute.wsgi.server [req-39744e3d4b07477390a07a3036e8bae2 18e08589fb1446b0afba700849efe9f4 00d0b2b316194ddda17f65b9fd4b6e76 - - -] 192.168.136.69 ""GET /v2/89e51de21d154fd491e4936385d4588b/servers/detail HTTP/1.1"" HTTP status code -  200 len: 322 time: 0.2744592",HTTP Status
+ModernCRM,User 1947 tried to bypass API security measures,Security Alert
+BillingSystem,Detection of multiple disk faults in RAID setup (Node 3),Critical Error
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-707194a5c4864d50a9c016661515959d aa7bf473740047deb5fd6cb0edc0ac53 8cde5565fcfa4c8caaded740f6f329a9 - - -] 192.168.123.14 ""GET /v2/41d3df6470294238a2e90483b94a976d/servers/detail HTTP/1.1"" HTTP status code -  200 len: 449 time: 0.2774982",HTTP Status
+ThirdPartyAPI,Account with ID 5499 created by User416.,User Action
+ModernCRM,"nova.compute.claims [req-a05ce406645143aaaa7cb4339dbee662 be22ebbf835840ffbd300fcc83474177 f42d870a1ed14d59a4e10f641c41d8a4 - - -] [instance: 94335443-41a8-496c-8799-dcaf337706d7] memory limit: 65607.00 MB, free: 36015.00 MB",Resource Usage
+BillingSystem,"Abnormal system behavior on server 69, potential security breach",Security Alert
+AnalyticsEngine,System reboot initiated by user User394.,System Notification
+ThirdPartyAPI,Detection of multiple disk faults in RAID setup (Node 8),Critical Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,User User645 logged out.,User Action
+ModernCRM,User 2692 tried to bypass API security measures,Security Alert
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,Replication of data to shard 7 failed,Error
+ModernCRM,Account with ID 1635 created by User967.,User Action
+ModernHR,System reboot initiated by user User126.,System Notification
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,User User910 logged in.,User Action
+ModernCRM,Unrecoverable issue found in vital application module (Module ID 841),Critical Error
+BillingSystem,System reboot initiated by user User847.,System Notification
+ModernHR,Disk cleanup completed successfully.,System Notification
+BillingSystem,Backup completed successfully.,System Notification
+ThirdPartyAPI,Backup completed successfully.,System Notification
+ThirdPartyAPI,Critical system unit error: unit ID Component86,Critical Error
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-d88e59dee97d486295cd87421eea049d 99aeb4d028f44ad59f8527b8be27c5e9 f7b3075c35164935bdfef93ce039e50a - - -] 192.168.171.228 ""GET /v2/7e1cc6464f5e4c07af2b51b84605d2a9/servers/detail HTTP/1.1"" RCODE  200 len: 1206 time: 0.3058763",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-da065228564f44828b10b902ff1f2e98 9897a74a49e1449494b7bfb558d2dfd3 1bca45f1608b4ef68698e3c458038b4c - - -] 192.168.35.177 ""GET /v2/7284bd0c9b244acda731131225ca8779/servers/detail HTTP/1.1"" HTTP status code -  200 len: 261 time: 0.0500048",HTTP Status
+ModernHR,System component malfunction: component ID Component57,Critical Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,Account with ID 5680 created by User483.,User Action
+ModernHR,"nova.compute.claims [req-1877a948b10b4802bae0fc9b9098631a 075576f6ba8f4bf582ca6d016c31e0a1 de068dde7e6d4fafa668c96e20845c40 - - -] [instance: de8abc84-5b10-427c-9ec9-21f4dc6d4c17] memory limit: 72509.00 MB, free: 44046.00 MB",Resource Usage
+AnalyticsEngine,Suspicious login activity detected from 192.168.95.112,Security Alert
+LegacyCRM,Case escalation for ticket ID 2077 failed because the assigned support agent is no longer active., Workflow Error 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-050add7839c54f4fab9f1a4f4dbcdf52 bf6812f972fe43ca99cdeb323b0e3953 37b353504d444dce8c1e1b95d43ba444 - - -] 192.168.250.49 ""GET /v2/c461a7c189a4443082d85a4072071b00/servers/detail HTTP/1.1"" status: 200 len: 2830 time: 0.0990461",HTTP Status
+BillingSystem,System updated to version 3.9.1.,System Notification
+ModernCRM,Shard 5 replication task ended in failure,Error
+ModernCRM,Server 33 restarted without warning during data migration,Error
+BillingSystem,nova.compute.resource_tracker [req-0dd805dba58f411fb56d6010cd6a532a - - - - -] Final resource view: name=cp-4.slowvm.utah.cloudlab.us phys_ram=35455MB used_ram=1388MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernHR,System reboot initiated by user User543.,System Notification
+LegacyCRM,Case escalation for ticket ID 1493 failed because the assigned support agent is no longer active., Workflow Error 
+ModernCRM,Attempt to access account Account6321 was not authorized,Security Alert
+ModernCRM,User User850 logged out.,User Action
+ModernCRM,Disk cleanup completed successfully.,System Notification
+BillingSystem,User User726 logged out.,User Action
+BillingSystem,"nova.compute.claims [req-e109bc51aa5942d7b43a94d75d2893d0 32033658328f45eab00cf072ab3eaf24 428d37aa7192403f86e8ecaf8f7169a8 - - -] [instance: 3b7965f8-a59c-4094-8516-8c1315b34f79] memory limit: 110079.00 MB, free: 40848.00 MB",Resource Usage
+AnalyticsEngine,"nova.compute.claims [req-7c520e284e614f8aa9ef4522a543b282 344dcbf70557464fbd775d4cc7a1db24 3b5712ebb6534ff98b218382e4f472a6 - - -] [instance: b04d5836-f2b2-4cff-8bf2-267e5b7d1b96] Total memory: 72862 MB, used: 3103 MB",Resource Usage
+ThirdPartyAPI,Suspicious login activity detected from 192.168.18.153,Security Alert
+ModernHR,Critical system unit error: unit ID Component35,Critical Error
+BillingSystem,"nova.compute.claims [req-097d1f5a441043ea8ff887763dca104c 51e7aea60da64523b57aaa0c86973385 05a98b6122f341948bb0a7eae3a0c1c5 - - -] [instance: 9178990b-39d3-466c-b8cd-1340c424e381] memory limit: 111022.00 MB, free: 21071.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+ThirdPartyAPI,Attempt to access account Account4996 was not authorized,Security Alert
+BillingSystem,User 3019 tried to bypass API security measures,Security Alert
+AnalyticsEngine,System component malfunction: component ID Component43,Critical Error
+BillingSystem,System updated to version 3.9.1.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,"nova.metadata.wsgi.server [req-03de8c6567fb41c88a0a49cda3b97569 - - - - -] 192.168.139.185,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 289 time: 0.131771",HTTP Status
+ThirdPartyAPI,System updated to version 3.9.1.,System Notification
+ModernHR,Disk cleanup completed successfully.,System Notification
+ModernCRM,User User774 logged in.,User Action
+BillingSystem,Unauthorized access to data was attempted,Security Alert
+ModernHR,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 5049),Critical Error
+AnalyticsEngine,User User203 logged out.,User Action
+AnalyticsEngine,Attempt to access account Account2243 was not authorized,Security Alert
+BillingSystem,Shard 9 replication task ended in failure,Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 9894),Critical Error
+ModernCRM,User 4179 tried to bypass API security measures,Security Alert
+AnalyticsEngine,System reboot initiated by user User466.,System Notification
+ModernHR,System component malfunction: component ID Component67,Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,Detection of multiple disk faults in RAID setup (Node 5),Critical Error
+BillingSystem,"nova.compute.claims [req-a64729bcd78f43f6910e781c19b98fd2 3a51ed5e45974b90b4a78ccdee992224 f781b855660240f88f74698e0053f6af - - -] [instance: 0e44e743-abae-48f5-b65d-080398a93fa0] memory limit: 96378.00 MB, free: 10748.00 MB",Resource Usage
+AnalyticsEngine,"nova.compute.claims [req-814310ae97624820bf1c7ff16b76af80 0a539c137ac24c068cc6d10e61dec60c 05148d3f591e47a09f0c6a0f5d1106fb - - -] [instance: 79bae1c3-7dc1-4be8-aaba-3426bf621bb9] Total memory: 110741 MB, used: 1246 MB",Resource Usage
+AnalyticsEngine,User User642 logged in.,User Action
+AnalyticsEngine,"nova.compute.claims [req-98f3b7076f8f43ffb266f1c11897e7e4 e8716df53fda405caf89ea6e5354f5ca 589f2f322ddf49d19a304b39b19f58c9 - - -] [instance: 51655943-f44d-4589-8d02-a022c14c42df] memory limit: 125008.00 MB, free: 43643.00 MB",Resource Usage
+ModernHR,nova.compute.resource_tracker [req-bcd22ebd038f4a79ae60eae3df70d9d9 - - - - -] Final resource view: name=cp-5.slowvm.utah.cloudlab.us phys_ram=58365MB used_ram=692MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernHR,Unexpected server 94 stoppage occurred during data conversion,Error
+ModernHR,Account with ID 2756 created by User109.,User Action
+ThirdPartyAPI,RAID array experienced multiple disk crashes (Array ID 2),Critical Error
+ModernCRM,Replication of data to shard 9 failed,Error
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernCRM,"nova.osapi_compute.wsgi.server [req-4ed3720e142d49cf8fc507611d7cf982 2a27af2620114a68b562fbb42a1aa424 d94ec96210ed40acbb0691e661fad582 - - -] 192.168.138.252 ""GET /v2/e633a8646e314988aefea2d3e0e85e41/servers/detail HTTP/1.1"" status: 200 len: 2375 time: 0.0782989",HTTP Status
+ModernHR,"nova.compute.claims [req-2101bc45a1634369bf10c8ab72a29d99 d577aba9eed346d7958579c314ae5913 4272a0a88d104f77b2d4dbba9cbe5e13 - - -] [instance: 70cc6741-6864-4151-ad4d-95272419f2da] memory limit: 119766.00 MB, free: 18962.00 MB",Resource Usage
+ModernCRM,"nova.osapi_compute.wsgi.server [req-815763c11a8c4f469bbd3221e2de290e 9338ef268e95430bafb69689a5e082e0 5412466f3e104a1e8740831ccf000cc1 - - -] 192.168.210.248 ""GET /v2/c09c8ea97df54ff59664f9458a6d1fa5/servers/detail HTTP/1.1"" RCODE  200 len: 1596 time: 0.164709",HTTP Status
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-ffa3cc21bcb547428766d03d771f3e2e 876653298f9e4b79b459c92519abd12b 4ca3d5cefcf6467b8c4116ae42195365 - - -] 192.168.8.182 ""GET /v2/22ed39eaafc045469f23535edb2158e0/servers/detail HTTP/1.1"" RCODE  200 len: 2957 time: 0.3785477",HTTP Status
+BillingSystem,Account with ID 2508 created by User220.,User Action
+ModernCRM,File data_4597.csv uploaded successfully by user User763.,System Notification
+BillingSystem,Email service experiencing issues with sending (Instance ID 6625),Unclassified
+BillingSystem,Alert: brute force login attempt from 192.168.219.101 detected,Security Alert
+AnalyticsEngine,Server 26 crashed unexpectedly while syncing data,Error
+ModernCRM,Email server encountered a sending fault,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-e3bcd034b17f4053952f8056c22bd580 2828904cef56460cb28c50f28c66963a c099db85e34d4602ae7ce77af65506d7 - - -] 192.168.245.150 ""GET /v2/b4425db71c054a00b598256fb441159c/servers/detail HTTP/1.1"" RCODE  200 len: 1833 time: 0.0549675",HTTP Status
+AnalyticsEngine,Email service experiencing issues with sending (Instance ID 6622),Unclassified
+ModernCRM,"nova.compute.claims [req-72b39bdfe3b441919e2e25db4a1fb280 a84b4c768d6544d5a09932f3a7227754 bd007d668493497b9d59165528c3eab8 - - -] [instance: 1ab572b4-8667-4c35-b0b7-a976cda959d5] Total memory: 96773 MB, used: 3047 MB",Resource Usage
+ModernCRM,Server 11 restarted without warning during data migration,Error
+AnalyticsEngine,System reboot initiated by user User178.,System Notification
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,Backup completed successfully.,System Notification
+ModernHR,System updated to version 3.9.1.,System Notification
+AnalyticsEngine,RAID array experienced multiple disk crashes (Array ID 1),Critical Error
+AnalyticsEngine,Multiple bad login attempts detected on user 7120 account,Security Alert
+ThirdPartyAPI,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,"nova.osapi_compute.wsgi.server [req-c36062b14c1849058f9b1de60d74bc97 1b4f0550e218429fa077dc7d0fa2fc21 17722b9115ef496d852458912739bf94 - - -] 192.168.7.50 ""GET /v2/6e012b3475c84305a58916f4e249c444/servers/detail HTTP/1.1"" status: 200 len: 2918 time: 0.1633993",HTTP Status
+ModernCRM,System component malfunction: component ID Component73,Critical Error
+ModernHR,Email server encountered a sending fault,Error
+BillingSystem,User User806 logged out.,User Action
+AnalyticsEngine,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+ModernCRM,Unexpected server 71 stoppage occurred during data conversion,Error
+LegacyCRM,Case escalation for ticket ID 5416 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,Account with ID 9219 created by User297.,User Action
+ModernHR,Disk cleanup completed successfully.,System Notification
+ThirdPartyAPI,Server 11 crashed unexpectedly while syncing data,Error
+ModernHR,"Abnormal system behavior on server 84, potential security breach",Security Alert
+LegacyCRM,Lead conversion failed for prospect ID 3738 due to missing contact information., Workflow Error 
+LegacyCRM,Invoice generation process aborted for order ID 8901 due to invalid tax calculation module., Workflow Error 
+ModernHR,Data replication task for shard 3 did not complete,Error
+ModernHR,"nova.compute.claims [req-0f82c13f56e247a3ac6df69507f91ea5 38aafd3a5c2b4933bca95fecaae905fe fa56bad32b1c4433b0e75e22b3ef0c51 - - -] [instance: 6b3cc71a-c920-4caa-999c-d2d70251cea7] memory limit: 124839.00 MB, free: 45259.00 MB",Resource Usage
+BillingSystem,Shard 6 replication task ended in failure,Error
+ThirdPartyAPI,"nova.compute.claims [req-8a6ee4d19460433c9b0556cdd0f33cf3 251de99fec9349228dce86e1472516c5 0218d47111e3443f8a1c8d75263589af - - -] [instance: c9804e75-0a88-40ab-b4a2-2821e09192f2] memory limit: 113275.00 MB, free: 26684.00 MB",Resource Usage
+LegacyCRM,Invoice generation process aborted for order ID 7938 due to invalid tax calculation module., Workflow Error 
+AnalyticsEngine,Backup completed successfully.,System Notification
+ModernCRM,Backup completed successfully.,System Notification
+AnalyticsEngine,User 4903 tried to bypass API security measures,Security Alert
+BillingSystem,Boot process terminated unexpectedly due to kernel issue (Instance ID 2721),Critical Error
+AnalyticsEngine,Account with ID 4794 created by User136.,User Action
+ModernCRM,"nova.osapi_compute.wsgi.server [req-cb2012ce7a63431d9443818fb5117032 8ec151100a164936b8bb0a6d7a4de254 3f2320a724fc4238b235c55c92b3ee15 - - -] 192.168.112.248 ""GET /v2/e660e365874d47f389bbd2e9820ca574/servers/detail HTTP/1.1"" status: 200 len: 1602 time: 0.4395038",HTTP Status
+ThirdPartyAPI,Unauthorized access to data was attempted,Security Alert
+AnalyticsEngine,Detection of multiple disk faults in RAID setup (Node 3),Critical Error
+BillingSystem,nova.compute.resource_tracker [req-8bec4842a3ef444899cf2226e0f0f0c2 - - - - -] Final resource view: name=cp-2.slowvm.utah.cloudlab.us phys_ram=63417MB used_ram=963MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,Data replication task for shard 5 did not complete,Error
+LegacyCRM,Lead conversion failed for prospect ID 4744 due to missing contact information., Workflow Error 
+ThirdPartyAPI,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,System component malfunction: component ID Component37,Critical Error
+LegacyCRM,Case escalation for ticket ID 7757 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,User User582 logged in.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 9007 due to missing contact information., Workflow Error 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-7fd6e91e3dcd4298befff90b8e9046c3 2bdf130ed1b34de7ada48472de69fdde 59a2d9ddd14d48bdaed1c6c102c940fe - - -] 192.168.89.58 ""GET /v2/5ee777f3d04741ef9290c6d72990941e/servers/detail HTTP/1.1"" RCODE  200 len: 2064 time: 0.1056052",HTTP Status
+ModernHR,User User107 logged out.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 6587 due to missing contact information., Workflow Error 
+ModernCRM,"nova.compute.claims [req-1959fcd2360041b284db9b6494619331 e4a3072756ea45298f37ac7c03efc960 1a79fd70226d4a7a8e838ae8f0d8b2a1 - - -] [instance: e2140e90-7eca-42f4-8554-ea1a164f3abd] Total memory: 63413 MB, used: 980 MB",Resource Usage
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-be0cf2d6b7c64919807cfa231156e50e a36ce78ac31441fe8e4a35b8f1e3e1c6 b5e12e7ecf6348f58787535f87c1fd35 - - -] 192.168.154.246 ""GET /v2/15de147c633a48dea9aa36f77774dc7d/servers/detail HTTP/1.1"" HTTP status code -  200 len: 472 time: 0.2025034",HTTP Status
+ThirdPartyAPI,Backup completed successfully.,System Notification
+ModernHR,Boot process terminated unexpectedly due to kernel issue (Instance ID 4852),Critical Error
+ThirdPartyAPI,Backup completed successfully.,System Notification
+LegacyCRM,Case escalation for ticket ID 2817 failed because the assigned support agent is no longer active., Workflow Error 
+LegacyCRM,Lead conversion failed for prospect ID 4088 due to missing contact information., Workflow Error 
+LegacyCRM,Invoice generation process aborted for order ID 6675 due to invalid tax calculation module., Workflow Error 
+ThirdPartyAPI,Account with ID 8763 created by User987.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 8668 due to missing contact information., Workflow Error 
+BillingSystem,Suspicious login activity detected from 192.168.96.10,Security Alert
+ModernCRM,Backup completed successfully.,System Notification
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+ModernHR,Shard 6 replication task ended in failure,Error
+LegacyCRM,Case escalation for ticket ID 9180 failed because the assigned support agent is no longer active., Workflow Error 
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-18cc0ff9eefa403f997c380715ec9d43 9c6cec2441e84e65aea2719c69fbf3c8 ea9f2f716ffd4e32897b04d6b63c051b - - -] 192.168.209.174 ""GET /v2/e809f1ad21be40b4a0e349c526ece87d/servers/detail HTTP/1.1"" status: 200 len: 1410 time: 0.1294608",HTTP Status
+ThirdPartyAPI,"nova.metadata.wsgi.server [req-8dce9f88033f4fc1835e6fb1edd00436 - - - - -] 192.168.45.6,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 444 time: 0.0779966",HTTP Status
+ModernCRM,System updated to version 3.9.1.,System Notification
+BillingSystem,File data_9199.csv uploaded successfully by user User634.,System Notification
+ModernHR,System updated to version 3.9.1.,System Notification
+ModernHR,nova.compute.resource_tracker [req-f5fc4260afb94ceb8fe596c81459b3d0 - - - - -] Final resource view: name=cp-3.slowvm.utah.cloudlab.us phys_ram=54229MB used_ram=895MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernHR,System updated to version 3.9.1.,System Notification
+AnalyticsEngine,User User918 logged in.,User Action
+ModernCRM,"nova.compute.claims [req-3b4bce9a92ea478fa5f2e8d91684d1a6 10f83c65a20e423aa50feddf44b66144 ddab5f32e1104aab88c7ec46da5e5fb2 - - -] [instance: d123e52e-df47-44b2-9476-f4034ef824fb] memory limit: 73346.00 MB, free: 10664.00 MB",Resource Usage
+ModernCRM,File data_8818.csv uploaded successfully by user User103.,System Notification
+ThirdPartyAPI,"nova.compute.claims [req-2a86109d9a84468a8547dd96e25bb860 5039611fca3742b48fbe0a1b6d259921 fce36161e87f4ac6bbc0d59fdcc9996e - - -] [instance: b6a353ef-0ba5-47a4-9658-2f16cb6fe345] memory limit: 86979.00 MB, free: 22616.00 MB",Resource Usage
+BillingSystem,Backup completed successfully.,System Notification
+AnalyticsEngine,"nova.metadata.wsgi.server [req-8bc674a642dd4bea948e2a3f192c568a - - - - -] 192.168.69.13,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 447 time: 0.1963346",HTTP Status
+AnalyticsEngine,Unrecoverable issue found in vital application module (Module ID 271),Critical Error
+AnalyticsEngine,System reboot initiated by user User754.,System Notification
+ModernHR,Server 84 crashed unexpectedly while syncing data,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-22b3c94df0614f00a0cd0fc8d28541ca df2120947af942009005412eb0ffdf2c df08ed920f074b3297f8f8e35b5751c5 - - -] 192.168.134.82 ""GET /v2/ca547742c1074e129369d7b299990ce8/servers/detail HTTP/1.1"" HTTP status code -  200 len: 159 time: 0.2097968",HTTP Status
+LegacyCRM,Case escalation for ticket ID 2184 failed because the assigned support agent is no longer active., Workflow Error 
+ModernCRM,Suspicious login activity detected from 192.168.43.72,Security Alert
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+ThirdPartyAPI,User 9526 tried to bypass API security measures,Security Alert
+AnalyticsEngine,Backup completed successfully.,System Notification
+LegacyCRM,Case escalation for ticket ID 3953 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,Shard 10 replication task ended in failure,Error
+ModernHR,"nova.compute.claims [req-56a3cd318398401aa5529cbb41d535e9 6cd4fc74a6e94c159d415a26d60d2c2d 00fc72a7ebf04ea8a9506706989effc5 - - -] [instance: 18f87a51-8086-4574-a0f2-870888427cef] Total memory: 86687 MB, used: 3370 MB",Resource Usage
+ThirdPartyAPI,Replication of data to shard 6 failed,Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,Backup completed successfully.,System Notification
+LegacyCRM,Invoice generation process aborted for order ID 3197 due to invalid tax calculation module., Workflow Error 
+ModernCRM,Shard 2 replication task ended in failure,Error
+ModernHR,Account with ID 1005 created by User674.,User Action
+BillingSystem,Suspicious login activity detected from 192.168.67.10,Security Alert
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,Disk cleanup completed successfully.,System Notification
+ModernCRM,Email service experiencing issues with sending (Instance ID 8828),Unclassified
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Alert: brute force login attempt from 192.168.164.126 detected,Security Alert
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,"nova.osapi_compute.wsgi.server [req-21ed6ecf85164dd4ab80726dae7c018c 8fe17c4cb8bf43b484b118638f4faa14 cfec4356e5904c04866b8ebbe081a1dd - - -] 192.168.135.150 ""GET /v2/199b09cadf864b8b96a5dc40efac9086/servers/detail HTTP/1.1"" status: 200 len: 2483 time: 0.4163709",HTTP Status
+ThirdPartyAPI,Boot process terminated unexpectedly due to kernel issue (Instance ID 1938),Critical Error
+ModernHR,"nova.osapi_compute.wsgi.server [req-8b031abe87464f8c84a2b086ea3d1d67 f674f821160f40f49adfad91e9bb7aa7 ba7115d282234bceb668015f3275bfca - - -] 192.168.154.44 ""GET /v2/161678ef28a84238831cdb80881def78/servers/detail HTTP/1.1"" status: 200 len: 2365 time: 0.1275547",HTTP Status
+ModernHR,nova.compute.resource_tracker [req-da27e32b9ee8459d92956c1c6366b84c - - - - -] Final resource view: name=cp-5.slowvm.utah.cloudlab.us phys_ram=42464MB used_ram=1576MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+BillingSystem,System reboot initiated by user User152.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+BillingSystem,Critical system unit error: unit ID Component97,Critical Error
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-1a3109c5847b46039cc00a5759b704e0 3a2320d3b6754b9a9347dc70a164e094 3e55780a0d3c4eaabb68123e24f32f8c - - -] 192.168.58.192 ""GET /v2/279ddd784b70422db127c61a5e0cb9db/servers/detail HTTP/1.1"" HTTP status code -  200 len: 289 time: 0.1426959",HTTP Status
+BillingSystem,Attempt to access account Account8918 was not authorized,Security Alert
+AnalyticsEngine,User User404 logged out.,User Action
+LegacyCRM,Invoice generation process aborted for order ID 1283 due to invalid tax calculation module., Workflow Error 
+ThirdPartyAPI,Replication of data to shard 10 failed,Error
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,User User136 logged out.,User Action
+ModernHR,User 9029 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-69f26b8f48294a7b9be4fac605892bf9 9f9f075ab02e4d3f951b9878d443a641 67a31aac275c46989a90a1cfd315f3be - - -] 192.168.122.147 ""POST /v2/8236cf4324a8470bb855f1411f35eabb/os-server-external-events HTTP/1.1"" status: 404 len: 465 time: 0.2208126",HTTP Status
+ThirdPartyAPI,"nova.compute.claims [req-dc9c6a2673234d47b91c8f4d5718d275 ac7e71bb53d842f9a01959f737dd5447 e42c9ebe3f9b4eb6bf9d492b3232bab2 - - -] [instance: a46188e0-88ea-448b-bf33-bc2251785f67] Total memory: 41904 MB, used: 2188 MB",Resource Usage
+BillingSystem,"nova.osapi_compute.wsgi.server [req-b7ff344fb2404417ae6c4b6cc1dacd3e 5f8439165b6d4575ad156f294d0e0ad7 e2839b4bf6be4597a7e7a77f12f81fa0 - - -] 192.168.60.52 ""GET /v2/14e9166321e04ab986c6c6066fd73ad9/servers/detail HTTP/1.1"" HTTP status code -  200 len: 431 time: 0.277013",HTTP Status
+AnalyticsEngine,"nova.metadata.wsgi.server [req-81ac0a95f6b8432a8cf074c06a11246b - - - - -] 192.168.138.124,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 109 time: 0.2280601",HTTP Status
+LegacyCRM,Lead conversion failed for prospect ID 9275 due to missing contact information., Workflow Error 
+AnalyticsEngine,Account with ID 3811 created by User890.,User Action
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernHR,User User184 logged in.,User Action
+ModernCRM,System updated to version 3.9.1.,System Notification
+ModernHR,User 5759 tried to bypass API security measures,Security Alert
+ModernCRM,User User870 logged out.,User Action
+AnalyticsEngine,User 6369 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,Backup completed successfully.,System Notification
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+LegacyCRM,Lead conversion failed for prospect ID 4992 due to missing contact information., Workflow Error 
+BillingSystem,Detection of multiple disk faults in RAID setup (Node 6),Critical Error
+ThirdPartyAPI,"nova.compute.claims [req-234ef29607a444ca90e4b5065a1895b4 cec5f5cf8d114630b5020f7581382a16 62de90b8a68a4ae3a907ec66f3de3863 - - -] [instance: 0f04dcd8-741f-47fa-9384-a752fc8f63ed] memory limit: 85818.00 MB, free: 44031.00 MB",Resource Usage
+ModernCRM,User User593 logged in.,User Action
+ModernCRM,System reboot initiated by user User194.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+BillingSystem,Replication of data to shard 11 failed,Error
+ThirdPartyAPI,Account with ID 6854 created by User971.,User Action
+ModernHR,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,"nova.compute.claims [req-d6ea6d3c6cda4e66b5b301617eea4efe 2a52fd044af84eaebc08c8b2c7cb314b 42daa3eaa6f34447976694db5d0c83c4 - - -] [instance: 5371e6e9-34b3-4eb0-86ae-1defbb2a6990] memory limit: 67427.00 MB, free: 23158.00 MB",Resource Usage
+ThirdPartyAPI,"nova.compute.claims [req-2303a4772b1448a6b8ba0fbd2b711ef5 0c3be6a55ef9499bbb98137b5cfda4ae dac114e242284937b8dd06c0c74b81e0 - - -] [instance: 571d608e-fb03-43f0-83a4-3654946ca46d] memory limit: 120770.00 MB, free: 43460.00 MB",Resource Usage
+ModernHR,User User850 logged in.,User Action
+ModernCRM,"nova.metadata.wsgi.server [req-5b9d1153bd4641ceb335d1e3ac1e4221 - - - - -] 192.168.65.71,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 166 time: 0.2018309",HTTP Status
+LegacyCRM,Lead conversion failed for prospect ID 1079 due to missing contact information., Workflow Error 
+ThirdPartyAPI,Account with ID 7509 created by User823.,User Action
+BillingSystem,"nova.osapi_compute.wsgi.server [req-af90746f4c3b477996b58c67be6d8826 2f8e7d07643943f1ba48020e69d0a091 d262e6197abc4bdf8bb17de295eede72 - - -] 192.168.113.200 ""GET /v2/ae5f43700506491fb2c698bb55be14d1/servers/detail HTTP/1.1"" HTTP status code -  200 len: 187 time: 0.201243",HTTP Status
+ThirdPartyAPI,Disk cleanup completed successfully.,System Notification
+ThirdPartyAPI,Email server encountered a sending fault,Error
+ThirdPartyAPI,User User479 logged in.,User Action
+BillingSystem,Unexpected server 2 stoppage occurred during data conversion,Error
+BillingSystem,User User937 logged out.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,"nova.osapi_compute.wsgi.server [req-895b76d89823482580bc4655cf0da517 929e9a2d44c14660b14d44961527dab2 c0c6aaade0434507a27c96c879c1682c - - -] 192.168.253.146 ""GET /v2/2e35104481184f259428b15c3b4e4a7d/servers/detail HTTP/1.1"" HTTP status code -  200 len: 160 time: 0.0570249",HTTP Status
+ModernHR,User User986 logged in.,User Action
+ModernCRM,"nova.compute.claims [req-fe91815063e84969b5897e5eb78d5f36 fdcd5a97dbdc4d25afe0adb0a0315dd5 a4aa7b6d6edf4859afe4d8c3ec7ea735 - - -] [instance: 9d7ef71b-7350-4e3a-ac9c-0714d4cf5f9a] memory limit: 110694.00 MB, free: 38306.00 MB",Resource Usage
+ModernCRM,"nova.osapi_compute.wsgi.server [req-bd2c6dffc0a5452bbc1649a038d47f34 ab8a2d867e7b41f5885a45b1ba57c6cd ed991770390a4bb58feb8f3627faa892 - - -] 192.168.11.18 ""GET /v2/773e63db510d4f34a09f2b0dd3d91efe/servers/detail HTTP/1.1"" RCODE  200 len: 1240 time: 0.0807845",HTTP Status
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+ThirdPartyAPI,Data replication task for shard 9 did not complete,Error
+LegacyCRM,Invoice generation process aborted for order ID 4998 due to invalid tax calculation module., Workflow Error 
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-f9c0d172ff4b4dcdb4db4d0e9e04f0bc 39d9f784237f459a9126ffb23c168333 42637bb600ec42e0a537b45e3c463e2a - - -] 192.168.198.40 ""POST /v2/70a7e263215d44a49cdd2dfb6db20986/os-server-external-events HTTP/1.1"" status: 404 len: 224 time: 0.3979417",HTTP Status
+BillingSystem,User User526 logged out.,User Action
+ModernCRM,Account with ID 4694 created by User995.,User Action
+ModernHR,"nova.osapi_compute.wsgi.server [req-7a1283e3db664334af08765d24f615da d875584a8b194e3ab8e938cf52139982 df9b9600d30549819447a50b229b6afb - - -] 192.168.181.8 ""GET /v2/2dd2326e23354ea3be5c90165471baac/servers/detail HTTP/1.1"" RCODE  200 len: 2061 time: 0.0615162",HTTP Status
+ModernCRM,Alert: brute force login attempt from 192.168.38.143 detected,Security Alert
+ModernHR,"nova.osapi_compute.wsgi.server [req-3e0c69d0eb3442b0a7ac35f7b98af115 392a62062b9e4c4b8df5c8a30efec0a0 40a67ff3dead4ec987f3beb13561cf0d - - -] 192.168.94.121 ""GET /v2/db9f0e15d9b849b28f5713091cbf496c/servers/detail HTTP/1.1"" HTTP status code -  200 len: 131 time: 0.3174716",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-ab3534094f0a4dd083db056dad0c78b7 7c430b79c6fa4c5781fdcf563b86571b 7d06832af3a24409b64a070360964c75 - - -] 192.168.202.104 ""POST /v2/b56f076e162d4a618bbaa08685ed7d29/os-server-external-events HTTP/1.1"" status: 404 len: 435 time: 0.2232372",HTTP Status
+ThirdPartyAPI,nova.compute.resource_tracker [req-abf1f2d5a0974017987719042b8e86ab - - - - -] Final resource view: name=cp-3.slowvm.utah.cloudlab.us phys_ram=35109MB used_ram=602MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ThirdPartyAPI,File data_7873.csv uploaded successfully by user User254.,System Notification
+ThirdPartyAPI,"nova.compute.claims [req-5e67c581320e4a07b5bf0f69f14f767f 2e84a79e97e045a29080a9de2f093325 40bdbe90731743aab0824b664cc2da75 - - -] [instance: c87a5c88-8abd-4674-9e9c-4c6c231735e3] memory limit: 112716.00 MB, free: 41175.00 MB",Resource Usage
+ModernHR,"Abnormal system behavior on server 33, potential security breach",Security Alert
+ThirdPartyAPI,User 8035 tried to bypass API security measures,Security Alert
+LegacyCRM,Lead conversion failed for prospect ID 1504 due to missing contact information., Workflow Error 
+ModernCRM,"nova.compute.claims [req-1779eb2575bc4c63b274f4f385c0dce3 797c9216aa504fc6b8d7477c5ce1f584 53c8cfe7c10447b3974a34bea7cf920c - - -] [instance: 56c0bb27-ec00-4f4d-82a9-baf88cf831a9] memory limit: 114960.00 MB, free: 33955.00 MB",Resource Usage
+ModernCRM,"nova.osapi_compute.wsgi.server [req-2793460b28e849ed9174e7fd1ec3388b 4bcaa5f43a3546a4ae9d861a82a6397d db5a27eee181469980229454ebbd9bc1 - - -] 192.168.95.118 ""GET /v2/3a633e0c005b446b895a8bb9317e24a8/servers/detail HTTP/1.1"" HTTP status code -  200 len: 304 time: 0.0992369",HTTP Status
+BillingSystem,Shard 2 replication task ended in failure,Error
+BillingSystem,System reboot initiated by user User953.,System Notification
+ModernHR,Unrecoverable issue found in vital application module (Module ID 301),Critical Error
+BillingSystem,"nova.compute.claims [req-66df3a95e9764ae7a803327b3b174085 0dc53842a51844f88cf52117d368d2a4 4e52731916fc4876aef648be1ba78c17 - - -] [instance: 3da5f165-fa03-448a-a061-9e09ef201677] Total memory: 109290 MB, used: 3189 MB",Resource Usage
+ModernCRM,"nova.compute.claims [req-284cbccc17334a3fbd66866c7ff1ad25 03bd721741f34a1ea33542c7ebb40581 7f295c3a6fac4096977ca61e4830a5a3 - - -] [instance: 5079d29c-2b40-45b3-8255-09129170a484] Total memory: 69393 MB, used: 1790 MB",Resource Usage
+ModernHR,User User234 logged out.,User Action
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,User User450 logged out.,User Action
+ThirdPartyAPI,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,"nova.compute.claims [req-551ef84114514cd08993a9fb2d6fe95b 3f0d3e7340064fe6942885664691f2e7 e1909bf972d746a6a565f7cab415f7f5 - - -] [instance: 5d386ab2-5615-4a84-a529-a8d105810d9d] memory limit: 71290.00 MB, free: 53827.00 MB",Resource Usage
+AnalyticsEngine,Replication of data to shard 7 failed,Error
+AnalyticsEngine,"nova.compute.claims [req-23465d9db75e4502bba48ebdb7fd5dff 54c68dd3873b420f9dc2d47f216c72ba 54a72ea774ad4f81b2dd282bfbb4dac8 - - -] [instance: 1db92123-0901-4c24-877d-16ca5be6178e] memory limit: 96949.00 MB, free: 26845.00 MB",Resource Usage
+BillingSystem,Backup started at 2025-05-14 07:06:55.,System Notification
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,Account with ID 7156 created by User455.,User Action
+ModernCRM,System component malfunction: component ID Component29,Critical Error
+AnalyticsEngine,Detection of multiple disk faults in RAID setup (Node 3),Critical Error
+BillingSystem,Account with ID 7293 created by User239.,User Action
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-f2a4936dd91f4aeeb80bf622cbf172d8 c47f437cdeb348e6a6de71e9f9cef711 cbeb08ac49284247b8e8b4255d2a9b19 - - -] 192.168.96.39 ""POST /v2/c04a47d91a1a46b4b68cd88193b61d2b/os-server-external-events HTTP/1.1"" status: 404 len: 228 time: 0.2791523",HTTP Status
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,"nova.metadata.wsgi.server [req-f9414a6b98b146348f1bf7195187100f - - - - -] 192.168.178.128,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 261 time: 0.2800701",HTTP Status
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,"nova.osapi_compute.wsgi.server [req-dc373d2468d642079de6f06c4bfda4e8 48c3acf662cb40bead2440e395c6ca47 d0bd62803a214557a5460089c27c5374 - - -] 192.168.84.36 ""POST /v2/6197c21305bc4bd4a58a44edd4fc9208/os-server-external-events HTTP/1.1"" status: 404 len: 468 time: 0.4155341",HTTP Status
+ModernCRM,Critical system unit error: unit ID Component86,Critical Error
+BillingSystem,Email server encountered a sending fault,Error
+ModernHR,"nova.metadata.wsgi.server [req-84a782c0f0114240999041dd5a32c622 - - - - -] 192.168.61.19,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 410 time: 0.3111444",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-fb93faf0e9f04bf0b012c57c56cbe0f4 aa9f6f549c0e46b9a7889f4c0834255d 96e48d30bce04b88ad052ce5ef4286b3 - - -] 192.168.235.105 ""GET /v2/35a6fd0f49c248f7ac7ee6bfe8e5a71a/servers/detail HTTP/1.1"" HTTP status code -  200 len: 154 time: 0.3423051",HTTP Status
+AnalyticsEngine,System reboot initiated by user User293.,System Notification
+ModernHR,System reboot initiated by user User979.,System Notification
+AnalyticsEngine,Data replication task for shard 5 did not complete,Error
+ModernCRM,Server 18 crashed unexpectedly while syncing data,Error
+AnalyticsEngine,Alert: brute force login attempt from 192.168.77.137 detected,Security Alert
+LegacyCRM,Lead conversion failed for prospect ID 6770 due to missing contact information., Workflow Error 
+ThirdPartyAPI,Server 52 restarted without warning during data migration,Error
+BillingSystem,User User976 logged out.,User Action
+AnalyticsEngine,User User906 logged out.,User Action
+ModernCRM,Attempt to access account Account1201 was not authorized,Security Alert
+BillingSystem,Account with ID 4461 created by User198.,User Action
+ModernHR,"nova.compute.claims [req-4ac5a61efc4344b2a2373798fbe82050 2704778918ed42efb0780640cde0a061 d47de04a2979443bb9b1556917802450 - - -] [instance: aeeef635-f9e7-47d1-adda-873dcf2fe4ef] Total memory: 33620 MB, used: 3378 MB",Resource Usage
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,"nova.compute.claims [req-58e21b0e683741a881fb816cf45f771f 6af86c1ef4da405488848dbb1c97ee0d 01aaaeb2317b4b74b667d10fae01fc79 - - -] [instance: 56786478-5494-43b5-9c94-9dceb6a4bb49] memory limit: 65071.00 MB, free: 43736.00 MB",Resource Usage
+AnalyticsEngine,Detection of multiple disk faults in RAID setup (Node 2),Critical Error
+ModernCRM,"Abnormal system behavior on server 55, potential security breach",Security Alert
+AnalyticsEngine,Multiple bad login attempts detected on user 6688 account,Security Alert
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,Denied access attempt on restricted account Account8223,Security Alert
+BillingSystem,Multiple bad login attempts detected on user 6499 account,Security Alert
+ModernCRM,System updated to version 3.9.1.,System Notification
+ModernHR,"nova.osapi_compute.wsgi.server [req-df8963a55e9c42868cdf8609b9eb9753 d41e0bf3fe1b4498a76dc692d048f004 922b6688046d4e46871bdbb31c294b41 - - -] 192.168.235.114 ""POST /v2/75187a376a86475280ca03486682c074/os-server-external-events HTTP/1.1"" status: 404 len: 206 time: 0.3928082",HTTP Status
+AnalyticsEngine,Unexpected server 24 stoppage occurred during data conversion,Error
+ThirdPartyAPI,"nova.metadata.wsgi.server [req-c40ebd1be64346b8a295e16be9663cda - - - - -] 192.168.64.39,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 163 time: 0.2069304",HTTP Status
+BillingSystem,Critical system unit error: unit ID Component15,Critical Error
+ThirdPartyAPI,Shard 6 replication task ended in failure,Error
+ThirdPartyAPI,Account with ID 7499 created by User669.,User Action
+ModernCRM,System updated to version 3.9.1.,System Notification
+AnalyticsEngine,User 5722 tried to bypass API security measures,Security Alert
+ModernHR,User User178 logged out.,User Action
+ThirdPartyAPI,Backup completed successfully.,System Notification
+ModernCRM,Email service experiencing issues with sending (Instance ID 6609),Unclassified
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-628e0dacbcbc4cc994de9fc65a154096 67f1657d98424c7eb0206088125a812d e00c3cc394894057a99a34caeeddcee1 - - -] 192.168.60.192 ""GET /v2/01df49c0fa254dd08031e05f16eafb4a/servers/detail HTTP/1.1"" RCODE  200 len: 2564 time: 0.3639811",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-23d9ee3ed9974dfc85641ee0bfd4cb11 22755a999f58478a970451f98fd3be1d ef68b5be81db4c85a665eac8abc9e4e7 - - -] 192.168.34.192 ""GET /v2/93bcb8c786bd445784e546f3a3a00a92/servers/detail HTTP/1.1"" HTTP status code -  200 len: 428 time: 0.1494314",HTTP Status
+BillingSystem,Unauthorized access to data was attempted,Security Alert
+ModernHR,Multiple bad login attempts detected on user 3191 account,Security Alert
+ThirdPartyAPI,User User637 logged out.,User Action
+BillingSystem,Email service experiencing issues with sending (Instance ID 8559),Unclassified
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-e15a0cfff0a24396b1a9520f10a85c20 4c8e336720da49e581817b4008688d91 8893d435db324532bf2dac23ba29e622 - - -] 192.168.46.71 ""GET /v2/56fb2a9d675841879a1fd599f1e206d4/servers/detail HTTP/1.1"" RCODE  200 len: 2943 time: 0.1585454",HTTP Status
+AnalyticsEngine,User 4703 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,User User666 logged out.,User Action
+ThirdPartyAPI,Replication of data to shard 1 failed,Error
+ModernHR,User User833 logged out.,User Action
+ThirdPartyAPI,System reboot initiated by user User799.,System Notification
+ModernHR,Backup completed successfully.,System Notification
+ModernCRM,System updated to version 3.9.1.,System Notification
+ModernHR,"nova.compute.claims [req-e1cd64e5b4f3492ba78c41681ad0744d 763ab3c56b294f2dad0a7efd6ba07ebf ab2ad0702c9d44b59264e8c183175c42 - - -] [instance: f6f2d282-6e47-49f0-bfee-840f3e207960] memory limit: 94885.00 MB, free: 29061.00 MB",Resource Usage
+BillingSystem,"nova.metadata.wsgi.server [req-6bce05cf1dd74285a687d14b04fe0f33 - - - - -] 192.168.247.237,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 320 time: 0.2501915",HTTP Status
+LegacyCRM,Invoice generation process aborted for order ID 4020 due to invalid tax calculation module., Workflow Error 
+ModernHR,nova.compute.resource_tracker [req-b0532da314d443408c9290a1226f5d8b - - - - -] Final resource view: name=cp-4.slowvm.utah.cloudlab.us phys_ram=55536MB used_ram=1975MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernHR,System reboot initiated by user User199.,System Notification
+LegacyCRM,Case escalation for ticket ID 5506 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernHR,"nova.osapi_compute.wsgi.server [req-1d5eacb4b96144a8908f5ce061a87ed6 5a5f9383c10a45e5b589d8e6a61e895e e11ad464fe17483d9a7792c9bcf0d3a7 - - -] 192.168.201.160 ""GET /v2/b85574117ffd4ed6b855aace1a7d1c5d/servers/detail HTTP/1.1"" RCODE  200 len: 1729 time: 0.3346413",HTTP Status
+ModernCRM,Unexpected server 99 stoppage occurred during data conversion,Error
+LegacyCRM,Invoice generation process aborted for order ID 2499 due to invalid tax calculation module., Workflow Error 
+BillingSystem,Unexpected server 34 stoppage occurred during data conversion,Error
+ThirdPartyAPI,Boot process terminated unexpectedly due to kernel issue (Instance ID 3829),Critical Error
+BillingSystem,"nova.osapi_compute.wsgi.server [req-446ee71060e74100997a3ee71905cdb4 ac3e1dea8b794bd9a8792fd1d67c2e79 9904d4b3d69b4498b5c08cc60ae80d9c - - -] 192.168.58.26 ""GET /v2/87f0151808df47ddbc98a9a228277767/servers/detail HTTP/1.1"" HTTP status code -  200 len: 300 time: 0.3713648",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-0ea81a4ef16247cc82a322f3d47ecf7d e5d2f186338b4ba19dd0c410b86307b7 768938171a4e441e89c54385b47e710d - - -] 192.168.148.182 ""GET /v2/b1f55f5b322e40b1a2a7d07d4f3649fa/servers/detail HTTP/1.1"" HTTP status code -  200 len: 206 time: 0.2381349",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-3210ddbfc8484ac0810aeef99c349b96 400fcfa4dfba4c45aa164741bf576ee1 835e1ca778194de3ab1a8ae0c862a9a6 - - -] 192.168.247.207 ""GET /v2/2f44816d6105471bb3ea50f0133fbfeb/servers/detail HTTP/1.1"" RCODE  200 len: 2875 time: 0.3508973",HTTP Status
+BillingSystem,Unrecoverable issue found in vital application module (Module ID 814),Critical Error
+ModernCRM,User User850 logged out.,User Action
+BillingSystem,Suspicious login activity detected from 192.168.132.178,Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,Backup completed successfully.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,Server 19 restarted without warning during data migration,Error
+ModernCRM,Denied access attempt on restricted account Account3430,Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,User User981 logged out.,User Action
+ModernCRM,Unrecoverable issue found in vital application module (Module ID 634),Critical Error
+ModernHR,"nova.compute.claims [req-5600551ca3844ceb85f3bc9fd478a5d6 22e15749e7b2422f9f31e2b5e648fa01 835adc0df769451ba43f4ffd7271ebe8 - - -] [instance: c8942413-37dc-41f4-b42c-baeb5ceec560] memory limit: 100866.00 MB, free: 23016.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,Boot process terminated unexpectedly due to kernel issue (Instance ID 7540),Critical Error
+LegacyCRM,Case escalation for ticket ID 3964 failed because the assigned support agent is no longer active., Workflow Error 
+BillingSystem,Replication of data to shard 8 failed,Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+BillingSystem,Server 6 restarted without warning during data migration,Error
+BillingSystem,Email server encountered a sending fault,Error
+ModernHR,"nova.compute.claims [req-27c58a5224484f709ffa3504ba3cd8c1 50e4e1590ff54cb2af21ea09ce9685e1 28fa9132ebf449759159cbdf4b4c477c - - -] [instance: f36b571c-dda9-45cb-b378-9c4dd89cdcdc] Total memory: 61256 MB, used: 2360 MB",Resource Usage
+AnalyticsEngine,System reboot initiated by user User776.,System Notification
+AnalyticsEngine,Unexpected server 49 stoppage occurred during data conversion,Error
+ModernCRM,Boot process terminated unexpectedly due to kernel issue (Instance ID 6888),Critical Error
+LegacyCRM,Lead conversion failed for prospect ID 7298 due to missing contact information., Workflow Error 
+ThirdPartyAPI,User 9828 tried to bypass API security measures,Security Alert
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-bd9dad471a0e4eb6b223d8d5dc656a15 5f6ae3e3f5c5448f8aad51d26f3f7c44 c058c2b6d5a74a85af2579057d7e87cd - - -] 192.168.133.89 ""GET /v2/90f062880e204768911d7e120fa2a560/servers/detail HTTP/1.1"" status: 200 len: 1442 time: 0.240744",HTTP Status
+ModernHR,Critical system unit error: unit ID Component28,Critical Error
+ModernHR,Critical system unit error: unit ID Component62,Critical Error
+ModernCRM,Email service experiencing issues with sending (Instance ID 9050),Unclassified
+BillingSystem,"nova.osapi_compute.wsgi.server [req-c7ca51688df84463ad0c4515110aa6df d84a7e1f78e84186ba87c444002e7621 ed7066596ea6439294e547187319cf98 - - -] 192.168.174.98 ""POST /v2/919452835494403f9e052813ac9f91be/os-server-external-events HTTP/1.1"" status: 404 len: 431 time: 0.1008589",HTTP Status
+BillingSystem,Unrecoverable issue found in vital application module (Module ID 860),Critical Error
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,"nova.osapi_compute.wsgi.server [req-5153243ac4fb4fbabd5af7b4c84f15d8 86143b06c4ab42c0894a02d95ed5efc8 478a0ae28453400c83d2e9fbd0a7c891 - - -] 192.168.250.161 ""POST /v2/4f569ca81d054af8845ad4a349fd6321/os-server-external-events HTTP/1.1"" status: 404 len: 110 time: 0.2694628",HTTP Status
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,Backup completed successfully.,System Notification
+AnalyticsEngine,Backup completed successfully.,System Notification
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,Unexpected server 10 stoppage occurred during data conversion,Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-3b17a7869fd141b996aa2d255fcfd6bc 9ceb502f99bb48d8927f8bd705544b7a e6885273c5104778b59a38cd89c188b8 - - -] 192.168.162.250 ""GET /v2/eb396e5766fb4f0fbd56e22d803dcf1e/servers/detail HTTP/1.1"" RCODE  200 len: 2494 time: 0.3938541",HTTP Status
+BillingSystem,"nova.compute.claims [req-b4e0c8676bb341f69a0e41b853ca6165 771b34ca33244d7fb16370d3db7f28d7 0c8d33177cbd48329f3bd4d5484f5c66 - - -] [instance: af29f24d-6cc6-4f37-a28f-3cb4c1ec9fb3] memory limit: 83045.00 MB, free: 11219.00 MB",Resource Usage
+BillingSystem,"nova.metadata.wsgi.server [req-d05dfc65f03942b39885527f9d7f26ad - - - - -] 192.168.212.105,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 242 time: 0.281314",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-8eb4822f9b9e48a09c2dce187d69a74c af6d569438fd4c42959b5f4df388faf4 72e3f05bdf364ef5afacf8182805f74d - - -] 192.168.11.140 ""GET /v2/1411a252751c4076bcddb2e389460cdb/servers/detail HTTP/1.1"" RCODE  200 len: 1586 time: 0.2981216",HTTP Status
+LegacyCRM,Lead conversion failed for prospect ID 7144 due to missing contact information., Workflow Error 
+BillingSystem,System reboot initiated by user User576.,System Notification
+AnalyticsEngine,Critical system unit error: unit ID Component70,Critical Error
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-ddf21f01f0b144c9b1e15a7f05cd3ef9 bd57e3ae19cf4b1493b2d786d00f6509 26e6bc87f7d54f4fb0f339c646e13d4b - - -] 192.168.68.37 ""POST /v2/bfe970496f91468bb4191b1cff45855e/os-server-external-events HTTP/1.1"" status: 404 len: 339 time: 0.1595598",HTTP Status
+BillingSystem,"nova.compute.claims [req-25d8fc6f11ec4178848dbbc9bb91e5b7 87b7e37c05954067b19aaf62bcf40047 b1860cfaf62d47a78d38e366a6e0c508 - - -] [instance: 1c2d1872-ef03-4f74-b314-a51d6a97f967] memory limit: 86550.00 MB, free: 17658.00 MB",Resource Usage
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,Backup completed successfully.,System Notification
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-cef017a127e24155966a8768d1c6f934 29bd61ad6ffb4d26a96f7affd09dedfc bf5483c352db4e12a0116438d19c2156 - - -] 192.168.104.151 ""GET /v2/43cdedd7cf084437b199d5cd4739d5bb/servers/detail HTTP/1.1"" status: 200 len: 2759 time: 0.3594335",HTTP Status
+ThirdPartyAPI,"nova.metadata.wsgi.server [req-c04355442c8f4fafa1327eaa983567f5 - - - - -] 192.168.239.122,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 348 time: 0.1927426",HTTP Status
+BillingSystem,User User543 logged out.,User Action
+AnalyticsEngine,System updated to version 3.9.1.,System Notification
+ModernHR,User User154 logged in.,User Action
+ThirdPartyAPI,File data_3492.csv uploaded successfully by user User246.,System Notification
+AnalyticsEngine,User 2183 tried to bypass API security measures,Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-8467d8a6de0345498efb77ff275f631d b8ed0caff9b24ec489e0d33f6020c461 673d4ec03fa04b7d8932f56b6a8e059a - - -] 192.168.218.146 ""GET /v2/2061a1897f754532885fe8f0ae08eb5a/servers/detail HTTP/1.1"" HTTP status code -  200 len: 483 time: 0.2179282",HTTP Status
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,Invoice generation process aborted for order ID 4575 due to invalid tax calculation module.,Workflow Error
+AnalyticsEngine,User User623 logged out.,User Action
+ThirdPartyAPI,"nova.compute.claims [req-3662a9b7fa60406b99bf8770a905f8fa 8139dac140e748b59b3ea8e8dbad617b a439d8a7ae74451e83f62d640964141c - - -] [instance: 55dfcbc6-4912-4819-983a-e126f8f63d8a] memory limit: 93909.00 MB, free: 53594.00 MB",Resource Usage
+ThirdPartyAPI,"Abnormal system behavior on server 44, potential security breach",Security Alert
+LegacyCRM,Invoice generation process aborted for order ID 1469 due to invalid tax calculation module., Workflow Error 
+ModernHR,User User650 logged in.,User Action
+ModernHR,User User948 logged in.,User Action
+ModernHR,"nova.compute.claims [req-356c02762d8d4fc8b455faf30b3cc3b9 47fc43a3a1b047f58246e8a06c135051 f3a36d5701ce4085b5ebcc585452e321 - - -] [instance: 4ba2732d-e79d-4677-85ca-30b59fbc231b] memory limit: 75466.00 MB, free: 53482.00 MB",Resource Usage
+BillingSystem,Data replication task for shard 1 did not complete,Error
+ModernHR,Unexpected server 71 stoppage occurred during data conversion,Error
+AnalyticsEngine,"nova.compute.claims [req-f25299047a5f48f6a30a09547de60bba 916f662ea66543f5b815d4544c12e625 05165db6d39a481f90554f522f11ae4b - - -] [instance: ca1fe78f-4697-46c3-a221-4ff3a62e4901] memory limit: 73677.00 MB, free: 34461.00 MB",Resource Usage
+AnalyticsEngine,User User867 logged out.,User Action
+AnalyticsEngine,User User305 logged in.,User Action
+ModernHR,"nova.compute.claims [req-78ce1314fef04ec3ba509dad3e6b14ee 8da6c0e119ba4c529e31b97efb15d513 b1e5098c020b4d528e96ae580d36977e - - -] [instance: 50d6099b-3e1c-47fe-afab-43cd05ab67a2] memory limit: 68020.00 MB, free: 53199.00 MB",Resource Usage
+AnalyticsEngine,Backup completed successfully.,System Notification
+AnalyticsEngine,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+LegacyCRM,Case escalation for ticket ID 7062 failed because the assigned support agent is no longer active., Workflow Error 
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 5592),Critical Error
+ModernCRM,System reboot initiated by user User787.,System Notification
+BillingSystem,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Attempt to access account Account2650 was not authorized,Security Alert
+ModernCRM,Email server encountered a sending fault,Error
+ThirdPartyAPI,Suspicious login activity detected from 192.168.175.85,Security Alert
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-55f45b00761c4241bcdca2246b0106e0 4589b35380e44d24bea8038e4f7819ea 999d6b67ecc54209a4a91ee7b21ec64e - - -] 192.168.20.229 ""GET /v2/a54a2a15c79544d4b224d7ea2db494eb/servers/detail HTTP/1.1"" HTTP status code -  200 len: 295 time: 0.4126463",HTTP Status
+ThirdPartyAPI,System reboot initiated by user User153.,System Notification
+BillingSystem,Disk cleanup completed successfully.,System Notification
+ModernCRM,Email server encountered a sending fault,Error
+ModernHR,File data_4297.csv uploaded successfully by user User741.,System Notification
+AnalyticsEngine,Unexpected server 29 stoppage occurred during data conversion,Error
+ModernHR,User 9772 tried to bypass API security measures,Security Alert
+BillingSystem,"nova.osapi_compute.wsgi.server [req-e78fb6af38ad4095a7215a119fae1ca6 20f71aba6da14f79a0b52151596574a0 19092d1f6c0d49af98c08adc55ba4e93 - - -] 192.168.62.21 ""POST /v2/dce2c67f5f5841feba806c4a20bf1e2f/os-server-external-events HTTP/1.1"" status: 404 len: 409 time: 0.3011501",HTTP Status
+ModernCRM,Attempt to access account Account3056 was not authorized,Security Alert
+ModernHR,"nova.osapi_compute.wsgi.server [req-710ded95733e4f2cbfe58928363c229b a1c5325c0b164b94a4144fe729888ae0 27070765f5b347769e2fa8f816eb4681 - - -] 192.168.225.198 ""POST /v2/1cfbdfcbccfa4b91b998510e7ddc4d9c/os-server-external-events HTTP/1.1"" status: 404 len: 420 time: 0.2115018",HTTP Status
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,Denied access attempt on restricted account Account1492,Security Alert
+BillingSystem,Disk cleanup completed successfully.,System Notification
+ModernCRM,Detection of multiple disk faults in RAID setup (Node 2),Critical Error
+BillingSystem,"nova.osapi_compute.wsgi.server [req-a24f39066dbc417495f293cf916e45b5 c2fbd72007c748b7a54228ba57496ff7 178b035765614f6e983e4b4ed4287f83 - - -] 192.168.241.248 ""GET /v2/9e0015ff198448c0b7bc469200083b34/servers/detail HTTP/1.1"" status: 200 len: 2960 time: 0.1471346",HTTP Status
+BillingSystem,Backup completed successfully.,System Notification
+LegacyCRM,Invoice generation process aborted for order ID 9678 due to invalid tax calculation module., Workflow Error 
+AnalyticsEngine,User User519 logged in.,User Action
+AnalyticsEngine,System component malfunction: component ID Component88,Critical Error
+ModernCRM,User 6931 tried to bypass API security measures,Security Alert
+LegacyCRM,Lead conversion failed for prospect ID 2155 due to missing contact information., Workflow Error 
+AnalyticsEngine,Unexpected server 81 stoppage occurred during data conversion,Error
+BillingSystem,Data replication task for shard 7 did not complete,Error
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 2470),Critical Error
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 5553),Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,"nova.osapi_compute.wsgi.server [req-b037f7fd4de847c09269f23365d453a1 6d9391f4fd7e4c9581a86436a6e9ae1e a27f74e39e64420a8d7b47cc0720e3d8 - - -] 192.168.41.103 ""GET /v2/365ab47c62a040d192fd081b4ed329d0/servers/detail HTTP/1.1"" status: 200 len: 1518 time: 0.2315166",HTTP Status
+ModernHR,Account with ID 6919 created by User290.,User Action
+ModernCRM,"nova.osapi_compute.wsgi.server [req-3e741fcd67bc47e98432e9e544598497 c006f2546264403981e0ca70534a0c2f 30c741dec22d436697d2c5312bc2b3e6 - - -] 192.168.170.56 ""GET /v2/aeb4b819c44c4fcd9d0eaa9fb26154e3/servers/detail HTTP/1.1"" HTTP status code -  200 len: 245 time: 0.1968232",HTTP Status
+AnalyticsEngine,User User685 logged in.,User Action
+AnalyticsEngine,Detection of multiple disk faults in RAID setup (Node 3),Critical Error
+BillingSystem,User User366 logged out.,User Action
+AnalyticsEngine,Email service experiencing issues with sending (Instance ID 2465),Unclassified
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-072a787eeb0c42c69c81982d1fcbba43 7b5293fd14f94eeeb5de66440938d3f0 7c5bf8f1ba6c4a3bba0edc038bd80336 - - -] 192.168.241.88 ""POST /v2/5772c6605fea43f094bdd69229fb34b0/os-server-external-events HTTP/1.1"" status: 404 len: 163 time: 0.2583995",HTTP Status
+ModernCRM,User User140 logged out.,User Action
+BillingSystem,Attempt to access account Account2554 was not authorized,Security Alert
+ThirdPartyAPI,Critical system unit error: unit ID Component42,Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-56bd1f817d4a4bc88446a7d870c42edf 121416fce0f34bd79d81ed4d275cc880 b5c33f687bba4ec491da8f3bd14568af - - -] 192.168.129.253 ""POST /v2/0510574048854f168b2776875247ffb3/os-server-external-events HTTP/1.1"" status: 404 len: 293 time: 0.3990731",HTTP Status
+AnalyticsEngine,User User971 logged in.,User Action
+AnalyticsEngine,User User456 logged in.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,User User255 logged in.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,User User774 logged out.,User Action
+AnalyticsEngine,System reboot initiated by user User470.,System Notification
+BillingSystem,"nova.osapi_compute.wsgi.server [req-b9463308404f40958630775beea66c7e 4dc3809ca6234adaa64bb968c788d199 55fe3410584343278eee78a1d515b549 - - -] 192.168.151.71 ""GET /v2/1bb62c5571634acfbb31c4a7a49c2054/servers/detail HTTP/1.1"" status: 200 len: 2310 time: 0.2716103",HTTP Status
+ModernCRM,Backup completed successfully.,System Notification
+ModernCRM,Alert: brute force login attempt from 192.168.142.116 detected,Security Alert
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-77c23155b36d417c932e7b0922faf550 c353c796207b4add82b290134efe200b be3b2c71dbbd4aa78899531514440b26 - - -] 192.168.213.173 ""GET /v2/6ef373b26d364a68b2275f23d68d4e61/servers/detail HTTP/1.1"" HTTP status code -  200 len: 368 time: 0.1374572",HTTP Status
+ThirdPartyAPI,Unrecoverable issue found in vital application module (Module ID 320),Critical Error
+BillingSystem,User User517 logged in.,User Action
+ModernCRM,"nova.compute.claims [req-e134c93c4b794670bf5798f65374f336 8f868c6f9c224b018a1379681f9c8b21 4cd6900b995a4763b75538e757abe18d - - -] [instance: 767f9524-f536-4438-8ded-0649ea14551a] memory limit: 96964.00 MB, free: 55229.00 MB",Resource Usage
+BillingSystem,"nova.osapi_compute.wsgi.server [req-9222c2db473445749f451369de062497 20de2337985144559459e38535beeb03 76ae963444ad40c882ed3f98ac4aea95 - - -] 192.168.142.76 ""GET /v2/2ead0bf879f743b4bf19cf9b0a2803a7/servers/detail HTTP/1.1"" status: 200 len: 1900 time: 0.4254525",HTTP Status
+BillingSystem,User User337 logged in.,User Action
+AnalyticsEngine,Critical system unit error: unit ID Component32,Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,Account with ID 6029 created by User437.,User Action
+ModernCRM,Email server encountered a sending fault,Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,"nova.compute.claims [req-696ac194296f4055b9ec9c48061483a4 699af7eff44846b9b9f5d980dfed7074 75a800768d7e49b096585d2dd7f13d41 - - -] [instance: 904eb0cb-0fe1-4cbf-a129-9084f76409c6] memory limit: 118131.00 MB, free: 59939.00 MB",Resource Usage
+BillingSystem,Unexpected server 8 stoppage occurred during data conversion,Error
+ModernHR,"nova.compute.claims [req-ff5e95c92ff54557bfda13edbcd001c4 a01d55a0ca4648948c4e1b9b27ed2fbd 608e0a652b0444d8be2a05aedd084675 - - -] [instance: 5461835f-a606-4b56-8e13-706bc76cba31] memory limit: 86239.00 MB, free: 42178.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,User User264 logged in.,User Action
+LegacyCRM,Case escalation for ticket ID 9814 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,Disk cleanup completed successfully.,System Notification
+ModernCRM,"nova.osapi_compute.wsgi.server [req-324a2c1dd8f340f4bd097ec8a38fb674 bec8498968e2406d98634c60804c7000 6929c1267041465ba8e231295f41876c - - -] 192.168.77.160 ""POST /v2/10be645a5ebb411e9b6256cf38552f9f/os-server-external-events HTTP/1.1"" status: 404 len: 375 time: 0.2669007",HTTP Status
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,User User456 logged out.,User Action
+ModernHR,"nova.compute.claims [req-9ee3df5de00d494682eaf5fa326a7ca3 569f2b52bbdc4009b9a1795713e6cda9 1e6c1f5e7f2144f5b1c625ef1e79285d - - -] [instance: e2daf226-5d28-420b-99fe-b75a6ad773e4] memory limit: 97884.00 MB, free: 35949.00 MB",Resource Usage
+ModernCRM,Critical system unit error: unit ID Component39,Critical Error
+LegacyCRM,Lead conversion failed for prospect ID 7400 due to missing contact information., Workflow Error 
+BillingSystem,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+ModernHR,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+ModernHR,"nova.compute.claims [req-720dbb0b61e646ada658e11d6f66d755 aa0399829eac48e38ee82e6d84c918e1 8cf78f0e064a465586e269b8ed5eda45 - - -] [instance: 0d76b0ed-1aab-46e5-b5f1-459f82beeb48] memory limit: 92139.00 MB, free: 34602.00 MB",Resource Usage
+AnalyticsEngine,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,"nova.compute.claims [req-029fda5a3a734430ad386d4c39d52e79 12008545b2f440eda7b0e5854195ba3c 263601656d574037baafa25229107854 - - -] [instance: 191dd9c4-5f92-4dd6-9a85-a73b7ed8c2af] memory limit: 126451.00 MB, free: 44537.00 MB",Resource Usage
+BillingSystem,"nova.compute.claims [req-1f2ca1780bd44371a6508582e690e048 970458563dcb4a31970a0a8d6be55544 d75635c558e045e69e72e3bcd1ed79cf - - -] [instance: 3d47d0dc-a6e4-496a-9e2f-4d789e58e42d] Total memory: 93159 MB, used: 2499 MB",Resource Usage
+BillingSystem,User User148 logged out.,User Action
+LegacyCRM,Case escalation for ticket ID 6871 failed because the assigned support agent is no longer active., Workflow Error 
+BillingSystem,System reboot initiated by user User670.,System Notification
+LegacyCRM,Lead conversion failed for prospect ID 7379 due to missing contact information., Workflow Error 
+BillingSystem,Boot process terminated unexpectedly due to kernel issue (Instance ID 7964),Critical Error
+ModernCRM,Multiple bad login attempts detected on user 1622 account,Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,nova.compute.resource_tracker [req-3dc024aa47624bc3b05e31fb93c9eebb - - - - -] Final resource view: name=cp-5.slowvm.utah.cloudlab.us phys_ram=53826MB used_ram=1129MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,"Abnormal system behavior on server 21, potential security breach",Security Alert
+ModernHR,Account with ID 1753 created by User456.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 3151 due to missing contact information., Workflow Error 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,RAID array experienced multiple disk crashes (Array ID 2),Critical Error
+ModernCRM,System updated to version 3.9.1.,System Notification
+ModernCRM,Critical system unit error: unit ID Component82,Critical Error
+BillingSystem,"nova.osapi_compute.wsgi.server [req-5e95cde3a22e4b789b73ace26b7021f4 2e004e4ee66843bca8fa36258a638d7c 41dd026e4f504b6dbecf87a8fb50d7b3 - - -] 192.168.74.148 ""GET /v2/6635cabe044840b5af9ded0e5cd79720/servers/detail HTTP/1.1"" status: 200 len: 2562 time: 0.4417629",HTTP Status
+LegacyCRM,Lead conversion failed for prospect ID 2986 due to missing contact information., Workflow Error 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-63dc8cf04ed74c469af085ad6b6b3d0d 8dfac2ad438a4672aa3b7ddc772748e9 9857963c075f4bfc93df825f5e61439f - - -] 192.168.178.79 ""GET /v2/39a1e37e91fe460182f8aee29d8f4d07/servers/detail HTTP/1.1"" status: 200 len: 1234 time: 0.1144642",HTTP Status
+ModernHR,Shard 7 replication task ended in failure,Error
+ModernCRM,File data_1449.csv uploaded successfully by user User407.,System Notification
+ModernHR,Denied access attempt on restricted account Account2566,Security Alert
+BillingSystem,User User931 logged out.,User Action
+ModernHR,"nova.osapi_compute.wsgi.server [req-905878682c784dd68586e731441a3018 a41f55acbc52476fb0a6c079d41206fc 6e5de23337f144cbaf55ab759df056b8 - - -] 192.168.185.85 ""GET /v2/39f64428b26f4025b2f5202b7d3765df/servers/detail HTTP/1.1"" status: 200 len: 2206 time: 0.0771816",HTTP Status
+ThirdPartyAPI,"nova.compute.claims [req-4a70e510b773462981ab995e1165da89 dc9212c5b09149c6b1cd3c4afc813ff8 fd26f51e66704779804bd032a55ebb35 - - -] [instance: 37062092-aa17-4e2d-8880-236f8225f0b3] memory limit: 67111.00 MB, free: 24654.00 MB",Resource Usage
+ModernHR,Critical system unit error: unit ID Component26,Critical Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,Lead conversion failed for prospect ID 9231 due to missing contact information., Workflow Error 
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Server 1 crashed unexpectedly while syncing data,Error
+BillingSystem,Multiple bad login attempts detected on user 1773 account,Security Alert
+ModernCRM,"nova.compute.claims [req-0d5e20cf6b4c4d2b8340a537e7010120 b4d35e842a9c4d4c8d6da1a8fce5df46 07e1e785d785400394cc5c4f90c43193 - - -] [instance: e361790a-5d3e-46dd-ae9e-d85471d0b673] Total memory: 83099 MB, used: 1940 MB",Resource Usage
+ModernHR,System updated to version 3.9.1.,System Notification
+AnalyticsEngine,User User999 logged out.,User Action
+ModernHR,System component malfunction: component ID Component60,Critical Error
+ModernCRM,User User903 logged out.,User Action
+ModernCRM,System reboot initiated by user User162.,System Notification
+ModernCRM,User User316 logged in.,User Action
+ModernHR,System reboot initiated by user User555.,System Notification
+ModernHR,System component malfunction: component ID Component10,Critical Error
+BillingSystem,Shard 12 replication task ended in failure,Error
+AnalyticsEngine,RAID array experienced multiple disk crashes (Array ID 2),Critical Error
+ModernCRM,User User751 logged in.,User Action
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-dd45c78848fd444c9bbadbb33b94dabd 9490276408e04cc295250a3920700bfb f3150e7a202b4fdc99e945e989701707 - - -] 192.168.203.63 ""GET /v2/394b9fdfd4e74261a798273fb7c362ca/servers/detail HTTP/1.1"" status: 200 len: 2156 time: 0.2210878",HTTP Status
+ModernCRM,User User538 logged in.,User Action
+AnalyticsEngine,User User827 logged out.,User Action
+ModernHR,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,Unrecoverable issue found in vital application module (Module ID 279),Critical Error
+ModernCRM,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,nova.compute.resource_tracker [req-141645ca2dd7492bad54e46f91f6f927 - - - - -] Final resource view: name=cp-2.slowvm.utah.cloudlab.us phys_ram=56098MB used_ram=1045MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,User User114 logged in.,User Action
+AnalyticsEngine,"nova.compute.claims [req-88f9b3d59a6e4213b044998ead6dfc71 db1c8cd567084f38afa032e605228feb 9bba99f412de40b7bce2e53b0855c836 - - -] [instance: d15c17f7-3f38-4207-bfc0-197ae3162daf] Total memory: 67574 MB, used: 843 MB",Resource Usage
+BillingSystem,System reboot initiated by user User351.,System Notification
+BillingSystem,Unrecoverable issue found in vital application module (Module ID 422),Critical Error
+ModernCRM,File data_9052.csv uploaded successfully by user User471.,System Notification
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-42f20d881c96488da6194808105ac6d4 2e715dff661a439aa067eba1d516f218 10d1c3736eb347d4bcdb2eb28bb02b7f - - -] 192.168.163.14 ""POST /v2/88d70c597d984a10a0d4f345fb2e3c6d/os-server-external-events HTTP/1.1"" status: 404 len: 488 time: 0.287623",HTTP Status
+ThirdPartyAPI,nova.compute.resource_tracker [req-ff1b61726d634dc5b37c7bf28cf62d00 - - - - -] Final resource view: name=cp-3.slowvm.utah.cloudlab.us phys_ram=37578MB used_ram=512MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ThirdPartyAPI,System reboot initiated by user User639.,System Notification
+ModernCRM,System component malfunction: component ID Component12,Critical Error
+ThirdPartyAPI,System updated to version 3.9.1.,System Notification
+AnalyticsEngine,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,"nova.metadata.wsgi.server [req-7612206979f344078615b4df6f31733a - - - - -] 192.168.175.89,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 179 time: 0.3412598",HTTP Status
+ThirdPartyAPI,System reboot initiated by user User945.,System Notification
+AnalyticsEngine,Account with ID 8305 created by User102.,User Action
+BillingSystem,Server 37 restarted without warning during data migration,Error
+ModernCRM,User User646 logged out.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,User 6135 tried to bypass API security measures,Security Alert
+ModernHR,nova.compute.resource_tracker [req-4e472415b91d4c268c98e3dff92ff8ea - - - - -] Final resource view: name=cp-2.slowvm.utah.cloudlab.us phys_ram=63468MB used_ram=611MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,User User998 logged out.,User Action
+ModernHR,"nova.osapi_compute.wsgi.server [req-350bad8795e946d2b70314a3a0c5a156 eb1ce8a3b8b64290b1152e5537b1903a bd1a78b2e9144f61852c9795594fb4c5 - - -] 192.168.235.2 ""POST /v2/59bdcf61abb44f5a93a85821f4057ee5/os-server-external-events HTTP/1.1"" status: 404 len: 345 time: 0.3499922",HTTP Status
+ModernHR,"nova.metadata.wsgi.server [req-c6c7702b1ceb462bbb8d8654a0508e8b - - - - -] 192.168.5.63,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 457 time: 0.0883036",HTTP Status
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,Detection of multiple disk faults in RAID setup (Node 10),Critical Error
+ThirdPartyAPI,"nova.compute.claims [req-155b7186b8f64c7e8dbffb982d087e8b 740d3599679d43b2bfe8cb267d4d7ee8 6b9400ac2aa04556820939018b397100 - - -] [instance: 28d7ba27-1d0e-411b-8376-a65f5f79ead4] memory limit: 73803.00 MB, free: 26985.00 MB",Resource Usage
+AnalyticsEngine,"nova.compute.claims [req-0af23d23fd2b4934a506ce9f05d81b80 bb4d23869f554714ad9f8af3125c92f2 24a751c66d154db49bcb385d01882e02 - - -] [instance: f083a516-7c39-405c-af11-794ca9bc01b7] memory limit: 96365.00 MB, free: 17669.00 MB",Resource Usage
+ModernCRM,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,Server 94 crashed unexpectedly while syncing data,Error
+AnalyticsEngine,Backup completed successfully.,System Notification
+ModernCRM,User User357 logged out.,User Action
+ModernHR,User User461 logged in.,User Action
+ThirdPartyAPI,Unexpected server 100 stoppage occurred during data conversion,Error
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-4faa0e9df8584babb86ba3b19b793872 28f5a3f3a7404ca2b53cc49cac4b26fb e0dba06b955b4d0c9a3d49c3df91db9a - - -] 192.168.55.239 ""GET /v2/6626c98191c64462a03dbd0e573a870f/servers/detail HTTP/1.1"" HTTP status code -  200 len: 449 time: 0.1774158",HTTP Status
+AnalyticsEngine,User User555 logged in.,User Action
+ModernHR,System reboot initiated by user User822.,System Notification
+BillingSystem,Unexpected server 99 stoppage occurred during data conversion,Error
+ModernHR,System reboot initiated by user User563.,System Notification
+ModernHR,Data replication task for shard 3 did not complete,Error
+ModernHR,Boot process terminated unexpectedly due to kernel issue (Instance ID 8634),Critical Error
+ThirdPartyAPI,Unauthorized access to data was attempted,Security Alert
+BillingSystem,Shard 8 replication task ended in failure,Error
+AnalyticsEngine,"nova.metadata.wsgi.server [req-bfc1fa6552b24b5ebce0fa9d4f526007 - - - - -] 192.168.187.86,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 318 time: 0.1169397",HTTP Status
+ModernCRM,Email service experiencing issues with sending (Instance ID 8903),Unclassified
+ThirdPartyAPI,User User404 logged in.,User Action
+ModernCRM,Disk cleanup completed successfully.,System Notification
+ModernCRM,User User601 logged in.,User Action
+ModernHR,User User832 logged out.,User Action
+ThirdPartyAPI,"nova.compute.claims [req-80d21260adf845339f7e9578ccaf61c6 6f429dff4b7844c488ee3ef175b797d3 f20f2ec0d38749d688471d7617a09de6 - - -] [instance: a8df6337-b747-4137-b97f-6eb11a1fb7c0] Total memory: 41861 MB, used: 3682 MB",Resource Usage
+ThirdPartyAPI,Backup completed successfully.,System Notification
+ThirdPartyAPI,nova.compute.resource_tracker [req-cf1b7a611b204c97b8577ed6c60c3005 - - - - -] Final resource view: name=cp-2.slowvm.utah.cloudlab.us phys_ram=52013MB used_ram=1820MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,User 3787 tried to bypass API security measures,Security Alert
+ModernHR,Backup completed successfully.,System Notification
+ThirdPartyAPI,System component malfunction: component ID Component16,Critical Error
+ThirdPartyAPI,Account with ID 1681 created by User250.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 8473 due to missing contact information., Workflow Error 
+ModernCRM,"nova.osapi_compute.wsgi.server [req-66972f10fc2a404b9c7000e7cf833ca4 b3474d694e0c4306a2ae891f34dce50d 88bfa66767b5472a844b61d3f6a2b459 - - -] 192.168.222.240 ""GET /v2/bb9cae5c8b0a48ecbc75b9f96112da6e/servers/detail HTTP/1.1"" status: 200 len: 2345 time: 0.0652146",HTTP Status
+ModernCRM,System updated to version 3.9.1.,System Notification
+ModernCRM,Detection of multiple disk faults in RAID setup (Node 1),Critical Error
+AnalyticsEngine,File data_4204.csv uploaded successfully by user User826.,System Notification
+BillingSystem,Unexpected server 88 stoppage occurred during data conversion,Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,Denied access attempt on restricted account Account4966,Security Alert
+ModernHR,Server 32 crashed unexpectedly while syncing data,Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,User User349 logged in.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 7365 due to missing contact information., Workflow Error 
+ModernHR,Attempt to access account Account9545 was not authorized,Security Alert
+AnalyticsEngine,User User575 logged out.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 6681 due to missing contact information., Workflow Error 
+ModernHR,Account with ID 7364 created by User473.,User Action
+ThirdPartyAPI,Server 8 crashed unexpectedly while syncing data,Error
+ModernHR,User User554 logged out.,User Action
+ModernHR,Disk cleanup completed successfully.,System Notification
+ThirdPartyAPI,User User114 logged out.,User Action
+ModernCRM,Detection of multiple disk faults in RAID setup (Node 8),Critical Error
+BillingSystem,System reboot initiated by user User314.,System Notification
+ModernCRM,"nova.metadata.wsgi.server [req-612ed79f05074fd7b2bd12b0d7510ce0 - - - - -] 192.168.146.26,10.11.10.1 ""GET /latest/meta-data/block-device-mapping/root HTTP/1.1"" Status code -  200 len: 442 time: 0.286661",HTTP Status
+ThirdPartyAPI,User User486 logged in.,User Action
+BillingSystem,System reboot initiated by user User865.,System Notification
+ModernCRM,File data_2861.csv uploaded successfully by user User670.,System Notification
+AnalyticsEngine,"nova.compute.claims [req-8452d89d5a8946f2a6d9e78c649ee5d9 2c95aa38149f42e7b73508b3663e3328 65094e69a43942f3a40b331ff61a56dd - - -] [instance: e88748c1-79bc-4346-955f-1d024f635ca5] memory limit: 120017.00 MB, free: 30488.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,nova.compute.resource_tracker [req-5d7a22bc2c174392a757dee38e4ed976 - - - - -] Final resource view: name=cp-4.slowvm.utah.cloudlab.us phys_ram=63427MB used_ram=1466MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-b50a5382a6cf4231ad7a380f3f99c969 f0d849826069458f969f15d40daeb785 1697bc7ca10a4d2cb4750a85dc455817 - - -] 192.168.98.210 ""GET /v2/de3c8ac6791240229ae2a72cb4a315d2/servers/detail HTTP/1.1"" RCODE  200 len: 2248 time: 0.0953314",HTTP Status
+ModernCRM,Alert: brute force login attempt from 192.168.104.11 detected,Security Alert
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-4c5d6bdf66c94300bce76f17e5284b15 1cb1aa567e5049deb66d6b1b70537b27 53632b7e82544df5b400776b96d6754e - - -] 192.168.221.150 ""GET /v2/7b5deed2c191440aaa8b1a1b2d9524d2/servers/detail HTTP/1.1"" RCODE  200 len: 2474 time: 0.0981398",HTTP Status
+ModernCRM,Account with ID 9246 created by User829.,User Action
+ModernCRM,Server 16 restarted without warning during data migration,Error
+BillingSystem,"nova.osapi_compute.wsgi.server [req-50e6dcf66b5b4be2a8e7240b6da5acf6 920f25010bb9405884288ff9e545b1ab 1fbcd3d7210344409d537e88a73c46df - - -] 192.168.83.173 ""GET /v2/2d46c2ca83bf4b23a321c6f7d980499f/servers/detail HTTP/1.1"" RCODE  200 len: 2039 time: 0.3708854",HTTP Status
+AnalyticsEngine,Critical system unit error: unit ID Component37,Critical Error
+ModernHR,System reboot initiated by user User476.,System Notification
+AnalyticsEngine,User User134 logged out.,User Action
+ModernCRM,Critical system unit error: unit ID Component66,Critical Error
+LegacyCRM,Lead conversion failed for prospect ID 1471 due to missing contact information., Workflow Error 
+ModernHR,User 4653 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,Critical system unit error: unit ID Component22,Critical Error
+ModernHR,Backup completed successfully.,System Notification
+AnalyticsEngine,System reboot initiated by user User676.,System Notification
+BillingSystem,"nova.compute.claims [req-82ee5b54a21347f8b1f8307b004bc3cc f1c641736e374ecc94c24b0472ef980c 2f07df3b5006460cb765de2b0c7285ae - - -] [instance: 6136e98d-9595-45ad-8bed-ab42fbeb558d] memory limit: 84733.00 MB, free: 31494.00 MB",Resource Usage
+ModernHR,Email server encountered a sending fault,Error
+ModernCRM,Account with ID 1179 created by User423.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 4574 due to missing contact information., Workflow Error 
+ModernHR,"nova.osapi_compute.wsgi.server [req-212da631e46a4f3fba5d239ad1a04777 138dc816dc044d53bd1f3a01244c2251 c50623bfd94a4cf29f825e671828c3fc - - -] 192.168.108.64 ""GET /v2/20556556d66048da81762cbfadaa9bba/servers/detail HTTP/1.1"" RCODE  200 len: 1628 time: 0.4030196",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-c06b57b3e9654db6a7d578cd9e3af191 f8607a0585eb4edf83f9690059f19ccc f009d72a562e4d9ca81173573b7080b3 - - -] 192.168.51.67 ""GET /v2/518c2da9ae7d4c4480e35eb249a7a257/servers/detail HTTP/1.1"" HTTP status code -  200 len: 229 time: 0.4378631",HTTP Status
+AnalyticsEngine,User User785 logged in.,User Action
+BillingSystem,User 7114 tried to bypass API security measures,Security Alert
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,User 7171 tried to bypass API security measures,Security Alert
+ModernCRM,"nova.osapi_compute.wsgi.server [req-da99c3fdc1084b7c9a0fdc7799ca3b0d 8d1995f567bc46e7aa2ec592f027ad56 09f68b2d0d5c42318fa79df1e36c3dbf - - -] 192.168.187.135 ""POST /v2/b9b3b7e8c4574279b9ac571f6bab9e7c/os-server-external-events HTTP/1.1"" status: 404 len: 101 time: 0.159154",HTTP Status
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+BillingSystem,User User904 logged out.,User Action
+AnalyticsEngine,System reboot initiated by user User874.,System Notification
+BillingSystem,Alert: brute force login attempt from 192.168.176.152 detected,Security Alert
+ModernCRM,Server 97 crashed unexpectedly while syncing data,Error
+ModernHR,User User511 logged out.,User Action
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-e2ed7de26c474ee2b2abdd9442897224 b4343c10a4f04cf5b4522108cf1d3bc0 f593c261faec453a817c73b0e5fb0f48 - - -] 192.168.197.215 ""GET /v2/94ccd12e7be24dc198a617b4af566f06/servers/detail HTTP/1.1"" HTTP status code -  200 len: 157 time: 0.3543051",HTTP Status
+AnalyticsEngine,RAID array experienced multiple disk crashes (Array ID 5),Critical Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,"nova.compute.claims [req-bb71e4b83c584da8ae51fdbace56c74a ea7b746927054db1b2b35d19ee37949e 7988d7234262461ca3356c01c9a96647 - - -] [instance: 981474ca-3921-40da-bc37-584adbda19d0] memory limit: 97273.00 MB, free: 17620.00 MB",Resource Usage
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernHR,Unexpected server 9 stoppage occurred during data conversion,Error
+ModernHR,User User166 logged out.,User Action
+AnalyticsEngine,User 3325 tried to bypass API security measures,Security Alert
+ModernCRM,Critical system unit error: unit ID Component71,Critical Error
+ModernCRM,Unrecoverable issue found in vital application module (Module ID 243),Critical Error
+ModernHR,"nova.compute.claims [req-8645e8f505294caca7012eae1eb49234 b3f7c2c465594936ba825970d9fde7f3 2418fef6cfad4dc2a66f5f8d8ef95069 - - -] [instance: ead86900-b804-48f3-958c-5afcdba0649e] Total memory: 103812 MB, used: 737 MB",Resource Usage
+BillingSystem,Detection of multiple disk faults in RAID setup (Node 9),Critical Error
+AnalyticsEngine,Replication of data to shard 12 failed,Error
+AnalyticsEngine,Unrecoverable issue found in vital application module (Module ID 853),Critical Error
+ModernHR,Unexpected server 58 stoppage occurred during data conversion,Error
+ModernCRM,nova.compute.resource_tracker [req-e7bc5d50fbcc4d469278c84d72cabef8 - - - - -] Final resource view: name=cp-1.slowvm.utah.cloudlab.us phys_ram=40956MB used_ram=1363MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,Suspicious login activity detected from 192.168.174.207,Security Alert
+AnalyticsEngine,Backup completed successfully.,System Notification
+AnalyticsEngine,Data replication task for shard 12 did not complete,Error
+AnalyticsEngine,"nova.compute.claims [req-6cc01c510b894566b3ced70f1213816e abf98cdb6a25402d90d47a92546ce87d caca6f7c7a374a3d844d55d1efa0c9f7 - - -] [instance: 26d8b7ca-46ef-4766-827c-d32b5da3b357] Total memory: 101695 MB, used: 754 MB",Resource Usage
+ModernHR,Email server encountered a sending fault,Error
+ThirdPartyAPI,Data replication task for shard 7 did not complete,Error
+AnalyticsEngine,Server 76 crashed unexpectedly while syncing data,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-420437a16cbe464a954434f763ace726 4a7b0386fdfe4305b826ddcc043caf76 a0da3618bef2406ab256dd2483e60cf1 - - -] 192.168.218.65 ""GET /v2/6a9e6b9da2e643bfbb757545350a8d44/servers/detail HTTP/1.1"" RCODE  200 len: 2396 time: 0.1076122",HTTP Status
+AnalyticsEngine,User User263 logged in.,User Action
+AnalyticsEngine,User User937 logged out.,User Action
+ThirdPartyAPI,Email service experiencing issues with sending (Instance ID 3668),Unclassified
+ModernHR,User User376 logged in.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+LegacyCRM,Invoice generation process aborted for order ID 5893 due to invalid tax calculation module., Workflow Error 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,Backup completed successfully.,System Notification
+ModernHR,Server 72 restarted without warning during data migration,Error
+ModernHR,Account with ID 7981 created by User107.,User Action
+BillingSystem,User User210 logged out.,User Action
+ModernHR,"nova.osapi_compute.wsgi.server [req-4906d15efa0e49a590daac3d1a7017d1 3ec7323d1bda415eaacc5d6a0542a99b 2ef4c8bde4554ae6946eb39f58ee0320 - - -] 192.168.11.101 ""POST /v2/895b51dbea75485f9e48eb4e4ca1214c/os-server-external-events HTTP/1.1"" status: 404 len: 282 time: 0.3887289",HTTP Status
+AnalyticsEngine,"Abnormal system behavior on server 50, potential security breach",Security Alert
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,Suspicious login activity detected from 192.168.129.14,Security Alert
+LegacyCRM,Invoice generation process aborted for order ID 9273 due to invalid tax calculation module., Workflow Error 
+AnalyticsEngine,File data_5975.csv uploaded successfully by user User442.,System Notification
+ThirdPartyAPI,Data replication task for shard 11 did not complete,Error
+ModernCRM,Account with ID 1926 created by User730.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,Disk cleanup completed successfully.,System Notification
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+ThirdPartyAPI,System updated to version 3.9.1.,System Notification
+ModernHR,"nova.compute.claims [req-4cba2495a0f94c4b92fc58e2a6e04913 99ec6f666fdd4071a1c7e3dbf730340b bcb2d43686d947b695d8e5441ac1effa - - -] [instance: 421d1e0e-18aa-40bf-856a-e0ff60eb0030] Total memory: 68803 MB, used: 3950 MB",Resource Usage
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,"nova.compute.claims [req-b343bc233d814231bba8b2977459e2f2 ca9b8baf33ce4e30abe9e8f466f10523 3e02bf40e42d4ea9bd36e7088027efe7 - - -] [instance: b4fdbc0e-d742-4500-83d3-74760e8da04f] memory limit: 85863.00 MB, free: 57917.00 MB",Resource Usage
+ThirdPartyAPI,User User374 logged in.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,User User426 logged in.,User Action
+ThirdPartyAPI,System reboot initiated by user User718.,System Notification
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernHR,System reboot initiated by user User637.,System Notification
+BillingSystem,Unrecoverable issue found in vital application module (Module ID 609),Critical Error
+ModernHR,Server 63 crashed unexpectedly while syncing data,Error
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-8b17a7f8eb0a43a495806b51b1d3412f 9ab93096d2424a0cb35077542abb7714 4c6ac2bd51f8464f8835d26e9e94bc50 - - -] 192.168.59.63 ""GET /v2/e8b68644b13445ba96e420c89a73b4e8/servers/detail HTTP/1.1"" HTTP status code -  200 len: 177 time: 0.4474862",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-d9e97d4749ef47dda59cda21397115c6 17ff912f20984d028c1b8e6a7b75d8a1 52676856e3f44fd89ac9f9b8869251da - - -] 192.168.105.99 ""POST /v2/b520b1e4ee644cf7a8f362f8ac651d7f/os-server-external-events HTTP/1.1"" status: 404 len: 432 time: 0.3908237",HTTP Status
+ModernHR,"nova.compute.claims [req-eea4b5faf5a443ad9fb731e5e5525591 fb5d92051f464c9e95ac758a6cc8ab4d ac4acce62b904707acc8f1f0d0324048 - - -] [instance: 66263b51-68b1-4fc3-a881-be118e977257] memory limit: 101749.00 MB, free: 46007.00 MB",Resource Usage
+BillingSystem,Email service experiencing issues with sending (Instance ID 6905),Unclassified
+BillingSystem,Unauthorized access to data was attempted,Security Alert
+AnalyticsEngine,Boot process terminated unexpectedly due to kernel issue (Instance ID 4530),Critical Error
+ModernCRM,User User908 logged in.,User Action
+AnalyticsEngine,Unexpected server 26 stoppage occurred during data conversion,Error
+ModernHR,User User103 logged out.,User Action
+AnalyticsEngine,System reboot initiated by user User332.,System Notification
+LegacyCRM,Invoice generation process aborted for order ID 2324 due to invalid tax calculation module., Workflow Error 
+LegacyCRM,Lead conversion failed for prospect ID 3115 due to missing contact information., Workflow Error 
+AnalyticsEngine,Backup completed successfully.,System Notification
+AnalyticsEngine,File data_5411.csv uploaded successfully by user User606.,System Notification
+LegacyCRM,Invoice generation process aborted for order ID 6432 due to invalid tax calculation module., Workflow Error 
+ModernCRM,User 3060 tried to bypass API security measures,Security Alert
+ModernHR,Boot process terminated unexpectedly due to kernel issue (Instance ID 1082),Critical Error
+AnalyticsEngine,"nova.compute.claims [req-64b4b70d2ed54c64ad23eb6cc7bd7655 1edf0c8015e440ec8d3bdf04290f6db3 ee5bb62b670149afa09468ffb5b91d60 - - -] [instance: e5658527-a84d-4ce8-bc95-ad8271bc2151] memory limit: 82477.00 MB, free: 40901.00 MB",Resource Usage
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-4d8dd5fd82d44e84b05ec52cace08359 d778c27d36ad421489a24bd71d73220c 224903bfcc11425ca5738907f54f90cd - - -] 192.168.50.90 ""GET /v2/b7ad780706ec4e2eae631d4afa01fa5d/servers/detail HTTP/1.1"" RCODE  200 len: 1088 time: 0.3166518",HTTP Status
+BillingSystem,Replication of data to shard 7 failed,Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,Suspicious login activity detected from 192.168.167.107,Security Alert
+ModernHR,"nova.osapi_compute.wsgi.server [req-0ba952155c3c4fddbe70189fdd8c28e1 f1cca581ffd04e5f86520ff6ba59ca95 c3a75bc659d748b0b0b8a06b0988b37d - - -] 192.168.80.200 ""GET /v2/321f017471d34e6e92c7948d51fc98ff/servers/detail HTTP/1.1"" RCODE  200 len: 1381 time: 0.2195124",HTTP Status
+ModernCRM,Critical system unit error: unit ID Component92,Critical Error
+ModernHR,Shard 7 replication task ended in failure,Error
+ThirdPartyAPI,Account with ID 4210 created by User335.,User Action
+BillingSystem,User User515 logged in.,User Action
+ModernCRM,Unauthorized access to data was attempted,Security Alert
+ModernHR,Data replication task for shard 12 did not complete,Error
+ModernCRM,Critical system unit error: unit ID Component47,Critical Error
+BillingSystem,System updated to version 3.9.1.,System Notification
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-7ad8411916374e978e714c51fe4eded8 c0bc17daccb54d0285fa9e8399a1704e c765fbfc9c844ef9808884c9ad951ac1 - - -] 192.168.203.68 ""GET /v2/b62fe634a6f04f9da610962c4b33bfa6/servers/detail HTTP/1.1"" RCODE  200 len: 2823 time: 0.3130867",HTTP Status
+ModernCRM,"nova.osapi_compute.wsgi.server [req-66204062ffc44e69b876c63678be87c0 8ceb3c7fda454145bae1085437f37289 67fbc922aa7441cb86a2ba9e9ca9ce7c - - -] 192.168.184.143 ""GET /v2/3753ed4c537348038bd11078c6352465/servers/detail HTTP/1.1"" status: 200 len: 1261 time: 0.4143726",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-36f53f3ef60c403eb7f9018725ce10b7 f6ea611cc0c44518a01761705184fec0 b5e1ce84fa7847b28c4aa8d19ad100a9 - - -] 192.168.246.160 ""GET /v2/7741ae217a144c84b56907d880f5dbfe/servers/detail HTTP/1.1"" HTTP status code -  200 len: 226 time: 0.2815486",HTTP Status
+ModernCRM,System reboot initiated by user User355.,System Notification
+ModernHR,Email service experiencing issues with sending (Instance ID 7510),Unclassified
+ModernHR,Unauthorized access to data was attempted,Security Alert
+ModernHR,Email server encountered a sending fault,Error
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,nova.compute.resource_tracker [req-e4767bc64f51404e8af888b62c483342 - - - - -] Final resource view: name=cp-3.slowvm.utah.cloudlab.us phys_ram=34086MB used_ram=1730MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,System component malfunction: component ID Component75,Critical Error
+BillingSystem,Backup completed successfully.,System Notification
+ThirdPartyAPI,Unexpected server 2 stoppage occurred during data conversion,Error
+AnalyticsEngine,User User935 logged out.,User Action
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-a39dada80f404dfb8813e231c60ba242 09d3f889b32341c6b459f37bb232a4b7 23c47b5bbd6441e2af2c79065f1141cf - - -] 192.168.21.39 ""GET /v2/9d84d63e25644006838028473aa2841f/servers/detail HTTP/1.1"" HTTP status code -  200 len: 280 time: 0.2133774",HTTP Status
+ModernHR,Shard 11 replication task ended in failure,Error
+BillingSystem,Server 97 crashed unexpectedly while syncing data,Error
+LegacyCRM,Case escalation for ticket ID 6936 failed because the assigned support agent is no longer active., Workflow Error 
+ModernCRM,Data replication task for shard 6 did not complete,Error
+ModernHR,Unexpected server 60 stoppage occurred during data conversion,Error
+AnalyticsEngine,Server 81 crashed unexpectedly while syncing data,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-655e285a27e5404abb12b14bdb5f24f3 bcb1fbded7fc4579bcb1bb17e99b1ab5 ca595808d2824e858af12dd4daa33e05 - - -] 192.168.176.52 ""POST /v2/e1821365291c487bab478b59b9e91026/os-server-external-events HTTP/1.1"" status: 404 len: 199 time: 0.4102693",HTTP Status
+AnalyticsEngine,Unrecoverable issue found in vital application module (Module ID 528),Critical Error
+ModernHR,Alert: brute force login attempt from 192.168.97.93 detected,Security Alert
+ModernCRM,System reboot initiated by user User386.,System Notification
+BillingSystem,User 7894 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,Denied access attempt on restricted account Account8292,Security Alert
+LegacyCRM,Case escalation for ticket ID 7466 failed because the assigned support agent is no longer active., Workflow Error 
+BillingSystem,Backup started at 2025-05-14 07:06:55.,System Notification
+AnalyticsEngine,Replication of data to shard 9 failed,Error
+BillingSystem,Alert: brute force login attempt from 192.168.2.216 detected,Security Alert
+ThirdPartyAPI,Email service experiencing issues with sending (Instance ID 8118),Unclassified
+ModernCRM,Shard 3 replication task ended in failure,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-ac37b98d3ace470f91d3a1241739655c a67aa5548ced4064841112c4f94655f6 f2703b477a3d4ebf9abc8c31967a330e - - -] 192.168.241.189 ""GET /v2/fc7dff36b2634796b4e01b92e674a161/servers/detail HTTP/1.1"" HTTP status code -  200 len: 272 time: 0.4062799",HTTP Status
+ModernHR,Critical system unit error: unit ID Component56,Critical Error
+ThirdPartyAPI,"Abnormal system behavior on server 96, potential security breach",Security Alert
+ModernHR,"nova.osapi_compute.wsgi.server [req-c08bf87ea58e4aceac9f90511f4de186 67322861468846568be1f682a0dc7c05 a9f002aae62448cda79de0f4f9b0450b - - -] 192.168.41.189 ""GET /v2/4e1e3b765af64885b8e71f92219b8762/servers/detail HTTP/1.1"" RCODE  200 len: 1155 time: 0.0965025",HTTP Status
+ModernHR,System component malfunction: component ID Component75,Critical Error
+ModernHR,Account with ID 2006 created by User665.,User Action
+ModernCRM,User User967 logged in.,User Action
+ThirdPartyAPI,Email server encountered a sending fault,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-4ce7ab5289694fd4ac14badae742a97a 1ed9bc2abd8f45e989d636b6e205f6f5 b31f22c87d744880bc22d469a7c53110 - - -] 192.168.212.12 ""GET /v2/e297c870b067474ebc74fc594ef58d43/servers/detail HTTP/1.1"" HTTP status code -  200 len: 125 time: 0.2389231",HTTP Status
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,Email service experiencing issues with sending (Instance ID 9773),Unclassified
+AnalyticsEngine,File data_5960.csv uploaded successfully by user User309.,System Notification
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+ModernHR,File data_6728.csv uploaded successfully by user User957.,System Notification
+ThirdPartyAPI,File data_5175.csv uploaded successfully by user User629.,System Notification
+LegacyCRM,Invoice generation process aborted for order ID 5215 due to invalid tax calculation module., Workflow Error 
+ModernHR,Disk cleanup completed successfully.,System Notification
+LegacyCRM,Lead conversion failed for prospect ID 5946 due to missing contact information., Workflow Error 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+AnalyticsEngine,Email service experiencing issues with sending (Instance ID 6961),Unclassified
+ModernCRM,"nova.compute.claims [req-688e862965084b3abc07d8ec7270396f ab39f833ca5d4eb38ca52a9c6a6e9a7f f403dee794ca42e89b2427bee6f53b21 - - -] [instance: bfeee737-7cb4-47d6-b8ed-277b1ef3b0ef] memory limit: 64167.00 MB, free: 37683.00 MB",Resource Usage
+AnalyticsEngine,System reboot initiated by user User165.,System Notification
+ThirdPartyAPI,System component malfunction: component ID Component38,Critical Error
+ModernHR,Shard 9 replication task ended in failure,Error
+ModernHR,Unrecoverable issue found in vital application module (Module ID 519),Critical Error
+ThirdPartyAPI,User User136 logged in.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,Unexpected server 9 stoppage occurred during data conversion,Error
+BillingSystem,"nova.compute.claims [req-9b8b0989d19e460082b5ae509444945d ed9d570801f84553b2363a12fecd0c56 cb0742fca57841eb93d8b8594effc336 - - -] [instance: e4e0b71d-bea9-4eda-9ed0-fabd61fe1a40] memory limit: 121199.00 MB, free: 26495.00 MB",Resource Usage
+ThirdPartyAPI,RAID array experienced multiple disk crashes (Array ID 4),Critical Error
+AnalyticsEngine,Disk cleanup completed successfully.,System Notification
+ModernHR,Shard 5 replication task ended in failure,Error
+BillingSystem,"nova.compute.claims [req-8f0931f08efa4297b65b0836ef80ffae a91b49aa352a4d70abf60d96dd085d84 9db1aa647735470d95659b893f7d5fe8 - - -] [instance: fe14b3b0-e69b-4933-9801-335dd29fc27c] Total memory: 85065 MB, used: 2613 MB",Resource Usage
+LegacyCRM,Lead conversion failed for prospect ID 8701 due to missing contact information., Workflow Error 
+ThirdPartyAPI,Replication of data to shard 1 failed,Error
+ModernHR,"nova.osapi_compute.wsgi.server [req-b72c7a5cf8d94095b9ccf73a2f0bc37e 97815f3a8a8942189965e3a0c9e831fb 2ee2410d1c064c4ea3c296f12041de4f - - -] 192.168.84.226 ""POST /v2/9681aa612975420784c06c75c34131c1/os-server-external-events HTTP/1.1"" status: 404 len: 187 time: 0.0792241",HTTP Status
+ModernHR,Account with ID 9720 created by User332.,User Action
+ThirdPartyAPI,Backup completed successfully.,System Notification
+BillingSystem,nova.compute.resource_tracker [req-24662be863984859bb61fb42a7364d43 - - - - -] Final resource view: name=cp-2.slowvm.utah.cloudlab.us phys_ram=41501MB used_ram=1674MB phys_disk=15GB used_disk=0GB total_vcpus=16 used_vcpus=0 pci_stats=[],Resource Usage
+ModernCRM,"Abnormal system behavior on server 98, potential security breach",Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,User User212 logged in.,User Action
+ModernCRM,Server 25 restarted without warning during data migration,Error
+ModernCRM,"nova.osapi_compute.wsgi.server [req-0889b5b87bf844669719b099959c31e5 f498775bdb7c43d7aea6f5f69152d55b 393521a976cb4de2ad4ab1e174e5704f - - -] 192.168.3.216 ""GET /v2/14a57d32ea4945fa9fc0d06db193a7f4/servers/detail HTTP/1.1"" HTTP status code -  200 len: 403 time: 0.3413897",HTTP Status
+AnalyticsEngine,User User404 logged out.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,Lead conversion failed for prospect ID 3858 due to missing contact information., Workflow Error 
+BillingSystem,Backup completed successfully.,System Notification
+ModernHR,"nova.osapi_compute.wsgi.server [req-145f0621a45a4db098b9c5e37af1007c 901e110443894d7ca079b0671c14e5a6 566ef43a025f4c0aa516628acc55aa4a - - -] 192.168.104.208 ""GET /v2/2a7c65857521491b86aa072a2c4bc507/servers/detail HTTP/1.1"" HTTP status code -  200 len: 309 time: 0.3454213",HTTP Status
+AnalyticsEngine,"nova.compute.claims [req-4bb5bac78381427591a0421b05bfe918 cba267da03de47c3bbd1e7913e0307be 931f8333293a4b9981c8da028f5f8019 - - -] [instance: c957e0d0-d643-4e5c-b5ed-5fb6cf42dedd] memory limit: 105346.00 MB, free: 58248.00 MB",Resource Usage
+ModernCRM,Backup completed successfully.,System Notification
+ModernCRM,Disk cleanup completed successfully.,System Notification
+ModernHR,Account with ID 2181 created by User638.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+BillingSystem,Detection of multiple disk faults in RAID setup (Node 6),Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ThirdPartyAPI,User User746 logged out.,User Action
+AnalyticsEngine,"nova.compute.claims [req-a0a6bd21578744019f35366e261f0c2d 5a217e2e9dbf472f9b3f566e0c5fa86f dcc8cd063bc3498caa21477a9df9bd59 - - -] [instance: 4f5664d4-c32e-4e75-9f48-c80f73d16fe0] memory limit: 116624.00 MB, free: 37513.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+LegacyCRM,Case escalation for ticket ID 2036 failed because the assigned support agent is no longer active., Workflow Error 
+ThirdPartyAPI,User 2867 tried to bypass API security measures,Security Alert
+AnalyticsEngine,User User349 logged in.,User Action
+ModernHR,System reboot initiated by user User862.,System Notification
+AnalyticsEngine,Unexpected server 63 stoppage occurred during data conversion,Error
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+BillingSystem,User User827 logged in.,User Action
+AnalyticsEngine,"nova.compute.claims [req-8a2eef4514794db98b54b1557cfddd6b 91b43a2033f94472a68a8ddb1aafb4c0 eb89d17bb5654e0abf6e5736ee0bfc62 - - -] [instance: 5f2e525b-f7b0-45ce-baa1-7c1597dd4ec3] memory limit: 77671.00 MB, free: 59996.00 MB",Resource Usage
+ModernCRM,Alert: brute force login attempt from 192.168.168.91 detected,Security Alert
+ModernCRM,"nova.osapi_compute.wsgi.server [req-6d5c8cedc5aa42249922ac01df07d405 e894fbfddd064cecbf5f7aef416e5e18 cb128d6acfa5400a93ab6f2990244008 - - -] 192.168.57.90 ""POST /v2/fec6293ac8584c108c801c2d23b7a3d4/os-server-external-events HTTP/1.1"" status: 404 len: 196 time: 0.4495514",HTTP Status
+ModernHR,File data_9837.csv uploaded successfully by user User717.,System Notification
+ModernHR,"nova.osapi_compute.wsgi.server [req-e9c1a884c91b4e8eab292d606d80f988 a25488aeeb894d31b3e3805e19e683f2 5300fc4f497942bd98195a0ea8765fbf - - -] 192.168.93.125 ""GET /v2/e2eafc06ec3a44e4b5c2353a104fb4b3/servers/detail HTTP/1.1"" RCODE  200 len: 2630 time: 0.3622962",HTTP Status
+ModernHR,User User834 logged in.,User Action
+AnalyticsEngine,"nova.compute.claims [req-593c30f4948e4b9887f3fe0dbeff5264 db7bdd9e7156457eb9d9f513029d51a1 a34fe4383f174c67a998f63032453252 - - -] [instance: 712c5ee3-7068-4a9a-8878-dc3697c2f67c] memory limit: 102534.00 MB, free: 25630.00 MB",Resource Usage
+ThirdPartyAPI,Email service experiencing issues with sending (Instance ID 1589),Unclassified
+AnalyticsEngine,Email server encountered a sending fault,Error
+BillingSystem,"nova.compute.claims [req-b495ee068cd94f65aa7f27abbb7713c9 803c3e52a86640699c99b58f9e239be8 3a0248a9cea64cda87efb8c31ca6e020 - - -] [instance: 574325a2-d385-4195-a24a-7fcf0a4544ab] memory limit: 109573.00 MB, free: 16964.00 MB",Resource Usage
+ModernHR,Alert: brute force login attempt from 192.168.155.141 detected,Security Alert
+ModernHR,"nova.compute.claims [req-c228beb6ab0944da950e8016f15ae968 1948ca7752c04fafac3afcf9bea42b2c d3262f5f3f8143fd913cb36ea452d718 - - -] [instance: 2ad656fc-dc53-4731-8c3d-6d67674c2723] Total memory: 57535 MB, used: 3511 MB",Resource Usage
+AnalyticsEngine,Unauthorized access to data was attempted,Security Alert
+LegacyCRM,Lead conversion failed for prospect ID 3446 due to missing contact information., Workflow Error 
+BillingSystem,User 2872 tried to bypass API security measures,Security Alert
+ModernHR,"nova.compute.claims [req-28f27887c48148bc9879a74c8c6bcf24 19231f05c6c84c12b3268d1ea752bfc4 458af7f636444152ac288da57ab4efe2 - - -] [instance: 8332a0df-4b24-4c68-92e5-ab608b57569b] memory limit: 98530.00 MB, free: 41208.00 MB",Resource Usage
+ModernCRM,"Abnormal system behavior on server 1, potential security breach",Security Alert
+ThirdPartyAPI,"nova.compute.claims [req-8c1ec7ad7e6f45cd977a37d6c76ee05a d4543e4ed1e640809b9dc9b3b09050c0 35bad27fa1f144c7b9bb3b6606016b09 - - -] [instance: 214dd3df-d8c4-4ffe-a639-9fa973d29a2c] memory limit: 107880.00 MB, free: 11654.00 MB",Resource Usage
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,Data replication task for shard 1 did not complete,Error
+ThirdPartyAPI,Server 22 restarted without warning during data migration,Error
+ModernHR,Unexpected server 83 stoppage occurred during data conversion,Error
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+ThirdPartyAPI,Detection of multiple disk faults in RAID setup (Node 3),Critical Error
+BillingSystem,Server 56 crashed unexpectedly while syncing data,Error
+ThirdPartyAPI,System updated to version 3.9.1.,System Notification
+BillingSystem,"nova.osapi_compute.wsgi.server [req-bc2135b633944f4994fdf9d7a5a6cd9d b5396c5ea9074d38887b3f623bd2376c e52f620c6d4e478f9f90d888956960e1 - - -] 192.168.155.237 ""GET /v2/ba64b75edadd4e13b8ce2cbb41bff086/servers/detail HTTP/1.1"" status: 200 len: 1665 time: 0.1167096",HTTP Status
+AnalyticsEngine,"nova.compute.claims [req-9c600123a71343ffb82b11c722d1d379 d30c6a7e6f9e4972acae03011e85cdde 35662a0e81004ba8a0355f609017606a - - -] [instance: 1b8ddf2a-2bb0-46ff-aa72-a9d2eb2401dc] memory limit: 67628.00 MB, free: 45101.00 MB",Resource Usage
+AnalyticsEngine,User User719 logged in.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ModernCRM,"nova.compute.claims [req-374c2fbb6bf74173bbc6f084e01807a4 628f5c67a3da401f8873964626277dea a55d6151a33e4826aabf679314886d5d - - -] [instance: e4a3248b-1888-486f-8f5d-2f5ec4d82da1] memory limit: 66642.00 MB, free: 19799.00 MB",Resource Usage
+BillingSystem,"Abnormal system behavior on server 56, potential security breach",Security Alert
+LegacyCRM,Case escalation for ticket ID 1739 failed because the assigned support agent is no longer active., Workflow Error 
+ModernHR,Denied access attempt on restricted account Account2214,Security Alert
+ModernCRM,Backup completed successfully.,System Notification
+ModernHR,System component malfunction: component ID Component73,Critical Error
+ModernCRM,System updated to version 3.9.1.,System Notification
+ThirdPartyAPI,Account with ID 4376 created by User680.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+ModernCRM,User User689 logged in.,User Action
+AnalyticsEngine,User 9873 tried to bypass API security measures,Security Alert
+ModernCRM,"nova.osapi_compute.wsgi.server [req-88a39507a7164dfebc5fbb71f70956e3 695f4a690b2748f1a01bfe2ad3c8d559 c6f753b05b2b4a22855550aa6f4f6e90 - - -] 192.168.240.168 ""POST /v2/7a3c4c9d7b8c4f2aadcee3d48715b20e/os-server-external-events HTTP/1.1"" status: 404 len: 260 time: 0.1714948",HTTP Status
+ThirdPartyAPI,"nova.compute.claims [req-156db7ccd5a8475a9086632b6924be26 1c70770e5daf43da8f2a0b253534d53d 635c547c920849149a86818a7068e01a - - -] [instance: ce027ec3-4ad1-4690-89ce-3cfd5d2e4ecb] Total memory: 99457 MB, used: 1193 MB",Resource Usage
+ModernCRM,"nova.osapi_compute.wsgi.server [req-65c9cac865314303adf62cff59cb0d64 3ca7b8e91a884687b285be1562241643 9defc11ff007409a80273b617fd9ba8a - - -] 192.168.228.86 ""GET /v2/fce1aedf23434fe6b14e74ec65c919a3/servers/detail HTTP/1.1"" status: 200 len: 2400 time: 0.0593445",HTTP Status
+ThirdPartyAPI,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernCRM,Backup started at 2025-05-14 07:06:55.,System Notification
+ModernCRM,"nova.osapi_compute.wsgi.server [req-253d987a1b4d42d7b63cfc37c7c857f1 dd126cb2ac504239a54ad9900e0f2761 a34b69a8962c4b66ae8dc34a23ac8285 - - -] 192.168.170.185 ""GET /v2/735b8ffedcef420fb5ec1311a585e600/servers/detail HTTP/1.1"" status: 200 len: 2291 time: 0.3802256",HTTP Status
+BillingSystem,"nova.compute.claims [req-919c42452e614b47b1f5a4e7008dc2e4 16276783ab3243da9bc6d0c24b5fc989 9c5e2299558c49f5aef73407229bbfb3 - - -] [instance: 1da9890f-f1a6-4994-9d16-434c01ee96cc] memory limit: 92981.00 MB, free: 31629.00 MB",Resource Usage
+ModernHR,Account with ID 8252 created by User954.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 2760 due to missing contact information., Workflow Error 
+ModernHR,"nova.osapi_compute.wsgi.server [req-d2dd20ecb99840649b9a96bff34eb82d 465440b29acd4ce3864b2a74e8245f9b 0179b7057b004e8b922cdc38c63c7c69 - - -] 192.168.225.161 ""GET /v2/024a78d99e1a4ed38877de328dfe12e7/servers/detail HTTP/1.1"" HTTP status code -  200 len: 258 time: 0.1597352",HTTP Status
+ModernHR,User User448 logged out.,User Action
+ThirdPartyAPI,User User508 logged out.,User Action
+BillingSystem,Unauthorized access to data was attempted,Security Alert
+ThirdPartyAPI,Shard 10 replication task ended in failure,Error
+ModernHR,Alert: brute force login attempt from 192.168.114.145 detected,Security Alert
+ModernCRM,"Abnormal system behavior on server 32, potential security breach",Security Alert
+BillingSystem,User User585 logged in.,User Action
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,User User727 logged out.,User Action
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 
+AnalyticsEngine,File data_6078.csv uploaded successfully by user User779.,System Notification
+ModernHR,Attempt to access account Account6938 was not authorized,Security Alert
+ModernHR,Boot process terminated unexpectedly due to kernel issue (Instance ID 5071),Critical Error
+ThirdPartyAPI,User User568 logged in.,User Action
+ModernCRM,Email service experiencing issues with sending (Instance ID 4108),Unclassified
+ThirdPartyAPI,"nova.osapi_compute.wsgi.server [req-7dc5a1ba482543a49528542904654b72 c226a5caaf4248aeb638d9029ab0ad31 209fc429cb04479793f4e3b96fafa662 - - -] 192.168.117.118 ""GET /v2/ccb5550e9cb946fcbbf7ff7432232435/servers/detail HTTP/1.1"" HTTP status code -  200 len: 289 time: 0.3174261",HTTP Status
+AnalyticsEngine,"nova.osapi_compute.wsgi.server [req-a62ff7e0648748788457daeda1c293ea 941b8478112645c39e1fcbd5737bead9 6b7073dbbb6843a4b3b1d8f5770ea361 - - -] 192.168.1.120 ""GET /v2/4a09c1622a354172ba477f2a79126763/servers/detail HTTP/1.1"" RCODE  200 len: 2713 time: 0.3152358",HTTP Status
+LegacyCRM,Lead conversion failed for prospect ID 8506 due to missing contact information., Workflow Error 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,"Abnormal system behavior on server 29, potential security breach",Security Alert
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to the 'AdvancedAnalyticsSuite' by Dec 2025, (2) Deprecation Warning 
+ThirdPartyAPI,Suspicious login activity detected from 192.168.17.60,Security Alert
+ModernCRM,Account with ID 4285 created by User678.,User Action
+BillingSystem,RAID array experienced multiple disk crashes (Array ID 3),Critical Error
+AnalyticsEngine,Account with ID 4153 created by User238.,User Action
+ThirdPartyAPI,System reboot initiated by user User235.,System Notification
+ThirdPartyAPI,Backup completed successfully.,System Notification
+ModernCRM,User 1198 tried to bypass API security measures,Security Alert
+ThirdPartyAPI,"nova.compute.claims [req-0da654a6a99d49079e631dacfa7b2f28 9df1fbc6a7644d08a96aca15c0b3d57b 9b6d3236f0a24a47a7a451bf31970c8f - - -] [instance: b06451c4-6c24-4d8f-8416-00a267a3d43b] memory limit: 92595.00 MB, free: 36843.00 MB",Resource Usage
+LegacyCRM,Invoice generation process aborted for order ID 1320 due to invalid tax calculation module., Workflow Error 
+ModernCRM,System component malfunction: component ID Component15,Critical Error
+BillingSystem,Account with ID 1258 created by User362.,User Action
+LegacyCRM,Lead conversion failed for prospect ID 8798 due to missing contact information., Workflow Error 
+ModernCRM,RAID array experienced multiple disk crashes (Array ID 2),Critical Error
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' for improved functionality., (2) Deprecation Warning 

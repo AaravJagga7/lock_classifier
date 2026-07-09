@@ -3,129 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log Console - Zoho Analytics Platform</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>SmartLog AI Dashboard</title>
+    <meta name="description" content="Enterprise curated monitoring with AI.">
+    <link rel="stylesheet" href="/static/style.css?v=20">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="app-wrapper">
-        <!-- Sidebar Navigation -->
+    <div class="app-wrapper" id="appContainer">
+
+        <!-- ===== SMARTLOG AI SIDEBAR ===== -->
         <aside class="sidebar">
-            <div class="sidebar-brand">
-                <div class="brand-icon">L</div>
-                <div class="brand-text">LogConsole</div>
+            <div class="sidebar-header">
+                <div class="sidebar-logo">SmartLog AI</div>
+                <div class="sidebar-logo-sub">Enterprise Curated Monitoring</div>
             </div>
-            
+
             <ul class="sidebar-menu">
                 <li>
-                    <a href="#" class="menu-item active" data-target="dashboard">
-                        <span class="menu-icon">📊</span>
+                    <a class="menu-item active" data-target="dashboard">
+                        <span class="menu-icon">⊞</span>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-item" data-target="ingestion">
-                        <span class="menu-icon">📥</span>
-                        <span>Log Ingestion</span>
+                    <a class="menu-item" data-target="ingestion">
+                        <span class="menu-icon">📋</span>
+                        <span>Live Logs</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-item" data-target="incidents">
-                        <span class="menu-icon">🚨</span>
+                    <a class="menu-item" data-target="incidents">
+                        <span class="menu-icon">⚡</span>
                         <span>Incidents</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu-item" data-target="root-cause">
+                    <a class="menu-item" data-target="timeline">
                         <span class="menu-icon">🔍</span>
-                        <span>Root Cause</span>
+                        <span>Incident History</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" data-target="root-cause">
+                        <span class="menu-icon">🧠</span>
+                        <span>AI Root Cause</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" data-target="calendar">
+                        <span class="menu-icon">📅</span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" data-target="model-test">
+                        <span class="menu-icon">📄</span>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" data-target="pipeline">
+                        <span class="menu-icon">🧬</span>
+                        <span>Pipeline</span>
                     </a>
                 </li>
             </ul>
-            
-            <div class="sidebar-footer">
-                <p>Zoho-style Interface</p>
-                <p>Version 2.4.0</p>
+
+            <div class="sidebar-action-btn-container">
+                <button class="sidebar-action-btn">
+                    <span>⚡ Run AI Scan</span>
+                </button>
+            </div>
+
+            <div class="sidebar-footer-links">
+                <a href="#" class="sidebar-footer-link"><span>❔</span> DOCS</a>
+                <a href="#" class="sidebar-footer-link"><span>🎧</span> SUPPORT</a>
             </div>
         </aside>
 
-        <!-- Right Content Section -->
+        <!-- ===== MAIN CONTENT AREA ===== -->
         <main class="content-area">
-            <!-- Navbar Header -->
+
+            <!-- Top Navbar -->
             <header class="navbar">
-                <div id="navBreadcrumb" class="nav-breadcrumbs">Dashboard</div>
-                <div class="nav-status">
-                    <div class="status-badge">
-                        <div class="status-indicator"></div>
-                        <span>Server Live</span>
+                <div class="nav-search-container">
+                    <div class="nav-search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="Search logs, incidents, or patterns..." />
+                        <span style="font-size: 10px; color: var(--text-muted); background: #fff; padding: 2px 6px; border: 1px solid var(--border-main); border-radius: 4px;">⌘ K</span>
                     </div>
+                </div>
+
+                <div class="nav-right">
+
                     <div class="user-profile">
-                        <div class="user-avatar">A</div>
-                        <div style="font-size: 0.9rem; font-weight: 500;">Admin</div>
+                        <span class="user-name">SysOp-42</span>
+                        <div class="user-avatar">
+                            <img src="https://ui-avatars.com/api/?name=SysOp-42&background=111827&color=fff" style="border-radius: 50%; width: 100%; height: 100%;" />
+                        </div>
                     </div>
                 </div>
             </header>
 
             <!-- Main Scrollable Workspace -->
             <div class="workspace">
-                
-                <!-- 1. Dashboard View -->
+
+                <!-- 1. Dashboard View (REDESIGNED) -->
                 <section id="dashboard" class="view-section active">
-                    <!-- Metrics Row -->
-                    <div class="metrics-grid">
-                        <div class="metric-card m-total">
-                            <span class="metric-header">Total Logs Processed</span>
-                            <span id="dashTotal" class="metric-value">0</span>
-                            <div class="metric-trend trend-neutral">Upload logs in Ingestion to populate</div>
-                        </div>
-                        <div class="metric-card m-warning">
-                            <span class="metric-header">Warnings Detected</span>
-                            <span id="dashWarning" class="metric-value">0</span>
-                            <div id="dashWarningTrend" class="metric-trend trend-neutral">0% of total</div>
-                        </div>
-                        <div class="metric-card m-error">
-                            <span class="metric-header">Errors / Criticals</span>
-                            <span id="dashError" class="metric-value">0</span>
-                            <div id="dashErrorTrend" class="metric-trend trend-neutral">0% of total</div>
-                        </div>
-                        <div class="metric-card m-sources">
-                            <span class="metric-header">Active Sources</span>
-                            <span id="dashSources" class="metric-value">0</span>
-                            <div class="metric-trend trend-neutral">Unique log channels</div>
+                    <div class="section-header">
+                        <div class="section-header-row">
+                            <div>
+                                <h1 class="section-title">Dashboard Overview</h1>
+                                <p class="section-subtitle">Real-time log intelligence and system status across 14 clusters, curated for rapid root-cause identification.</p>
+                            </div>
+                            <div class="header-actions">
+                                <button class="action-btn">📅 Last 24 Hours</button>
+                                <button class="action-btn">≡ Filters</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Charts row -->
+                    <!-- Top 4 Cards -->
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-card-title">TOTAL LOGS</span>
+                                <div class="metric-card-icon">📄</div>
+                            </div>
+                            <div class="metric-card-value" id="dashTotal">
+                                0
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-top: auto;">
+                                Total processed logs
+                            </div>
+                        </div>
+
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-card-title">WARNINGS</span>
+                                <div class="metric-card-icon" style="color: var(--color-warning); background: #fffbeb; border-color: #fef3c7;">⚠️</div>
+                            </div>
+                            <div class="metric-card-value">
+                                <span id="dashWarning">0</span> <span style="font-size: 13px; font-weight: 500; color: var(--text-secondary);" id="dashWarningTrend">0% of total</span>
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-top: auto;">
+                                Warning logs
+                            </div>
+                        </div>
+
+                        <div class="metric-card m-critical">
+                            <div class="metric-card-header">
+                                <span class="metric-card-title">ERRORS</span>
+                                <div class="metric-card-icon">!</div>
+                            </div>
+                            <div class="metric-card-value">
+                                <span id="dashError">0</span> <span style="font-size: 11px; font-weight: 700; color: var(--color-critical); text-transform: uppercase;" id="dashErrorTrend">0% of total</span>
+                            </div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-top: auto;">
+                                Critical errors
+                            </div>
+                        </div>
+
+                        <div class="metric-card m-health">
+                            <div class="metric-card-header">
+                                <span class="metric-card-title">SOURCES</span>
+                            </div>
+                            <div class="metric-card-value" style="color: var(--text-primary); font-size: 28px; font-weight: 800;" id="dashSources">
+                                0
+                            </div>
+                            <div style="font-size: 11px; font-weight: 700; color: var(--smartlog-primary); letter-spacing: 0.5px; margin-top: auto;">
+                                UNIQUE SOURCES
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden legacy containers to prevent JS errors -->
+                    <div id="dashChartBars" style="display: none;"></div>
+                    <div id="dashSourceBars" style="display: none;"></div>
+
+                    <!-- Charts Grid -->
                     <div class="charts-grid">
                         <div class="card">
-                            <h3 class="card-title">Classification Distributions</h3>
-                            <div id="dashChartBars" class="bar-chart">
-                                <div class="empty-state" style="padding: 2rem 0;">
-                                    <div class="empty-state-icon">📊</div>
-                                    <p>No distribution data available. Upload log files in the Log Ingestion module.</p>
+                            <div class="chart-card-header">
+                                <div>
+                                    <h3 class="chart-card-title">Classification Comparison</h3>
+                                    <p class="chart-card-subtitle" style="margin-bottom: 0;">Train vs Test data distribution by label category.</p>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="chart-legend-item">
+                                        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--smartlog-primary);"></span> TRAIN DATA
+                                    </div>
+                                    <div class="chart-legend-item">
+                                        <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#22c55e;"></span> TEST DATA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-container" style="height: 280px; margin-top: 20px;">
+                                <canvas id="logVolumeChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="chart-card-title">Severity Distribution</h3>
+                            <p class="chart-card-subtitle">Current active event categorization.</p>
+                            <div class="chart-container" style="height: 180px; display: flex; justify-content: center; position: relative;">
+                                <canvas id="severityChart"></canvas>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                                    <div style="font-weight: 800; font-size: 16px; color: var(--text-primary);">Total</div>
+                                    <div id="sevTotalEvents" style="font-size: 10px; font-weight: 700; color: var(--text-muted); letter-spacing: 0.5px;">0 EVENTS</div>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px;">
+                                <div style="display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600;">
+                                    <span style="width:6px; height:6px; border-radius:50%; background:var(--color-critical);"></span> <span id="sevLegendCritText">Critical (0%)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600;">
+                                    <span style="width:6px; height:6px; border-radius:50%; background:var(--color-warning);"></span> <span id="sevLegendWarnText">Warning (0%)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600;">
+                                    <span style="width:6px; height:6px; border-radius:50%; background:#fbbf24;"></span> <span id="sevLegendNoticeText">Notice (0%)</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600;">
+                                    <span style="width:6px; height:6px; border-radius:50%; background:var(--smartlog-primary);"></span> <span id="sevLegendInfoText">Info (0%)</span>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="card">
-                            <h3 class="card-title">Top Activity by Source</h3>
-                            <div id="dashSourceBars" class="bar-chart">
-                                <div class="empty-state" style="padding: 2rem 0;">
-                                    <div class="empty-state-icon">🏢</div>
-                                    <p>No activity data available.</p>
-                                </div>
+                    </div>
+
+                    <!-- Incidents Table -->
+                    <div class="table-card">
+                        <div class="table-header">
+                            <h3 class="table-title">Recent Critical Incidents</h3>
+                            <div style="display: flex; gap: 16px; align-items: center;">
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-muted); background: var(--bg-hover); padding: 4px 8px; border-radius: 4px;">✨ AI INSIGHTS ACTIVE</span>
+                                <a href="#" class="table-action">VIEW ALL INCIDENTS</a>
                             </div>
+                        </div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>SOURCE</th>
+                                    <th>SEVERITY</th>
+                                    <th>STATUS</th>
+                                    <th>AI CONFIDENCE</th>
+                                    <th>TIMELINE</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentIncidentsTableBody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                        <div class="table-footer">
+                            ↻ LAST UPDATED: <span id="lastUpdatedTime">14:52:12</span>
                         </div>
                     </div>
                 </section>
 
+                <!-- PRESERVE OLD SECTIONS FOR FUNCTIONALITY -->
+                
                 <!-- 2. Log Ingestion View -->
                 <section id="ingestion" class="view-section">
                     <div class="ingest-grid">
                         <!-- Left Ingestion Card -->
-                        <div class="card" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div class="card" style="display: flex; flex-direction: column; gap: 14px;">
                             <h3 class="card-title">Import Logs</h3>
-                            
-                            <!-- Source Switcher Tabs -->
+
                             <div class="ingest-tabs">
                                 <button class="ingest-tab active" data-tab="upload">📁 Upload File</button>
                                 <button class="ingest-tab" data-tab="scrape">🌐 Web Scrape</button>
@@ -137,136 +281,142 @@
                                     <div class="upload-icon">📂</div>
                                     <div class="upload-title">Drag and drop logs CSV</div>
                                     <div class="upload-subtitle">Accepts .csv with 'source' and 'log_message' columns</div>
-                                    <button class="btn btn-secondary">Browse Local Files</button>
+                                    <button class="btn btn-secondary" style="margin-bottom: 8px;">Browse Local Files</button>
                                     <input type="file" id="fileInput" accept=".csv" style="display: none;">
+                                    <div style="font-size: 11px; color: var(--text-light);">
+                                        Need a test file? <a href="/static/sample_mixed_logs.csv" download="sample_mixed_logs.csv" style="color: var(--smartlog-primary); text-decoration: underline; font-weight: 500;">Download 1000 mixed sample logs CSV</a>
+                                    </div>
                                 </div>
 
                                 <div id="fileInfoBox" class="file-meta-box" style="display: none;">
                                     <div class="file-meta-details">
-                                        <span style="font-size: 1.5rem;">📄</span>
+                                        <span style="font-size: 1.4rem;">📄</span>
                                         <div>
                                             <div id="fileName" class="file-meta-name">---</div>
                                             <div id="fileSize" class="file-meta-size">---</div>
                                         </div>
                                     </div>
-                                    <button id="removeFileBtn" class="btn btn-danger" style="padding: 0.35rem 0.65rem;">✕ Remove</button>
+                                    <button id="removeFileBtn" class="btn btn-danger" style="padding: 3px 8px;">✕ Remove</button>
                                 </div>
                             </div>
 
                             <!-- Scrape Source Form -->
-                            <div id="scrapeSourceForm" class="ingest-source-form" style="display: none; flex-direction: column; gap: 1rem;">
-                                <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
-                                    Fetch logs directly from a webpage containing a log row table. You can test this using the system log stream URL:
+                            <div id="scrapeSourceForm" class="ingest-source-form" style="display: none; flex-direction: column; gap: 10px;">
+                                <div style="font-size: 12px; color: var(--text-muted); line-height: 1.5;">
+                                    Fetch logs directly from a webpage containing a log row table. You can test this using the built-in log stream:
                                 </div>
-                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <div style="display: flex; flex-direction: column; gap: 5px;">
                                     <input type="text" id="scrapeUrlInput" class="search-input" style="width: 100%; min-width: unset;" value="http://127.0.0.1:8000/mock-logs" placeholder="http://example.com/logs">
-                                    <a href="/mock-logs" target="_blank" style="font-size: 0.75rem; color: var(--primary); text-decoration: none; font-weight: 500; align-self: flex-end;">Open Log Stream ↗</a>
+                                    <a href="/mock-logs" target="_blank" style="font-size: 11px; color: var(--smartlog-primary); text-decoration: none; font-weight: 500; align-self: flex-end;">Open Log Stream ↗</a>
                                 </div>
-                                
+
                                 <button id="scrapeSubmitBtn" class="btn btn-secondary" style="width: 100%;">
                                     <span>🔍 Scrape & Load Logs</span>
                                 </button>
-                                
-                                <div id="scrapeSuccessBox" class="file-meta-box" style="display: none; background-color: #eff6ff; border-color: #bfdbfe;">
+
+                                <div id="scrapeSuccessBox" class="file-meta-box" style="display: none; background-color: #EFF6FF; border-color: #BFDBFE;">
                                     <div class="file-meta-details">
-                                        <span style="font-size: 1.25rem;">🌐</span>
+                                        <span style="font-size: 1.2rem;">🌐</span>
                                         <div>
-                                            <div id="scrapeMsg" style="font-weight: 600; color: #1d4ed8; font-size: 0.85rem;">Scraped 0 logs</div>
-                                            <div id="scrapeUrlDisplay" class="file-meta-size" style="max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">http://localhost:8000</div>
+                                            <div id="scrapeMsg" style="font-weight: 600; color: #1D4ED8; font-size: 12px;">Scraped 0 logs</div>
+                                            <div id="scrapeUrlDisplay" class="file-meta-size" style="max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">http://localhost:8000</div>
                                         </div>
                                     </div>
-                                    <button id="removeScrapeBtn" class="btn-danger btn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">✕ Clear</button>
+                                    <button id="removeScrapeBtn" class="btn-danger btn" style="padding: 2px 7px; font-size: 11px;">✕ Clear</button>
                                 </div>
                             </div>
 
                             <button id="classifyBtn" class="btn btn-primary btn-disabled" style="width: 100%;" disabled>
                                 <span>⚡ Start Classification</span>
                             </button>
+
+                            <!-- Show Real Logs Toggle -->
+                            <div style="display: none; border-top: 1px solid var(--border-main); padding-top: 12px; margin-top: 2px;">
+                                <button id="hiddenLogsToggle" class="hidden-logs-toggle">
+                                    <span>📟 Show Real Logs</span>
+                                    <span class="toggle-arrow">▼</span>
+                                </button>
+                                <div id="hiddenLogsPanel" class="hidden-logs-panel">
+                                    <div class="hidden-logs-content">
+                                        <h4>📟 Live System Service Log Stream</h4>
+                                        <div id="hiddenLogsTableContainer">
+                                            <div class="empty-state" style="padding: 14px 0;">
+                                                <div class="spinner" style="width: 24px; height: 24px; border-width: 2px;"></div>
+                                                <p style="color: #94A3B8; font-size: 11px; margin-top: 6px;">Loading logs...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Right Preview Card -->
-                        <div class="card" style="display: flex; flex-direction: column; min-height: 400px;">
+                        <div class="card" style="display: flex; flex-direction: column; min-height: 380px;">
                             <h3 class="card-title">
                                 <span>Preview Logs Ingest</span>
                                 <span id="ingestRowCount" class="badge badge-info" style="display: none;">0 rows</span>
                             </h3>
 
-                            <!-- Empty preview state -->
                             <div id="ingestEmptyState" class="empty-state">
                                 <div class="empty-state-icon">📝</div>
                                 <h3>No preview available</h3>
                                 <p>Upload a file to inspect columns and rows before classification.</p>
                             </div>
 
-                            <!-- Loader View -->
                             <div id="ingestLoaderView" class="loader-overlay" style="display: none;">
                                 <div class="spinner"></div>
                                 <div id="ingestLoaderStatus" class="loader-status">Processing dataset...</div>
                             </div>
 
-                            <!-- Preview Table -->
-                            <div id="ingestTableWrapper" class="table-container" style="display: none; max-height: 350px; overflow-y: auto;">
-                                <table id="ingestTable">
-                                    <thead>
-                                        <tr id="ingestTableHeader">
-                                            <!-- Dynamically injected -->
-                                        </tr>
-                                    </thead>
-                                    <tbody id="ingestTableBody">
-                                        <!-- Dynamically injected -->
-                                    </tbody>
+                            <div id="ingestTableWrapper" class="table-container" style="display: none; max-height: 330px; overflow-y: auto;">
+                                <table id="ingestTable" class="crm-table">
+                                    <thead><tr id="ingestTableHeader"></tr></thead>
+                                    <tbody id="ingestTableBody"></tbody>
                                 </table>
                             </div>
-                            
-                            <!-- Post-Classify Action Row -->
-                            <div id="ingestSuccessBox" class="file-meta-box" style="display: none; margin-top: 1.25rem; background-color: #f0fdf4; border-color: #bbf7d0;">
+
+                            <div id="ingestSuccessBox" class="file-meta-box" style="display: none; margin-top: 14px; background-color: #F0FDF4; border-color: #BBF7D0;">
                                 <div class="file-meta-details">
-                                    <span style="font-size: 1.5rem;">✅</span>
+                                    <span style="font-size: 1.4rem;">✅</span>
                                     <div>
                                         <div style="font-weight: 600; color: #166534;">Classification Complete!</div>
-                                        <div style="font-size: 0.8rem; color: #166534;">Target labels added successfully.</div>
+                                        <div style="font-size: 11px; color: #166534;">Target labels added successfully.</div>
                                     </div>
                                 </div>
-                                <button id="downloadBtn" class="btn btn-primary">📥 Download CSV</button>
+                                <div style="display: flex; gap: 8px;">
+                                    <button id="downloadBtn" class="btn btn-primary">📥 Download CSV</button>
+                                    <button id="emailReportBtn" class="btn btn-secondary" style="border: 1px solid var(--border-main);">📧 Send to Mail</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- 3. Incidents View -->
                 <section id="incidents" class="view-section">
-                    <!-- Filters bar -->
-                    <div class="card filter-bar">
-                        <input type="text" id="incidentSearch" class="search-input" placeholder="Search by source or message...">
-                        
-                        <select id="incidentSeverityFilter" class="select-input">
-                            <option value="ALL">All Severities</option>
-                            <option value="INCIDENT">All Incidents (Warn/Err/Crit)</option>
-                            <option value="CRITICAL">Critical</option>
-                            <option value="ERROR">Error</option>
-                            <option value="WARNING">Warning</option>
-                            <option value="INFO">Info</option>
-                        </select>
-                        
-                        <select id="incidentSourceFilter" class="select-input">
-                            <option value="ALL">All Sources</option>
-                        </select>
-                    </div>
-
-                    <!-- Layout split -->
                     <div class="incidents-split">
-                        <!-- Master List Table -->
-                        <div class="card" style="overflow: hidden; display: flex; flex-direction: column;">
+                        <div class="card">
                             <h3 class="card-title">Incidents Feed</h3>
-                            
-                            <div id="incidentsEmptyState" class="empty-state">
-                                <div class="empty-state-icon">🛡️</div>
-                                <h3>No Incidents Found</h3>
-                                <p>No logs match the selected filter. Try choosing another query or upload a file containing incident classifications.</p>
+                            <div class="filter-bar">
+                                <input type="text" id="incidentSearch" class="search-input" placeholder="Search by source or message...">
+                                <select id="incidentSeverityFilter" class="select-input">
+                                    <option value="ALL">All Severities</option>
+                                    <option value="INCIDENT">Anomalies Only (Warn/Err/Crit)</option>
+                                    <option value="ERROR">Errors</option>
+                                    <option value="WARNING">Warnings</option>
+                                </select>
+                                <select id="incidentSourceFilter" class="select-input">
+                                    <option value="ALL">All Sources</option>
+                                </select>
                             </div>
 
-                            <div id="incidentsTableWrapper" class="table-container" style="display: none; max-height: 480px; overflow-y: auto;">
-                                <table id="incidentsTable">
+                            <div id="incidentsEmptyState" class="empty-state">
+                                <div class="empty-state-icon">📋</div>
+                                <h3>No Incidents Found</h3>
+                                <p>Upload logs or adjust your filters.</p>
+                            </div>
+
+                            <div id="incidentsTableWrapper" class="table-container" style="display: none; height: 500px; overflow-y: auto;">
+                                <table id="incidentsTable" class="crm-table">
                                     <thead>
                                         <tr>
                                             <th>Source</th>
@@ -274,67 +424,1081 @@
                                             <th>Severity</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="incidentsTableBody">
-                                        <!-- Dynamically loaded -->
-                                    </tbody>
+                                    <tbody id="incidentsTableBody"></tbody>
                                 </table>
                             </div>
                         </div>
 
-                        <!-- Detail Panel -->
-                        <div class="incident-detail-panel card">
-                            <h3 class="card-title">Incident Details</h3>
-                            <div id="incidentDetailContent">
-                                <div class="empty-state" style="padding: 2rem 0;">
-                                    <div class="empty-state-icon">🔍</div>
-                                    <p>Select an incident row from the feed to view full diagnostics.</p>
+                        <!-- Incident Detail Panel -->
+                        <div class="incident-detail-panel" id="incidentDetailContent">
+                            <div class="empty-state" style="padding: 2rem 0;">
+                                <div class="empty-state-icon"><span style="font-size: 24px;">🔍</span></div>
+                                <p>Select an incident row from the feed to view full diagnostics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="timeline" class="view-section">
+                    <div class="card" style="min-height: 500px;">
+                        <h3 class="card-title">Incident History</h3>
+                        <div class="filter-bar" style="margin-bottom: 20px;">
+                            <select id="timelineSourceScope" class="select-input">
+                                <option value="CURRENT">Current Session</option>
+                                <option value="HISTORICAL">Historical Database</option>
+                            </select>
+                            <select id="timelineSeverityFilter" class="select-input">
+                                <option value="ALL">All Severities</option>
+                                <option value="CRITICAL">Critical Only</option>
+                                <option value="WARNING">Warnings</option>
+                            </select>
+                        </div>
+
+                        <div id="timelineEmptyState" class="empty-state">
+                            <div class="empty-state-icon">⏳</div>
+                            <h3>No events on timeline</h3>
+                            <p>Upload a dataset or fetch historical records.</p>
+                        </div>
+
+                        <div id="timelineGraphic" style="display: none; padding-left: 10px; border-left: 2px solid var(--border-main); margin-left: 10px;">
+                            <div id="timelineFlowList"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="calendar" class="view-section">
+                    <div class="card" style="min-height: 600px; padding: 24px;">
+                        <div class="calendar-header">
+                            <h4 id="calMonthDisplay">Month Year</h4>
+                            <div>
+                                <button id="calPrevMonth" class="btn btn-secondary" style="padding: 6px 12px; font-weight: 700; margin-right: 4px;">&lt;</button>
+                                <button id="calNextMonth" class="btn btn-secondary" style="padding: 6px 12px; font-weight: 700;">&gt;</button>
+                            </div>
+                        </div>
+                        
+                        <div class="cal-day-header-container">
+                            <div class="cal-day-header">Sun</div>
+                            <div class="cal-day-header">Mon</div>
+                            <div class="cal-day-header">Tue</div>
+                            <div class="cal-day-header">Wed</div>
+                            <div class="cal-day-header">Thu</div>
+                            <div class="cal-day-header">Fri</div>
+                            <div class="cal-day-header">Sat</div>
+                        </div>
+                        <div id="calendarGrid" class="calendar-grid">
+                            <!-- Days injected by JS -->
+                        </div>
+                    </div>
+                </section>
+
+                <section id="root-cause" class="view-section">
+                    <div class="card" style="min-height: 400px;">
+                        <h3 class="card-title" style="margin-bottom: 16px;">AI Root Cause Diagnosis (RCA)</h3>
+                        <button id="runRcaBtn" class="btn btn-primary" style="margin-bottom: 24px;" disabled>🧠 Generate AI Diagnosis</button>
+                        
+                        <div id="rcaEmptyState" class="empty-state">
+                            <div class="empty-state-icon">🤖</div>
+                            <p id="rcaEmptyText">Please upload a log dataset in the Ingestion module first to enable diagnosis.</p>
+                        </div>
+                        
+                        <div id="rcaLoaderView" class="loader-overlay" style="display: none; padding: 40px;">
+                            <div class="spinner"></div>
+                            <div class="loader-status" style="margin-top: 16px; color: var(--text-muted); font-weight: 500;">Synthesizing AI diagnosis context. This may take up to 20 seconds...</div>
+                        </div>
+
+                        <div id="rcaReport" class="rca-report" style="display: none; line-height: 1.6; padding: 16px; border: 1px solid var(--border-main); border-radius: var(--radius-md); background-color: var(--bg-main);"></div>
+                    </div>
+                </section>
+
+                <section id="historical-search" class="view-section">
+                    <div class="card">
+                        <h3 class="card-title">Historical Incident Search</h3>
+                    </div>
+                </section>
+
+                <section id="model-test" class="view-section">
+                    <div class="section-header">
+                        <div class="section-header-row">
+                            <div>
+                                <h1 class="section-title">Model Performance</h1>
+                                <p class="section-subtitle">Real-time classification model evaluation metrics, confusion matrix, and training convergence.</p>
+                            </div>
+                            <div class="header-actions">
+                                <button id="refreshMetricsBtn" class="action-btn" onclick="fetchRealTimeMetrics()">🔄 Refresh Metrics</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Metrics Cards -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-label">ACCURACY</span>
+                                <span class="metric-icon" style="background: rgba(34,197,94,0.1); color: #22c55e;">✓</span>
+                            </div>
+                            <div class="metric-value" id="rt-accuracy">—</div>
+                            <div class="metric-trend trend-success">Model overall accuracy</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-label">PRECISION</span>
+                                <span class="metric-icon" style="background: rgba(16,76,199,0.1); color: #104cc7;">🎯</span>
+                            </div>
+                            <div class="metric-value" id="rt-precision">—</div>
+                            <div class="metric-trend trend-neutral">Positive predictive value</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-label">RECALL</span>
+                                <span class="metric-icon" style="background: rgba(251,191,36,0.1); color: #d97706;">📡</span>
+                            </div>
+                            <div class="metric-value" id="rt-recall">—</div>
+                            <div class="metric-trend trend-neutral">True positive rate</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-card-header">
+                                <span class="metric-label">F1 SCORE</span>
+                                <span class="metric-icon" style="background: rgba(225,29,72,0.1); color: #e11d48;">⚡</span>
+                            </div>
+                            <div class="metric-value" id="rt-f1">—</div>
+                            <div class="metric-trend trend-neutral">Harmonic mean of P & R</div>
+                        </div>
+                    </div>
+
+                    <!-- Model Comparison + Confusion Matrix -->
+                    <div class="charts-grid" style="margin-top: 24px;">
+                        <!-- Per-Model Accuracy Comparison -->
+                        <div class="card">
+                            <h3 class="chart-card-title">Model Accuracy Comparison</h3>
+                            <p class="chart-card-subtitle">Per-processor classification accuracy and latency.</p>
+                            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 20px;">
+                                <!-- BERT -->
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                        <span style="font-weight: 700; font-size: 13px; color: var(--text-primary);">🤖 BERT Classifier</span>
+                                        <span id="rt-lat-bert" style="font-size: 11px; font-weight: 600; color: var(--text-muted);">— ms</span>
+                                    </div>
+                                    <div style="height: 10px; background: var(--bg-hover); border-radius: 6px; overflow: hidden;">
+                                        <div id="rt-acc-bert" style="height: 100%; width: 0%; background: linear-gradient(90deg, #104cc7, #3b82f6); border-radius: 6px; transition: width 0.8s ease;"></div>
+                                    </div>
+                                </div>
+                                <!-- LLM -->
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                        <span style="font-weight: 700; font-size: 13px; color: var(--text-primary);">🧠 LLM Processor</span>
+                                        <span id="rt-lat-llm" style="font-size: 11px; font-weight: 600; color: var(--text-muted);">— ms</span>
+                                    </div>
+                                    <div style="height: 10px; background: var(--bg-hover); border-radius: 6px; overflow: hidden;">
+                                        <div id="rt-acc-llm" style="height: 100%; width: 0%; background: linear-gradient(90deg, #7c3aed, #a78bfa); border-radius: 6px; transition: width 0.8s ease;"></div>
+                                    </div>
+                                </div>
+                                <!-- Regex -->
+                                <div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                        <span style="font-weight: 700; font-size: 13px; color: var(--text-primary);">⚙️ Regex Engine</span>
+                                        <span id="rt-lat-regex" style="font-size: 11px; font-weight: 600; color: var(--text-muted);">— ms</span>
+                                    </div>
+                                    <div style="height: 10px; background: var(--bg-hover); border-radius: 6px; overflow: hidden;">
+                                        <div id="rt-acc-regex" style="height: 100%; width: 0%; background: linear-gradient(90deg, #22c55e, #86efac); border-radius: 6px; transition: width 0.8s ease;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Scalability Profile -->
+                            <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-main);">
+                                <h4 style="font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 14px;">Scalability Profile</h4>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+                                    <div style="text-align: center; padding: 12px; background: var(--bg-hover); border-radius: 8px;">
+                                        <div id="rt-throughput" style="font-size: 20px; font-weight: 800; color: var(--text-primary);">—</div>
+                                        <div style="font-size: 10px; font-weight: 600; color: var(--text-muted); margin-top: 4px;">MAX THROUGHPUT</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 12px; background: var(--bg-hover); border-radius: 8px;">
+                                        <div id="rt-memory" style="font-size: 20px; font-weight: 800; color: var(--text-primary);">—</div>
+                                        <div style="font-size: 10px; font-weight: 600; color: var(--text-muted); margin-top: 4px;">MEMORY FOOTPRINT</div>
+                                    </div>
+                                    <div style="text-align: center; padding: 12px; background: var(--bg-hover); border-radius: 8px;">
+                                        <div id="rt-p99" style="font-size: 20px; font-weight: 800; color: var(--text-primary);">—</div>
+                                        <div style="font-size: 10px; font-weight: 600; color: var(--text-muted); margin-top: 4px;">P99 LATENCY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Confusion Matrix -->
+                        <div class="card">
+                            <h3 class="chart-card-title">Confusion Matrix</h3>
+                            <p class="chart-card-subtitle">Predicted vs Actual classification breakdown.</p>
+                            <div style="margin-top: 20px; overflow-x: auto;">
+                                <table style="width: 100%; border-collapse: collapse; text-align: center;">
+                                    <thead>
+                                        <tr>
+                                            <th style="padding: 10px; font-size: 11px; font-weight: 700; color: var(--text-muted); border-bottom: 2px solid var(--border-main);"></th>
+                                            <th style="padding: 10px; font-size: 11px; font-weight: 700; color: var(--text-muted); border-bottom: 2px solid var(--border-main);">Pred: Alert</th>
+                                            <th style="padding: 10px; font-size: 11px; font-weight: 700; color: var(--text-muted); border-bottom: 2px solid var(--border-main);">Pred: Error</th>
+                                            <th style="padding: 10px; font-size: 11px; font-weight: 700; color: var(--text-muted); border-bottom: 2px solid var(--border-main);">Pred: Warning</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding: 10px; font-size: 12px; font-weight: 700; color: var(--text-primary); text-align: left;">Act: Alert</td>
+                                            <td id="rt-cm-aa" style="padding: 12px; font-size: 18px; font-weight: 800; color: #22c55e; background: rgba(34,197,94,0.08); border-radius: 6px;">—</td>
+                                            <td id="rt-cm-ae" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                            <td id="rt-cm-aw" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; font-size: 12px; font-weight: 700; color: var(--text-primary); text-align: left;">Act: Error</td>
+                                            <td id="rt-cm-ea" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                            <td id="rt-cm-ee" style="padding: 12px; font-size: 18px; font-weight: 800; color: #22c55e; background: rgba(34,197,94,0.08); border-radius: 6px;">—</td>
+                                            <td id="rt-cm-ew" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 10px; font-size: 12px; font-weight: 700; color: var(--text-primary); text-align: left;">Act: Warning</td>
+                                            <td id="rt-cm-wa" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                            <td id="rt-cm-we" style="padding: 12px; font-size: 14px; font-weight: 600; color: var(--color-error);">—</td>
+                                            <td id="rt-cm-ww" style="padding: 12px; font-size: 18px; font-weight: 800; color: #22c55e; background: rgba(34,197,94,0.08); border-radius: 6px;">—</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Training vs Testing Loss Chart -->
+                            <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-main);">
+                                <h4 style="font-size: 13px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">Training vs Testing Loss</h4>
+                                <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 14px;">Convergence curve across training epochs.</p>
+                                <div style="height: 200px;">
+                                    <canvas id="trainingTestChart"></canvas>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- 4. Root Cause Analysis View -->
-                <section id="root-cause" class="view-section">
-                    <div class="card" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                            <div>
-                                <h3 class="card-title" style="margin-bottom: 0.25rem;">AI Root Cause Diagnosis (RCA)</h3>
-                                <p style="color: var(--text-muted); font-size: 0.88rem;">Leverages the LLM engine to scan warnings and error clusters and generate remediation reports.</p>
-                            </div>
-                            <button id="runRcaBtn" class="btn btn-primary btn-disabled" disabled>
-                                <span>🧠 Generate AI Diagnosis</span>
-                            </button>
+                <section id="pipeline" class="view-section">
+                    <style>
+                        /* Encapsulated styling for the Pipeline View */
+                        .pipeline-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 24px;
+                            padding: 8px;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                        }
+                        .pipeline-header {
+                            text-align: center;
+                            padding: 16px;
+                            background: var(--bg-card);
+                            border: 1px solid var(--border-main);
+                            border-radius: 12px;
+                            box-shadow: var(--shadow-sm);
+                        }
+                        .pipeline-header h2 {
+                            font-size: 24px;
+                            font-weight: 800;
+                            margin-bottom: 6px;
+                            background: linear-gradient(90deg, var(--smartlog-primary), #a855f7);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        .pipeline-header p {
+                            color: var(--text-secondary);
+                            font-size: 13px;
+                        }
+                        .pipeline-canvas-container {
+                            position: relative;
+                            width: 100%;
+                            background: #f8fafc;
+                            background-image: linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+                            background-size: 20px 20px;
+                            border: 1px solid var(--border-main);
+                            border-radius: 12px;
+                            overflow: hidden;
+                            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
+                        }
+                        /* Aspect ratio container */
+                        .pipeline-ratio-box {
+                            position: relative;
+                            width: 100%;
+                            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+                        }
+                        .pipeline-absolute-content {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .pipeline-svg {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                        }
+                        /* Glow lines and flows */
+                        .connector-path {
+                            stroke: #cbd5e1;
+                            stroke-width: 2;
+                            fill: none;
+                            transition: stroke 0.3s;
+                        }
+                        .connector-path.active {
+                            stroke: var(--smartlog-primary);
+                            stroke-width: 2.5;
+                        }
+                        .flow-dot {
+                            fill: var(--smartlog-primary);
+                            filter: drop-shadow(0 0 3px rgba(16, 76, 199, 0.4));
+                        }
+                        /* Nodes */
+                        .pl-node {
+                            position: absolute;
+                            background: #ffffff;
+                            border: 1px solid #d1d5db;
+                            border-radius: 10px;
+                            padding: 8px 12px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 4px;
+                            cursor: pointer;
+                            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                            transform: translate(-50%, -50%);
+                            z-index: 10;
+                            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+                            min-width: 90px;
+                        }
+                        .pl-node:hover {
+                            border-color: var(--smartlog-primary);
+                            box-shadow: 0 10px 15px -3px rgba(16, 76, 199, 0.15), 0 4px 6px -2px rgba(16, 76, 199, 0.05);
+                            transform: translate(-50%, -52%) scale(1.03);
+                        }
+                        .pl-node.active {
+                            border-color: var(--smartlog-primary);
+                            background: rgba(16, 76, 199, 0.08);
+                            box-shadow: 0 0 12px rgba(16, 76, 199, 0.2);
+                        }
+                        .pl-icon {
+                            font-size: 20px;
+                        }
+                        .pl-title {
+                            font-size: 11px;
+                            font-weight: 700;
+                            color: #1f2937;
+                            text-align: center;
+                        }
+                        .pl-subtitle {
+                            font-size: 8px;
+                            color: #6b7280;
+                            text-transform: uppercase;
+                            letter-spacing: 0.5px;
+                        }
+
+                        /* Unique layouts for nodes */
+                        .pl-node.diamond {
+                            border-radius: 50%;
+                            width: 70px;
+                            height: 70px;
+                            justify-content: center;
+                            padding: 4px;
+                        }
+                        .pl-node.database {
+                            border-radius: 12px;
+                            border-top-width: 3px;
+                            border-top-color: var(--smartlog-primary);
+                        }
+                        .pl-node.known-categories {
+                            width: 140px;
+                            align-items: stretch;
+                            gap: 5px;
+                            padding: 10px;
+                        }
+                        .cat-pill {
+                            font-size: 9px;
+                            font-weight: 700;
+                            padding: 3px 6px;
+                            border-radius: 4px;
+                            text-align: center;
+                        }
+                        .cat-sec { background: rgba(34,197,94,0.15); color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+                        .cat-res { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+                        .cat-err { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+                        .cat-usr { background: rgba(59,130,246,0.15); color: #3b82f6; border: 1px solid rgba(59,130,246,0.3); }
+                        .cat-sys { background: rgba(168,85,247,0.15); color: #a855f7; border: 1px solid rgba(168,85,247,0.3); }
+
+                        /* Bottom Explanation Card */
+                        .pl-details-card {
+                            background: var(--card-bg);
+                            border: 1px solid var(--border-main);
+                            border-radius: 12px;
+                            padding: 24px;
+                            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+                        }
+                        .pl-details-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                            margin-bottom: 16px;
+                            border-bottom: 1px solid var(--border-main);
+                            padding-bottom: 12px;
+                        }
+                        .pl-details-badge {
+                            background: var(--smartlog-primary-light);
+                            color: var(--smartlog-primary);
+                            font-size: 10px;
+                            font-weight: 700;
+                            padding: 4px 8px;
+                            border-radius: 6px;
+                            text-transform: uppercase;
+                        }
+                        .pl-details-title {
+                            font-size: 16px;
+                            font-weight: 800;
+                            color: var(--text-primary);
+                        }
+                        .pl-details-grid {
+                            display: grid;
+                            grid-template-columns: 1.5fr 1fr;
+                            gap: 24px;
+                        }
+                        .pl-details-desc p {
+                            font-size: 13px;
+                            color: var(--text-secondary);
+                            line-height: 1.6;
+                            margin-bottom: 12px;
+                        }
+                        .pl-tech-stack {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                            margin-top: 16px;
+                        }
+                        .pl-tech-tag {
+                            background: var(--bg-hover);
+                            border: 1px solid var(--border-main);
+                            color: var(--text-secondary);
+                            font-size: 11px;
+                            padding: 4px 8px;
+                            border-radius: 6px;
+                            font-weight: 600;
+                        }
+                        .pl-playground {
+                            background: #f8fafc;
+                            border: 1px solid var(--border-main);
+                            border-radius: 8px;
+                            padding: 16px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                        }
+                        .pl-playground-title {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: var(--smartlog-primary);
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                        }
+                        /* Custom inputs & panels */
+                        .pl-input {
+                            background: #ffffff;
+                            border: 1px solid #cbd5e1;
+                            border-radius: 6px;
+                            color: #0f172a;
+                            padding: 8px 12px;
+                            font-size: 12px;
+                            outline: none;
+                            width: 100%;
+                            font-family: monospace;
+                        }
+                        .pl-btn {
+                            background: var(--smartlog-primary);
+                            color: #fff;
+                            border: none;
+                            border-radius: 6px;
+                            padding: 8px 16px;
+                            font-size: 12px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            transition: background 0.2s;
+                        }
+                        .pl-btn:hover {
+                            background: var(--smartlog-primary-hover);
+                        }
+                    </style>
+
+                    <div class="pipeline-wrapper">
+                        <div class="pipeline-header">
+                            <h2>Complete Pipeline: AI-Based Log Classification System</h2>
+                            <p>From multi-client log aggregation to AI-powered classification and alerting. Click any node to explore technical details and interactive stages.</p>
                         </div>
-                        
-                        <!-- Diagnosis Panel -->
-                        <div class="rca-diagnosis-panel">
-                            <!-- Empty RCA State -->
-                            <div id="rcaEmptyState" class="empty-state">
-                                <div class="empty-state-icon">🤖</div>
-                                <h3>No diagnosis generated</h3>
-                                <p id="rcaEmptyText">Please upload a log dataset in the Ingestion module first to enable diagnosis.</p>
-                            </div>
 
-                            <!-- Loader View -->
-                            <div id="rcaLoaderView" class="loader-overlay" style="display: none; min-height: 200px;">
-                                <div class="spinner"></div>
-                                <div id="rcaLoaderStatus" class="loader-status">AI is analyzing logs and calculating probable causes...</div>
-                            </div>
+                        <!-- 16:9 aspect-ratio Interactive Pipeline Canvas -->
+                        <div class="pipeline-canvas-container">
+                            <div class="pipeline-ratio-box">
+                                <div class="pipeline-absolute-content">
+                                    
+                                    <!-- Connection SVGs -->
+                                    <svg class="pipeline-svg" viewBox="0 0 1000 562.5" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                                                <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#475569"></path>
+                                            </marker>
+                                            <marker id="arrow-active" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                                                <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#3b82f6"></path>
+                                            </marker>
+                                        </defs>
 
-                            <!-- Report Output -->
-                            <div id="rcaReport" class="rca-report" style="display: none;">
-                                <!-- Injected as Markdown HTML -->
+                                        <!-- Paths -->
+                                        <!-- Clients to Sources -->
+                                        <path id="path-c1-src" d="M 100 101 L 135 101" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-c2-src" d="M 100 270 L 135 270" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-c3-src" d="M 100 439 L 135 439" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Sources to Raw Logs -->
+                                        <path id="path-src1-log" d="M 205 101 L 240 101" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-src2-log" d="M 205 270 L 240 270" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-src3-log" d="M 205 439 L 240 439" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Raw Logs to Aggregator -->
+                                        <path id="path-log1-agg" d="M 285 101 C 310 101, 310 270, 335 270" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-log2-agg" d="M 285 270 L 335 270" class="connector-path" marker-end="url(#arrow)"></path>
+                                        <path id="path-log3-agg" d="M 285 439 C 310 439, 310 270, 335 270" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Aggregator to Regex -->
+                                        <path id="path-agg-reg" d="M 395 270 L 440 270" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Regex to Known Patterns -->
+                                        <path id="path-reg-known" d="M 525 270 C 540 270, 560 146, 580 146" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Regex to Decision -->
+                                        <path id="path-reg-dec" d="M 525 270 C 540 270, 560 338, 585 338" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Decision to LLM (No Path) -->
+                                        <path id="path-dec-llm" d="M 685 338 C 700 338, 715 298, 735 298" class="connector-path" marker-end="url(#arrow)"></path>
+                                        
+                                        <!-- Decision to BERT (Yes Path) -->
+                                        <path id="path-dec-bert" d="M 650 373 C 650 400, 480 400, 480 415" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- BERT to DBSCAN -->
+                                        <path id="path-bert-dbscan" d="M 525 439 L 565 439" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- DBSCAN to Clusters -->
+                                        <path id="path-dbscan-cluster" d="M 650 439 L 685 439" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Clusters to Final Class -->
+                                        <path id="path-cluster-final" d="M 770 439 L 805 439" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Known Patterns to DevOps -->
+                                        <path id="path-known-devops" d="M 720 146 C 850 146, 850 270, 890 270" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- LLM to DevOps -->
+                                        <path id="path-llm-devops" d="M 830 298 C 850 298, 860 270, 890 270" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Final Class to DevOps -->
+                                        <path id="path-final-devops" d="M 885 439 C 895 439, 900 350, 915 320" class="connector-path" marker-end="url(#arrow)"></path>
+
+                                        <!-- Animated Pulses (Flowing logs) -->
+                                        <circle r="4" class="flow-dot">
+                                            <animateMotion dur="6s" repeatCount="indefinite" path="M 100 101 L 135 101 L 240 101 L 285 101 C 310 101, 310 270, 335 270 L 440 270 L 525 270" />
+                                        </circle>
+                                        <circle r="4" class="flow-dot" style="animation-delay: 2s;">
+                                            <animateMotion dur="5s" repeatCount="indefinite" path="M 100 270 L 135 270 L 240 270 L 285 270 L 335 270 L 440 270 L 525 270 C 540 270, 560 146, 580 146" />
+                                        </circle>
+                                    </svg>
+
+                                    <!-- HTML Nodes positioned absolutely -->
+                                    <!-- Stage 1 Nodes -->
+                                    <div class="pl-node active" style="left: 6%; top: 18%;" onclick="selectNode('c1')">
+                                        <div class="pl-icon">🏢</div>
+                                        <div class="pl-title">Client 1</div>
+                                        <div class="pl-subtitle">Log Source</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 6%; top: 48%;" onclick="selectNode('c2')">
+                                        <div class="pl-icon">🏢</div>
+                                        <div class="pl-title">Client 2</div>
+                                        <div class="pl-subtitle">Log Source</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 6%; top: 78%;" onclick="selectNode('c3')">
+                                        <div class="pl-icon">🏢</div>
+                                        <div class="pl-title">Client 3</div>
+                                        <div class="pl-subtitle">Log Source</div>
+                                    </div>
+
+                                    <!-- Source systems details -->
+                                    <div class="pl-node" style="left: 17%; top: 18%; min-width: 70px;" onclick="selectNode('src1')">
+                                        <div class="pl-title" style="font-size:9px;">CRM / Billing</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 17%; top: 48%; min-width: 70px;" onclick="selectNode('src2')">
+                                        <div class="pl-title" style="font-size:9px;">HR / CRM</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 17%; top: 78%; min-width: 70px;" onclick="selectNode('src3')">
+                                        <div class="pl-title" style="font-size:9px;">CRM/Billing/HR</div>
+                                    </div>
+
+                                    <!-- Raw Logs -->
+                                    <div class="pl-node" style="left: 26%; top: 18%; min-width: 45px;" onclick="selectNode('rawlogs')">
+                                        <div class="pl-icon" style="font-size:14px;">📄</div>
+                                        <div class="pl-title" style="font-size:8px;">Logs</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 26%; top: 48%; min-width: 45px;" onclick="selectNode('rawlogs')">
+                                        <div class="pl-icon" style="font-size:14px;">📄</div>
+                                        <div class="pl-title" style="font-size:8px;">Logs</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 26%; top: 78%; min-width: 45px;" onclick="selectNode('rawlogs')">
+                                        <div class="pl-icon" style="font-size:14px;">📄</div>
+                                        <div class="pl-title" style="font-size:8px;">Logs</div>
+                                    </div>
+
+                                    <!-- Stage 2 Node -->
+                                    <div class="pl-node database" style="left: 36%; top: 48%;" onclick="selectNode('aggregator')">
+                                        <div class="pl-icon">🛢️</div>
+                                        <div class="pl-title">Aggregator</div>
+                                        <div class="pl-subtitle">Buffer</div>
+                                    </div>
+
+                                    <!-- Stage 3 Node -->
+                                    <div class="pl-node" style="left: 48%; top: 48%;" onclick="selectNode('regex')">
+                                        <div class="pl-icon">🔍</div>
+                                        <div class="pl-title">Regex Match</div>
+                                        <div class="pl-subtitle">Stage 3</div>
+                                    </div>
+
+                                    <!-- Stage 4A Node -->
+                                    <div class="pl-node known-categories" style="left: 65%; top: 26%;" onclick="selectNode('known')">
+                                        <div class="pl-title" style="font-size: 11px; margin-bottom: 2px;">Known Patterns</div>
+                                        <div class="cat-pill cat-sec">🛡️ Security Alert</div>
+                                        <div class="cat-pill cat-err">⚠️ Workflow Error</div>
+                                        <div class="cat-pill cat-res">📈 Resource Usage</div>
+                                        <div class="cat-pill cat-sys">⚙️ System Notification</div>
+                                    </div>
+
+                                    <!-- Stage 4B Decision -->
+                                    <div class="pl-node diamond" style="left: 65%; top: 60%;" onclick="selectNode('decision')">
+                                        <div class="pl-title" style="font-size: 8px; line-height: 1.1;">Enough samples?</div>
+                                    </div>
+
+                                    <!-- LLM node -->
+                                    <div class="pl-node" style="left: 78%; top: 53%;" onclick="selectNode('llm')">
+                                        <div class="pl-icon">🧠</div>
+                                        <div class="pl-title">Few-shot LLM</div>
+                                        <div class="pl-subtitle">Llama 3.3</div>
+                                    </div>
+
+                                    <!-- BERT branch -->
+                                    <div class="pl-node" style="left: 48%; top: 78%;" onclick="selectNode('bert')">
+                                        <div class="pl-icon">🧠</div>
+                                        <div class="pl-title">BERT Embed</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 61%; top: 78%;" onclick="selectNode('dbscan')">
+                                        <div class="pl-icon">🕸️</div>
+                                        <div class="pl-title">DBSCAN</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 73%; top: 78%; min-width: 75px;" onclick="selectNode('clusters')">
+                                        <div class="pl-title" style="font-size: 9px;">Clusters</div>
+                                    </div>
+                                    <div class="pl-node" style="left: 84%; top: 78%;" onclick="selectNode('finalclass')">
+                                        <div class="pl-icon">✅</div>
+                                        <div class="pl-title">Classifier</div>
+                                    </div>
+
+                                    <!-- Stage 5 Node -->
+                                    <div class="pl-node" style="left: 93%; top: 48%;" onclick="selectNode('devops')">
+                                        <div class="pl-icon">📊</div>
+                                        <div class="pl-title">DevOps Feed</div>
+                                        <div class="pl-subtitle">Stage 5</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stage Explanation Drawer -->
+                        <div class="pl-details-card">
+                            <div class="pl-details-header">
+                                <div id="pl-details-badge" class="pl-details-badge">Log Collection</div>
+                                <h3 id="pl-details-title" class="pl-details-title">Client 1 Data Source Ingestion</h3>
+                            </div>
+                            
+                            <div class="pl-details-grid">
+                                <div class="pl-details-desc">
+                                    <p id="pl-details-para1">Client 1 represents a primary enterprise client node. In our log classification architecture, clients securely forward diagnostic logs generated from separate local source subsystems such as CRM apps or Billing platforms.</p>
+                                    <p id="pl-details-para2">Logs from Client 1 are aggregated and compiled with standard timezone timestamps and origin signatures before being forwarded to the primary central buffer.</p>
+                                    
+                                    <div class="pl-tech-stack" id="pl-tech-stack">
+                                        <span class="pl-tech-tag">fastapi</span>
+                                        <span class="pl-tech-tag">httpx</span>
+                                        <span class="pl-tech-tag">pandas</span>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Interactive Playground -->
+                                <div class="pl-playground" id="pl-playground-container">
+                                    <div class="pl-playground-title">
+                                        <span>⚡</span> <span id="pl-play-title">Client 1 Active Log Stream</span>
+                                    </div>
+                                    
+                                    <!-- Interactive body loads dynamically based on active node -->
+                                    <div id="pl-play-body" style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+                                        <div style="font-family: monospace; font-size: 11px; background:#ffffff; border:1px solid #cbd5e1; padding:10px; border-radius:6px; max-height:120px; overflow-y:auto; color:#16a34a;" id="pl-stream-box">
+                                            [Client 1] [10:46:12 PM] BillingSystem: Invoice generation process aborted...
+                                            <br>[Client 1] [10:46:15 PM] ModernCRM: File data_6957.csv uploaded...
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Javascript logic for Interactive Pipeline -->
+                    <script>
+                        const plNodeData = {
+                            c1: {
+                                badge: "Log Collection",
+                                title: "Client 1 Data Ingestion Node",
+                                p1: "Client 1 represents a primary enterprise client system. It aggregates local diagnostic logs generated from local CRM apps and Billing databases, forwarding them in real-time to the aggregation server.",
+                                p2: "We simulate multitenancy support where Client 1 logs have distinct authorization tokens and metadata identifiers.",
+                                tech: ["fastapi", "httpx", "python-dotenv"],
+                                playTitle: "Client 1 Active Log Stream",
+                                html: `<div style="font-family: monospace; font-size: 10px; background:#ffffff; border:1px solid #cbd5e1; padding:8px; border-radius:6px; color:#16a34a; height: 100px; overflow-y: auto;" id="c1-log-box">
+                                    [10:48:01 PM] BillingSystem: User 12345 logged in.<br>
+                                    [10:48:05 PM] ModernCRM: Admin access escalation detected...
+                                </div>`
+                            },
+                            c2: {
+                                badge: "Log Collection",
+                                title: "Client 2 Data Ingestion Node",
+                                p1: "Client 2 represents a separate microservices client. It forwards HR and internal CRM system telemetry. The logs represent general access tracking and resource updates.",
+                                p2: "Each log from Client 2 goes through token authorization checks at the backend edge.",
+                                tech: ["fastapi", "httpx"],
+                                playTitle: "Client 2 Active Log Stream",
+                                html: `<div style="font-family: monospace; font-size: 10px; background:#ffffff; border:1px solid #cbd5e1; padding:8px; border-radius:6px; color:#9333ea; height: 100px; overflow-y: auto;">
+                                    [10:48:10 PM] ModernHR: GET /v2/servers/detail HTTP/1.1 200 OK<br>
+                                    [10:48:12 PM] ModernCRM: Database connection check OK.
+                                </div>`
+                            },
+                            c3: {
+                                badge: "Log Collection",
+                                title: "Client 3 Data Ingestion Node",
+                                p1: "Client 3 represents our largest client cluster node, forwarding combined logs from billing, HR, and customer relation databases.",
+                                p2: "This node generates high-throughput events that test the ingestion scaling of our backend pipelines.",
+                                tech: ["fastapi", "httpx", "uvicorn"],
+                                playTitle: "Client 3 Active Log Stream",
+                                html: `<div style="font-family: monospace; font-size: 10px; background:#ffffff; border:1px solid #cbd5e1; padding:8px; border-radius:6px; color:#2563eb; height: 100px; overflow-y: auto;">
+                                    [10:48:15 PM] BillingSystem: Backup completed successfully.<br>
+                                    [10:48:19 PM] ModernHR: Token generation for session 9482.
+                                </div>`
+                            },
+                            src1: {
+                                badge: "Source Subsystem",
+                                title: "CRM / Billing Client Apps",
+                                p1: "These represent the internal business modules that spawn transactional events. Logs include database query times, connection verification, and user access records.",
+                                p2: "These logs represent structured diagnostic data that is easy to identify using regex pattern match rules.",
+                                tech: ["python-logging"],
+                                playTitle: "Source Simulator",
+                                html: `<p style="font-size:11px; margin-bottom: 6px; color:#374151;">Simulate an app event:</p>
+                                       <button class="pl-btn" style="padding: 4px 8px; font-size: 10px;" onclick="simulateEvent('CRM', 'User 555 logged out successfully.')">Trigger CRM Event</button>`
+                            },
+                            src2: {
+                                badge: "Source Subsystem",
+                                title: "HR / CRM Client Apps",
+                                p1: "The HR service generates authorization records and administrative system events, while CRM creates client-facing activity logs.",
+                                p2: "Critical security events like user privilege escalations generally spawn here.",
+                                tech: ["python-logging"],
+                                playTitle: "Source Simulator",
+                                html: `<p style="font-size:11px; margin-bottom: 6px; color:#374151;">Simulate an app event:</p>
+                                       <button class="pl-btn" style="padding: 4px 8px; font-size: 10px; background:#9333ea;" onclick="simulateEvent('HR', 'Failed login attempt for user Admin.')">Trigger HR Event</button>`
+                            },
+                            src3: {
+                                badge: "Source Subsystem",
+                                title: "Mixed Service Apps",
+                                p1: "High density systems containing HR, CRM, and Billing components. These systems can generate mixed, noisy records that require ML/BERT text classification.",
+                                p2: "The pipeline filters these logs concurrently.",
+                                tech: ["python-logging"],
+                                playTitle: "Source Simulator",
+                                html: `<p style="font-size:11px; margin-bottom: 6px; color:#374151;">Simulate an app event:</p>
+                                       <button class="pl-btn" style="padding: 4px 8px; font-size: 10px; background:#2563eb;" onclick="simulateEvent('Billing', 'Invoice generated successfully.')">Trigger Billing Event</button>`
+                            },
+                            rawlogs: {
+                                badge: "Data Payload",
+                                title: "Raw Diagnostic Logs",
+                                p1: "The raw diagnostic string logs represent unstructured event inputs before classification is completed.",
+                                p2: "Each raw log is formatted as a single line string containing the source component and a diagnostic message.",
+                                tech: ["pandas", "csv"],
+                                playTitle: "Raw Log Example",
+                                html: `<div style="font-family: monospace; font-size: 10px; background:#ffffff; border:1px solid #cbd5e1; padding:8px; border-radius:6px; color:#0f172a; line-height:1.4;">
+                                    "ModernCRM","IP 192.168.1.1 blocked due to potential attack"<br>
+                                    "BillingSystem","User 1234 logged in."
+                                </div>`
+                            },
+                            aggregator: {
+                                badge: "Log Buffer",
+                                title: "Central Aggregated Log Store",
+                                p1: "The aggregator acts as a central FIFO buffer. It consolidates all raw logs arriving concurrently from separate clients into a single sequence.",
+                                p2: "By creating a single continuous log flow, we protect downstream ML engines from memory overflow during spikes.",
+                                tech: ["fastapi", "pandas", "ujson"],
+                                playTitle: "Aggregation Preview",
+                                html: `<p style="font-size:10px; color:var(--text-muted); margin-bottom:6px;">Logs currently aggregated:</p>
+                                       <div style="font-family: monospace; font-size: 9px; background:#ffffff; border:1px solid #cbd5e1; padding:6px; border-radius:4px; color:#2563eb;" id="agg-log-box">
+                                           - Aggregating Client 1 logs...<br>
+                                           - Aggregating Client 2 logs...
+                                       </div>`
+                            },
+                            regex: {
+                                badge: "Classifier",
+                                title: "Stage 3 Regex Pattern Matcher",
+                                p1: "Regex Classification represents the first active routing stage. It is computationally extremely fast and uses predefined expression matching arrays to detect known categories.",
+                                p2: "If the log matches a known pattern (e.g., contains 'block', 'failed', 'backup'), it is instantly categorized, bypassing expensive AI models.",
+                                tech: ["re", "python"],
+                                playTitle: "Regex Engine Playground",
+                                html: `<div style="display:flex; flex-direction:column; gap:8px;">
+                                    <input type="text" id="regexTestInput" class="pl-input" placeholder="Type a log message (e.g. system failed or check status)" value="Access escalation aborted.">
+                                    <button class="pl-btn" onclick="testRegexEngine()">Run Regex Matcher</button>
+                                    <div id="regexTestResult" style="font-size:11px; font-weight:700; color:#16a34a;">Result: Click button to run.</div>
+                                </div>`
+                            },
+                            known: {
+                                badge: "Classification Categories",
+                                title: "Known Pattern Categories",
+                                p1: "Represents the five primary log event categories identified in our system: Security Alerts, Resource Usage logs, Workflow Errors, User Actions, and System Notifications.",
+                                p2: "Once categorized, the logs are immediately sent to the DevOps alerts feed to trigger relevant system updates.",
+                                tech: ["FastAPI Routing"],
+                                playTitle: "Category Rulebook",
+                                html: `<div style="font-size:10px; color:var(--text-secondary); line-height:1.4;">
+                                    <strong>Security Alert:</strong> Matches threat phrases.<br>
+                                    <strong>Workflow Error:</strong> Matches process abort/failure rules.<br>
+                                    <strong>System Notification:</strong> Matches status or backup updates.
+                                </div>`
+                            },
+                            decision: {
+                                badge: "Process Switch",
+                                title: "Clustering Sample Evaluation",
+                                p1: "If regex pattern matching fails (the log does not match any predefined rule), the log is flagged as 'Unknown'.",
+                                p2: "We check the current database size of similar unclassified items. If we have enough training samples, we route the log to our semantic cluster pipeline. If not, we fall back to LLM Few-Shot inference.",
+                                tech: ["scikit-learn", "numpy"],
+                                playTitle: "Inference Switch",
+                                html: `<div style="font-size:11px; color:var(--text-secondary); text-align:center;">
+                                    <p>Samples Count: <strong style="color:#2563eb;">> 20 samples</strong></p>
+                                    <p style="margin-top:4px;">Routing target: <span style="background:rgba(34,197,94,0.1); color:#16a34a; padding:2px 6px; border-radius:4px; font-weight:700; border:1px solid rgba(34,197,94,0.25);">BERT + DBSCAN</span></p>
+                                </div>`
+                            },
+                            llm: {
+                                badge: "Few-shot Engine",
+                                title: "LLM Few-shot Classification",
+                                p1: "If the log is completely new and we have no historical database records to cluster, the log is processed by our LLM Few-shot engine.",
+                                p2: "Using Llama 3.3 with precise contextual prompts, the LLM determines the closest category based on a few structured example scenarios.",
+                                tech: ["groq", "llama-3.3-70b-versatile"],
+                                playTitle: "Few-Shot Prompt Builder",
+                                html: `<div style="font-size:9px; font-family:monospace; background:#ffffff; border:1px solid #cbd5e1; padding:6px; border-radius:4px; color:#0f172a; max-height:100px; overflow-y:auto;">
+                                    System: You are an elite SRE.<br>
+                                    Example 1: Log "Database down" -> Error<br>
+                                    Example 2: Log "User joined" -> Info<br>
+                                    Query: "Server overheating" -> [Classify]
+                                </div>`
+                            },
+                            bert: {
+                                badge: "Vectorizer",
+                                title: "BERT Sentence Embedding Engine",
+                                p1: "Our semantic clustering uses BERT to generate dense, high-dimensional vector embeddings of the unstructured log text.",
+                                p2: "By converting text messages to vector arrays, the system captures complex semantic meanings rather than simple keyword matches.",
+                                tech: ["sentence-transformers", "pytorch", "huggingface"],
+                                playTitle: "Embedding Preview",
+                                html: `<p style="font-size:10px; color:var(--text-muted); margin-bottom:4px;">Vector vector output:</p>
+                                       <div style="font-family:monospace; font-size:10px; background:#ffffff; border:1px solid #cbd5e1; padding:6px; border-radius:4px; color:#2563eb;">
+                                           [0.124, -0.658, 0.941, ..., 0.052]
+                                       </div>`
+                            },
+                            dbscan: {
+                                badge: "Machine Learning",
+                                title: "DBSCAN Density-Based Clustering",
+                                p1: "We use DBSCAN (Density-Based Spatial Clustering of Applications with Noise) to partition the vector embeddings of unknown logs.",
+                                p2: "DBSCAN doesn't require predefining the number of clusters. It automatically isolates dense log clusters and flags sparse anomalies as 'noise'.",
+                                tech: ["scikit-learn", "numpy"],
+                                playTitle: "Interactive DBSCAN",
+                                html: `<div style="display:flex; flex-direction:column; gap:6px; align-items:center;">
+                                    <canvas id="dbscanCanvas" width="160" height="90" style="background:#ffffff; border-radius:6px; border:1px solid #cbd5e1;"></canvas>
+                                    <button class="pl-btn" style="padding:2px 8px; font-size:9px;" onclick="runDbscanDemo()">Cluster Data</button>
+                                </div>`
+                            },
+                            clusters: {
+                                badge: "ML Outcome",
+                                title: "Semantic Log Clusters",
+                                p1: "Represents the dense regions of log coordinates mapped in vector space. Each cluster identifies a specific ongoing system event pattern (e.g., repeating database check failures).",
+                                p2: "These clusters help SREs group logs and spot structural system defects immediately.",
+                                tech: ["scikit-learn", "matplotlib"],
+                                playTitle: "Cluster Diagnostics",
+                                html: `<div style="font-size:10px; color:var(--text-secondary); line-height:1.4;">
+                                    <span style="color:#dc2626;">● Cluster 1:</span> Database Connection Errors<br>
+                                    <span style="color:#2563eb;">● Cluster 2:</span> Successful Backups
+                                </div>`
+                            },
+                            finalclass: {
+                                badge: "ML Classifier",
+                                title: "Final Cluster Categorization",
+                                p1: "Once clusters are identified, our final classifier maps the clustered patterns to standard severity classifications (Security, Error, Warning, etc.).",
+                                p2: "This matches the final classified dataset output sent to index.html dashboard feeds.",
+                                tech: ["joblib", "scikit-learn"],
+                                playTitle: "Final Target mapping",
+                                html: `<div style="font-size:11px; text-align:center; color:#16a34a; font-weight:700;">
+                                    Cluster 1 ➔ Critical Error<br>
+                                    Cluster 2 ➔ System Info
+                                </div>`
+                            },
+                            devops: {
+                                badge: "Monitoring",
+                                title: "DevOps & SRE Alerts Dashboard",
+                                p1: "The final stage of the pipeline routes the classified logs to the main DevOps dashboard panel.",
+                                p2: "Real-time alerts, incident feeds, and metrics populate immediately to provide continuous visibility into the infrastructure health.",
+                                tech: ["FastAPI", "ChartJS", "WebSockets"],
+                                playTitle: "Go to Dashboard",
+                                html: `<button class="pl-btn" style="width:100%;" onclick="switchToDashboardTab()">➔ Open Dashboard Page</button>`
+                            }
+                        };
+
+                        function selectNode(nodeKey) {
+                            // Update active node styling
+                            document.querySelectorAll('.pl-node').forEach(node => {
+                                node.classList.remove('active');
+                            });
+                            
+                            // Find element
+                            const targetEl = event ? event.currentTarget : null;
+                            if (targetEl) {
+                                targetEl.classList.add('active');
+                            }
+
+                            // Load node data
+                            const data = plNodeData[nodeKey];
+                            if (!data) return;
+
+                            document.getElementById('pl-details-badge').textContent = data.badge;
+                            document.getElementById('pl-details-title').textContent = data.title;
+                            document.getElementById('pl-details-para1').textContent = data.p1;
+                            document.getElementById('pl-details-para2').textContent = data.p2;
+                            document.getElementById('pl-play-title').textContent = data.playTitle;
+                            
+                            // Populate tech stack
+                            const techStackBox = document.getElementById('pl-tech-stack');
+                            techStackBox.innerHTML = '';
+                            data.tech.forEach(t => {
+                                const span = document.createElement('span');
+                                span.className = 'pl-tech-tag';
+                                span.textContent = t;
+                                techStackBox.appendChild(span);
+                            });
+
+                            // Populate playground body
+                            document.getElementById('pl-play-body').innerHTML = data.html;
+
+                            // Handle special init code for Canvas (DBSCAN) if selected
+                            if (nodeKey === 'dbscan') {
+                                setTimeout(initDbscanCanvas, 100);
+                            }
+                        }
+
+                        // Regex Playground Action
+                        function testRegexEngine() {
+                            const input = document.getElementById('regexTestInput').value;
+                            const resultBox = document.getElementById('regexTestResult');
+                            const lower = input.toLowerCase();
+                            
+                            if (lower.includes('attack') || lower.includes('block') || lower.includes('unauthorized') || lower.includes('escalat')) {
+                                resultBox.innerHTML = `Result: <span style="color:#ef4444;">🛡️ Matches Security Alert</span>`;
+                            } else if (lower.includes('failed') || lower.includes('aborted') || lower.includes('error') || lower.includes('exception') || lower.includes('fail')) {
+                                resultBox.innerHTML = `Result: <span style="color:#e11d48;">⚠️ Matches Workflow Error</span>`;
+                            } else if (lower.includes('warn') || lower.includes('alert')) {
+                                resultBox.innerHTML = `Result: <span style="color:#d97706;">⚠️ Matches Warning</span>`;
+                            } else if (lower.includes('success') || lower.includes('backup') || lower.includes('login')) {
+                                resultBox.innerHTML = `Result: <span style="color:#22c55e;">⚙️ Matches System Notification</span>`;
+                            } else {
+                                resultBox.innerHTML = `Result: <span style="color:#94a3b8;">No match. Routes to [Unknown Logs ➔ Decision Box]</span>`;
+                            }
+                        }
+
+                        // App event simulation
+                        function simulateEvent(source, msg) {
+                            alert(`Triggered Event from ${source}: "${msg}" \nProcessed and appended to Aggregator buffer.`);
+                            const aggBox = document.getElementById('agg-log-box');
+                            if (aggBox) {
+                                aggBox.innerHTML = `➔ [${source}] ${msg}<br>` + aggBox.innerHTML;
+                            }
+                        }
+
+                        // Navigation link
+                        function switchToDashboardTab() {
+                            const dashboardTab = document.querySelector('.menu-item[data-target="dashboard"]');
+                            if (dashboardTab) dashboardTab.click();
+                        }
+
+                        // DBSCAN Canvas demo
+                        let dbscanDots = [];
+                        function initDbscanCanvas() {
+                            const canvas = document.getElementById('dbscanCanvas');
+                            if (!canvas) return;
+                            const ctx = canvas.getContext('2d');
+                            ctx.clearRect(0,0,160,90);
+                            
+                            // Generate cluster dots
+                            dbscanDots = [];
+                            // Cluster 1 (Left side)
+                            for (let i = 0; i < 20; i++) {
+                                dbscanDots.push({ x: 30 + Math.random() * 20, y: 30 + Math.random() * 25, color: '#64748b' });
+                            }
+                            // Cluster 2 (Right side)
+                            for (let i = 0; i < 20; i++) {
+                                dbscanDots.push({ x: 100 + Math.random() * 25, y: 40 + Math.random() * 20, color: '#64748b' });
+                            }
+                            // Noise dots
+                            for (let i = 0; i < 5; i++) {
+                                dbscanDots.push({ x: 10 + Math.random() * 140, y: 10 + Math.random() * 70, color: '#64748b' });
+                            }
+                            drawDbscanDots(ctx);
+                        }
+
+                        function drawDbscanDots(ctx) {
+                            ctx.clearRect(0,0,160,90);
+                            dbscanDots.forEach(dot => {
+                                ctx.beginPath();
+                                ctx.arc(dot.x, dot.y, 2.5, 0, 2 * Math.PI);
+                                ctx.fillStyle = dot.color;
+                                ctx.fill();
+                            });
+                        }
+
+                        function runDbscanDemo() {
+                            const canvas = document.getElementById('dbscanCanvas');
+                            if (!canvas) return;
+                            const ctx = canvas.getContext('2d');
+                            
+                            // Cluster color mapping
+                            dbscanDots.forEach(dot => {
+                                if (dot.x < 60 && dot.y < 65 && dot.x > 20) {
+                                    dot.color = '#dc2626'; // Red cluster
+                                } else if (dot.x > 85 && dot.x < 135 && dot.y > 30) {
+                                    dot.color = '#2563eb'; // Blue cluster
+                                } else {
+                                    dot.color = '#cbd5e1'; // Noise (Light Gray)
+                                }
+                            });
+                            drawDbscanDots(ctx);
+                        }
+
+                        // Simulate active stream rotation on load
+                        setInterval(() => {
+                            const stream = document.getElementById('c1-log-box');
+                            if (stream) {
+                                const newLog = `[${new Date().toLocaleTimeString()}] BillingSystem: User access verified.<br>`;
+                                stream.innerHTML = newLog + stream.innerHTML;
+                            }
+                        }, 5000);
+                    </script>
                 </section>
 
             </div>
         </main>
     </div>
 
-    <!-- JS Logic -->
-    <script src="/static/app.js"></script>
+    <!-- Main Application Logic -->
+    <script src="/static/app.js?v=20"></script>
 </body>
 </html>

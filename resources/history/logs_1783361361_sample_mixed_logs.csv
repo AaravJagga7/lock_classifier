@@ -1,0 +1,101 @@
+source,log_message,target_label
+AuthService,IP 192.168.1.100 blocked after 10 failed login attempts (Instance ID 1000),Security Alert
+AuthService,Admin access escalation detected for user guest_user (Instance ID 1001),Security Alert
+AuthService,JWT signature verification failed for incoming request header (Instance ID 1002),Unclassified
+AuthService,API key api_key_992a expired; request rejected (Instance ID 1003),Unclassified
+BillingSystem,Unauthorized access attempt to billing vault from subnet 10.20.0.0/16 (Instance ID 1004),Security Alert
+GatewayService,Cross-site scripting (XSS) payload detected in URL query string (Instance ID 1005),Unclassified
+GatewayService,SQL injection attempt detected in search input field: SELECT * FROM users (Instance ID 1006),Security Alert
+ModernCRM,User account compromised alert: account user_908 logged in from two distant geographic locations (Instance ID 1007),Security Alert
+ModernHR,HR admin credentials leaked detection alert (Instance ID 1008),Security Alert
+PaymentGateway,Credit card charge failed: expiration date is invalid (Instance ID 1009),Unclassified
+PaymentGateway,Refund processing aborted: transaction tx_8841 not found (Instance ID 1010),Unclassified
+PaymentGateway,Webhook dispatch to customer endpoint failed with RCODE 500,Unclassified
+BillingSystem,Invoice creation aborted for subscription sub_1241: invalid VAT format (Instance ID 1012),Unclassified
+BillingSystem,Failed to calculate taxes: tax calculation module offline (Instance ID 1013),Unclassified
+LegacyCRM,Case escalation rule failed: assignee is no longer active in CRM (Instance ID 1014), Workflow Error 
+LegacyCRM,Bulk email campaign aborted: template file template_welcome.html not found (Instance ID 1015), Workflow Error 
+AnalyticsEngine,Report compilation failed: out of memory during PDF generation (Instance ID 1016),Unclassified
+AnalyticsEngine,Data export process halted: disk space critical (Instance ID 1017),Unclassified
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' instead., (2) Deprecation Warning 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to 'AdvancedAnalyticsSuite' (Instance ID 1019), (2) Deprecation Warning 
+ModernHR,Deprecation warning: XML employee exports will be discontinued in Q3 2026 (Instance ID 1020),Unclassified
+BillingSystem,"Deprecation warning: legacy payment gateways v1 will be disabled on July 1, 2026 (Instance ID 1021)",Unclassified
+AuthService,Deprecated authentication mechanism OAuth 1.0 used by client app_884 (Instance ID 1022),Security Alert
+DatabaseEngine,Warning: deprecated column 'temp_status' referenced in query (Instance ID 1023),Unclassified
+BillingSystem,Subscription sub_9941 renewed successfully (Instance ID 1024),Unclassified
+AnalyticsEngine,Data sync process completed successfully for analytics_shard_3 (Instance ID 1025),Error
+AnalyticsEngine,Weekly database backup completed successfully; file size 4.2 GB (Instance ID 1026),Error
+DatabaseEngine,Database schema migration applied successfully: v2.4.1 (Instance ID 1027),Unclassified
+NotificationService,Email dispatch successful to user_123@domain.zohomail.in (Instance ID 1028),Security Alert
+NotificationService,SMS notification queue flushed; 24 messages sent (Instance ID 1029),Unclassified
+ModernHR,Payroll processing cycle executed successfully for June 2026 (Instance ID 1030),Unclassified
+ModernCRM,Lead sync scheduler completed successfully (Instance ID 1031),Error
+GatewayService,GET /api/v2/leads/list HTTP/1.1 RCODE 200 len: 2405 time: 0.082s,HTTP Status
+GatewayService,POST /api/v2/contacts/create HTTP/1.1 RCODE 201 len: 512 time: 0.145s,HTTP Status
+GatewayService,PUT /api/v2/deals/update?id=883 HTTP/1.1 RCODE 200 len: 1024 time: 0.095s,HTTP Status
+GatewayService,DELETE /api/v2/tasks/delete?id=1241 HTTP/1.1 RCODE 204 len: 0 time: 0.054s,HTTP Status
+GatewayService,GET /api/v2/analytics/dashboard HTTP/1.1 RCODE 200 len: 8540 time: 0.312s,HTTP Status
+GatewayService,POST /api/v2/auth/login HTTP/1.1 RCODE 401 len: 120 time: 0.045s,Security Alert
+GatewayService,GET /api/v2/settings/profile HTTP/1.1 RCODE 304 len: 0 time: 0.012s,HTTP Status
+AuthService,IP 192.168.1.100 blocked after 10 failed login attempts (Instance ID 1039),Security Alert
+AuthService,Admin access escalation detected for user guest_user (Instance ID 1040),Security Alert
+AuthService,JWT signature verification failed for incoming request header (Instance ID 1041),Unclassified
+AuthService,API key api_key_992a expired; request rejected (Instance ID 1042),Unclassified
+BillingSystem,Unauthorized access attempt to billing vault from subnet 10.20.0.0/16 (Instance ID 1043),Security Alert
+GatewayService,Cross-site scripting (XSS) payload detected in URL query string (Instance ID 1044),Unclassified
+GatewayService,SQL injection attempt detected in search input field: SELECT * FROM users (Instance ID 1045),Security Alert
+ModernCRM,User account compromised alert: account user_908 logged in from two distant geographic locations (Instance ID 1046),Security Alert
+ModernHR,HR admin credentials leaked detection alert (Instance ID 1047),Security Alert
+PaymentGateway,Credit card charge failed: expiration date is invalid (Instance ID 1048),Unclassified
+PaymentGateway,Refund processing aborted: transaction tx_8841 not found (Instance ID 1049),Unclassified
+PaymentGateway,Webhook dispatch to customer endpoint failed with RCODE 500,Unclassified
+BillingSystem,Invoice creation aborted for subscription sub_1241: invalid VAT format (Instance ID 1051),Unclassified
+BillingSystem,Failed to calculate taxes: tax calculation module offline (Instance ID 1052),Unclassified
+LegacyCRM,Case escalation rule failed: assignee is no longer active in CRM (Instance ID 1053), Workflow Error 
+LegacyCRM,Bulk email campaign aborted: template file template_welcome.html not found (Instance ID 1054), Workflow Error 
+AnalyticsEngine,Report compilation failed: out of memory during PDF generation (Instance ID 1055),Unclassified
+AnalyticsEngine,Data export process halted: disk space critical (Instance ID 1056),Unclassified
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' instead., (2) Deprecation Warning 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to 'AdvancedAnalyticsSuite' (Instance ID 1058), (2) Deprecation Warning 
+ModernHR,Deprecation warning: XML employee exports will be discontinued in Q3 2026 (Instance ID 1059),Unclassified
+BillingSystem,"Deprecation warning: legacy payment gateways v1 will be disabled on July 1, 2026 (Instance ID 1060)",Unclassified
+AuthService,Deprecated authentication mechanism OAuth 1.0 used by client app_884 (Instance ID 1061),Security Alert
+DatabaseEngine,Warning: deprecated column 'temp_status' referenced in query (Instance ID 1062),Unclassified
+BillingSystem,Subscription sub_9941 renewed successfully (Instance ID 1063),Unclassified
+AnalyticsEngine,Data sync process completed successfully for analytics_shard_3 (Instance ID 1064),Error
+AnalyticsEngine,Weekly database backup completed successfully; file size 4.2 GB (Instance ID 1065),Error
+DatabaseEngine,Database schema migration applied successfully: v2.4.1 (Instance ID 1066),Unclassified
+NotificationService,Email dispatch successful to user_123@domain.zohomail.in (Instance ID 1067),Security Alert
+NotificationService,SMS notification queue flushed; 24 messages sent (Instance ID 1068),Unclassified
+ModernHR,Payroll processing cycle executed successfully for June 2026 (Instance ID 1069),Unclassified
+ModernCRM,Lead sync scheduler completed successfully (Instance ID 1070),Error
+GatewayService,GET /api/v2/leads/list HTTP/1.1 RCODE 200 len: 2405 time: 0.082s,HTTP Status
+GatewayService,POST /api/v2/contacts/create HTTP/1.1 RCODE 201 len: 512 time: 0.145s,HTTP Status
+GatewayService,PUT /api/v2/deals/update?id=883 HTTP/1.1 RCODE 200 len: 1024 time: 0.095s,HTTP Status
+GatewayService,DELETE /api/v2/tasks/delete?id=1241 HTTP/1.1 RCODE 204 len: 0 time: 0.054s,HTTP Status
+GatewayService,GET /api/v2/analytics/dashboard HTTP/1.1 RCODE 200 len: 8540 time: 0.312s,HTTP Status
+GatewayService,POST /api/v2/auth/login HTTP/1.1 RCODE 401 len: 120 time: 0.045s,Security Alert
+GatewayService,GET /api/v2/settings/profile HTTP/1.1 RCODE 304 len: 0 time: 0.012s,HTTP Status
+AuthService,IP 192.168.1.100 blocked after 10 failed login attempts (Instance ID 1078),Security Alert
+AuthService,Admin access escalation detected for user guest_user (Instance ID 1079),Security Alert
+AuthService,JWT signature verification failed for incoming request header (Instance ID 1080),Unclassified
+AuthService,API key api_key_992a expired; request rejected (Instance ID 1081),Unclassified
+BillingSystem,Unauthorized access attempt to billing vault from subnet 10.20.0.0/16 (Instance ID 1082),Security Alert
+GatewayService,Cross-site scripting (XSS) payload detected in URL query string (Instance ID 1083),Unclassified
+GatewayService,SQL injection attempt detected in search input field: SELECT * FROM users (Instance ID 1084),Security Alert
+ModernCRM,User account compromised alert: account user_908 logged in from two distant geographic locations (Instance ID 1085),Security Alert
+ModernHR,HR admin credentials leaked detection alert (Instance ID 1086),Security Alert
+PaymentGateway,Credit card charge failed: expiration date is invalid (Instance ID 1087),Unclassified
+PaymentGateway,Refund processing aborted: transaction tx_8841 not found (Instance ID 1088),Unclassified
+PaymentGateway,Webhook dispatch to customer endpoint failed with RCODE 500,Unclassified
+BillingSystem,Invoice creation aborted for subscription sub_1241: invalid VAT format (Instance ID 1090),Unclassified
+BillingSystem,Failed to calculate taxes: tax calculation module offline (Instance ID 1091),Unclassified
+LegacyCRM,Case escalation rule failed: assignee is no longer active in CRM (Instance ID 1092), Workflow Error 
+LegacyCRM,Bulk email campaign aborted: template file template_welcome.html not found (Instance ID 1093), Workflow Error 
+AnalyticsEngine,Report compilation failed: out of memory during PDF generation (Instance ID 1094),Unclassified
+AnalyticsEngine,Data export process halted: disk space critical (Instance ID 1095),Unclassified
+LegacyCRM,The 'BulkEmailSender' feature is no longer supported. Use 'EmailCampaignManager' instead., (2) Deprecation Warning 
+LegacyCRM,The 'ReportGenerator' module will be retired in version 4.0. Please migrate to 'AdvancedAnalyticsSuite' (Instance ID 1097), (2) Deprecation Warning 
+ModernHR,Deprecation warning: XML employee exports will be discontinued in Q3 2026 (Instance ID 1098),Unclassified
+BillingSystem,"Deprecation warning: legacy payment gateways v1 will be disabled on July 1, 2026 (Instance ID 1099)",Unclassified
