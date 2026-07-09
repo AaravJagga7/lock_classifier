@@ -217,12 +217,13 @@ hiddenLogsToggle.addEventListener('click', () => {
     
     if (isExpanded) {
         hiddenLogsPanel.classList.remove('expanded');
-        hiddenLogsToggle.classList.remove('active');
-        hiddenLogsToggle.querySelector('span:first-child').innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><i data-lucide="terminal" style="width:14px;height:14px;"></i> Show Real Logs</span>'; lucide.createIcons();
+        hiddenLogsToggle.querySelector('span:first-child').innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><i data-lucide="terminal" style="width:14px;height:14px;"></i> Show Real Logs</span>';
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
     } else {
         hiddenLogsPanel.classList.add('expanded');
         hiddenLogsToggle.classList.add('active');
-        hiddenLogsToggle.querySelector('span:first-child').innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><i data-lucide="terminal" style="width:14px;height:14px;"></i> Hide Logs</span>'; lucide.createIcons();
+        hiddenLogsToggle.querySelector('span:first-child').innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><i data-lucide="terminal" style="width:14px;height:14px;"></i> Hide Logs</span>';
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
         
         // Fetch mock logs on first expand
         if (!hiddenLogsLoaded) {
@@ -1245,7 +1246,8 @@ emailReportBtn.addEventListener('click', () => {
     }
     
     const originalText = emailReportBtn.innerHTML;
-    emailReportBtn.innerHTML = '<span style="display:flex;align-items:center;justify-content:center;gap:6px;"><i data-lucide="loader" style="width:14px;height:14px;"></i> Sending...</span>'; lucide.createIcons();
+    emailReportBtn.innerHTML = '<span style="display:flex;align-items:center;justify-content:center;gap:6px;"><i data-lucide="loader" style="width:14px;height:14px;"></i> Sending...</span>';
+    if (typeof lucide !== 'undefined') { lucide.createIcons(); }
     emailReportBtn.disabled = true;
     
     const origName = selectedFile ? selectedFile.name.substring(0, selectedFile.name.lastIndexOf('.')) : 'logs';
