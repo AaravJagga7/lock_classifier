@@ -361,8 +361,12 @@ fileInput.addEventListener('change', (e) => {
 });
 
 removeFileBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    resetIngestState();
+    try {
+        e.stopPropagation();
+        resetIngestState();
+    } catch (err) {
+        alert("Remove failed: " + err.message);
+    }
 });
 
 classifyBtn.addEventListener('click', runIngestClassification);
@@ -1207,21 +1211,35 @@ function renderMarkdownToHtml(md) {
 
 // --- Actions: Labeled Output CSV download ---
 downloadBtn.addEventListener('click', () => {
-    if (!classifiedCSVBlob) return;
-    
-    const url = window.URL.createObjectURL(classifiedCSVBlob);
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = url;
-    
-    const origName = selectedFile ? selectedFile.name.substring(0, selectedFile.name.lastIndexOf('.')) : 'logs';
-    a.download = `${origName}_classified_report.csv`;
-    
-    document.body.appendChild(a);
-    a.click();
-    
-    window.URL.revokeObjectURL(url);
-    document.body.removeChild(a);
+    try {
+        let blobToDownload = classifiedCSVBlob;
+        if (!blobToDownload && classifiedCSVText) {
+            blobToDownload = new Blob([classifiedCSVText], { type: 'text/csv' });
+        }
+        
+        if (!blobToDownload) {
+            alert("No classified CSV data available to download.");
+            return;
+        }
+        
+        const url = window.URL.createObjectURL(blobToDownload);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        
+        const origName = selectedFile ? selectedFile.name.substring(0, selectedFile.name.lastIndexOf('.')) : 'logs';
+        a.download = `${origName}_classified_report.csv`;
+        
+        document.body.appendChild(a);
+        a.click();
+        
+        setTimeout(() => {
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }, 150);
+    } catch (err) {
+        alert("Download failed: " + err.message);
+    }
 });
 
 
