@@ -1242,32 +1242,66 @@ downloadBtn.addEventListener('click', () => {
     }
 });
 
+// --- Toast notification helper (non-blocking) ---
+function showToast(message, type) {
+    // Remove any existing toast
+    const existing = document.getElementById('appToast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'appToast';
+    toast.textContent = message;
+    const bgColor = type === 'success' ? '#22c55e' : type === 'error' ? '#ef4444' : '#3b82f6';
+    Object.assign(toast.style, {
+        position: 'fixed', bottom: '28px', right: '28px', zIndex: '99999',
+        background: bgColor, color: '#fff', padding: '12px 22px',
+        borderRadius: '10px', fontSize: '13px', fontWeight: '600',
+        boxShadow: '0 6px 24px rgba(0,0,0,0.18)', opacity: '0',
+        transform: 'translateY(12px)', transition: 'opacity 0.3s, transform 0.3s',
+        maxWidth: '380px', lineHeight: '1.4'
+    });
+    document.body.appendChild(toast);
+
+    // Animate in
+    requestAnimationFrame(() => {
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateY(0)';
+    });
+
+    // Auto-dismiss after 4 seconds
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(12px)';
+        setTimeout(() => toast.remove(), 350);
+    }, 4000);
+}
 
 emailReportBtn.addEventListener('click', () => {
     if (!classifiedCSVText) {
-        alert('Please ingestion/classify logs first.');
+        showToast('Please classify logs first before sending.', 'error');
         return;
     }
-    
+
+    // Prevent double-click
+    if (emailReportBtn.disabled) return;
+
     // Retrieve logged-in email from local storage session
     const sessionStr = localStorage.getItem('zoho_session');
     let email = 'aaravjagga@zohomail.in'; // Default fallback
     if (sessionStr) {
         try {
             const session = JSON.parse(sessionStr);
-            if (session.email) {
-                email = session.email;
-            }
-        } catch (e) {
-            console.error('Failed to parse session info:', e);
-        }
+            if (session.email) email = session.email;
+        } catch (e) { /* ignore parse errors */ }
     }
-    
-    const originalText = emailReportBtn.innerHTML;
-    emailReportBtn.innerHTML = '<span style="display:flex;align-items:center;justify-content:center;gap:6px;"><i data-lucide="loader" style="width:14px;height:14px;"></i> Sending...</span>';
-    if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+    // Save original button content and show spinner
+    const originalHTML = emailReportBtn.innerHTML;
+    emailReportBtn.innerHTML = '<span style="display:flex;align-items:center;justify-content:center;gap:6px;"><span style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite;"></span> Sending...</span>';
     emailReportBtn.disabled = true;
-    
+    emailReportBtn.style.opacity = '0.7';
+    emailReportBtn.style.pointerEvents = 'none';
+
     const origName = selectedFile ? selectedFile.name.substring(0, selectedFile.name.lastIndexOf('.')) : 'logs';
     const payload = {
         email: email,
@@ -1276,31 +1310,35 @@ emailReportBtn.addEventListener('click', () => {
         attachment_name: `${origName}_report.csv`,
         attachment_content: classifiedCSVText
     };
-    
+
+    // Use AbortController to set a 15-second hard timeout
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
+
     fetch('/send-report-email/', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        signal: controller.signal
     })
-    .then(async res => {
-        if (!res.ok) {
-            const err = await res.json();
-            throw new Error(err.detail || 'Internal email dispatch server error.');
-        }
+    .then(res => {
+        clearTimeout(timeoutId);
+        if (!res.ok) return res.json().then(err => { throw new Error(err.detail || 'Server error'); });
         return res.json();
     })
     .then(data => {
-        alert(data.message || `Error report successfully dispatched to ${email}!`);
+        showToast(data.message || `Report sent to ${email}!`, 'success');
     })
     .catch(err => {
-        console.error(err);
-        alert(`Failed to send email: ${err.message}`);
+        clearTimeout(timeoutId);
+        const msg = err.name === 'AbortError' ? 'Request timed out. Server may still be sending.' : `Failed: ${err.message}`;
+        showToast(msg, 'error');
     })
     .finally(() => {
-        emailReportBtn.innerHTML = originalText;
+        emailReportBtn.innerHTML = originalHTML;
         emailReportBtn.disabled = false;
+        emailReportBtn.style.opacity = '1';
+        emailReportBtn.style.pointerEvents = 'auto';
     });
 });
 
