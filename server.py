@@ -207,49 +207,369 @@ async def serve_mock_logs():
     <title>Setup Home — Zoho CRM Mock Logs</title>
     <link rel="stylesheet" href="/static/style.css?v=18">
     <style>
-        /* Extra specific mock page styling to align input forms cleanly in Zoho layout */
-        .mock-form-box {{
+        /* Zoho CRM Setup Style Overrides */
+        .app-wrapper {{
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }}
+        .sidebar-secondary {{
+            width: 240px;
+            background-color: #f5f6f8;
+            border-right: 1px solid var(--border-main);
+            display: flex;
+            flex-direction: column;
+            padding: 16px 0;
+            flex-shrink: 0;
+        }}
+        .sidebar-top-bar {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px 12px 16px;
+            border-bottom: 1px solid var(--border-main);
+        }}
+        .sidebar-back-link {{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+        }}
+        .sidebar-tune-icon {{
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 14px;
+        }}
+        .sidebar-search {{
+            padding: 12px 16px;
+        }}
+        .sidebar-search input {{
+            width: 100%;
+            padding: 6px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            outline: none;
+            background-color: #fff;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+        }}
+        .sidebar-search input:focus {{
+            border-color: var(--smartlog-primary);
+        }}
+        .sidebar-section-label {{
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 12px 16px 6px 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            letter-spacing: 0.5px;
+        }}
+        .sidebar-menu {{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }}
+        .sidebar-menu li a.menu-item {{
+            display: flex;
+            align-items: center;
+            padding: 8px 16px 8px 32px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 12px;
+            transition: var(--transition-fast);
+            cursor: pointer;
+        }}
+        .sidebar-menu li a.menu-item:hover {{
             background-color: var(--bg-hover);
+            color: var(--text-primary);
+        }}
+        .sidebar-menu li a.menu-item.active {{
+            background-color: #eef2ff;
+            color: var(--smartlog-primary);
+            font-weight: 600;
+            border-right: 3px solid var(--smartlog-primary);
+        }}
+        .sidebar-footer {{
+            margin-top: auto;
+            padding: 12px 16px;
+            font-size: 10px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-main);
+            text-align: center;
+        }}
+
+        /* Header / Navbar Styling */
+        .navbar {{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 24px;
+            border-bottom: 1px solid var(--border-main);
+            background-color: #fff;
+        }}
+        .nav-breadcrumbs {{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+        }}
+        .breadcrumb-parent {{
+            color: var(--text-muted);
+            font-weight: 500;
+        }}
+        .breadcrumb-separator {{
+            color: var(--text-muted);
+        }}
+        .breadcrumb-current {{
+            color: var(--text-primary);
+            font-weight: 600;
+        }}
+        .nav-status {{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }}
+        .nav-icon-btn {{
+            background: none;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            padding: 6px;
+            border-radius: var(--radius-sm);
+            transition: var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }}
+        .nav-icon-btn:hover {{
+            background-color: var(--bg-hover);
+        }}
+        .nav-divider {{
+            width: 1px;
+            height: 16px;
+            background-color: var(--border-main);
+            margin: 0 4px;
+        }}
+        .nav-apps-grid {{
+            font-size: 16px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            user-select: none;
+            padding: 4px;
+        }}
+
+        /* Tabs and Pills Styling */
+        .zoho-tabs {{
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid var(--border-main);
+            margin-bottom: 16px;
+        }}
+        .zoho-tab {{
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            padding-bottom: 10px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition-fast);
+            user-select: none;
+        }}
+        .zoho-tab:hover {{
+            color: var(--text-primary);
+        }}
+        .zoho-tab.active {{
+            color: var(--smartlog-primary);
+            border-bottom-color: var(--smartlog-primary);
+        }}
+        .zoho-pills {{
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }}
+        .zoho-pill {{
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            background-color: var(--bg-hover);
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            user-select: none;
+        }}
+        .zoho-pill:hover {{
+            background-color: var(--text-light);
+        }}
+        .zoho-pill.active {{
+            background-color: var(--smartlog-primary);
+            color: #fff;
+        }}
+
+        /* Form Styling */
+        .mock-form-box {{
+            background-color: #f8fafc;
             border: 1px solid var(--border-main);
             border-radius: var(--radius-md);
-            padding: 16px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
         }}
         .mock-form-box h4 {{
             margin-top: 0;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             font-size: 13px;
+            font-weight: 700;
             color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }}
         .mock-form-row {{
             display: flex;
-            gap: 12px;
+            gap: 16px;
             align-items: flex-end;
             flex-wrap: wrap;
         }}
         .mock-form-group {{
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 6px;
         }}
         .mock-form-group label {{
-            font-size: 11px;
-            font-weight: 600;
+            font-size: 10px;
+            font-weight: 700;
             color: var(--text-muted);
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }}
         .mock-form-group input {{
-            padding: 6px 10px;
-            border: 1px solid var(--border-main);
+            padding: 8px 12px;
+            border: 1px solid #cbd5e1;
             border-radius: var(--radius-sm);
             background-color: #fff;
             outline: none;
             font-size: 12px;
-            color: var(--text-secondary);
+            color: var(--text-primary);
             font-family: var(--font-body);
+            transition: var(--transition-fast);
         }}
         .mock-form-group input:focus {{
-            border-color: var(--zoho-primary);
+            border-color: var(--smartlog-primary);
+            box-shadow: 0 0 0 3px var(--smartlog-primary-glow);
+        }}
+
+        /* Table Styling */
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 12px;
+        }}
+        thead th {{
+            background-color: #f8fafc;
+            color: var(--text-secondary);
+            font-weight: 700;
+            font-size: 10px;
+            text-transform: uppercase;
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--border-main);
+            letter-spacing: 0.5px;
+        }}
+        tbody td {{
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-light);
+            color: var(--text-secondary);
+            vertical-align: middle;
+            font-family: var(--font-body);
+        }}
+        tbody tr:hover {{
+            background-color: var(--bg-hover);
+        }}
+        .badge {{
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 9px;
+            text-transform: uppercase;
+            display: inline-block;
+            letter-spacing: 0.5px;
+        }}
+        .badge-success {{ background-color: rgba(34, 197, 94, 0.15); color: #16a34a; border: 1px solid rgba(34, 197, 94, 0.2); }}
+        .badge-warning {{ background-color: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.2); }}
+        .badge-error {{ background-color: rgba(239, 68, 68, 0.15); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.2); }}
+        .badge-info {{ background-color: rgba(59, 130, 246, 0.15); color: #2563eb; border: 1px solid rgba(59, 130, 246, 0.2); }}
+        .badge-critical {{ background-color: rgba(225, 29, 72, 0.15); color: #e11d48; border: 1px solid rgba(225, 29, 72, 0.2); }}
+
+        /* Bottom Chat Bar Styling */
+        .bottom-chat-bar {{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #ffffff;
+            border-top: 1px solid var(--border-main);
+            padding: 10px 24px;
+            position: sticky;
+            bottom: 0;
+            z-index: 100;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.02);
+        }}
+        .chat-bar-input {{
+            flex: 1;
+            padding: 8px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 20px;
+            background-color: #f8fafc;
+            outline: none;
+            font-size: 12px;
+            color: var(--text-secondary);
+            transition: var(--transition-fast);
+        }}
+        .chat-bar-input:focus {{
+            background-color: #fff;
+            border-color: var(--smartlog-primary);
+        }}
+        .chat-bar-icons {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }}
+        .chat-bar-icon {{
+            font-size: 14px;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.15s;
+            user-select: none;
+            padding: 4px;
+            border-radius: 4px;
+        }}
+        .chat-bar-icon:hover {{
+            color: var(--text-secondary);
+            background-color: var(--bg-hover);
+        }}
+        .help-pill {{
+            background-color: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            user-select: none;
+        }}
+        .help-pill:hover {{
+            background-color: #cbd5e1;
         }}
     </style>
 </head>
