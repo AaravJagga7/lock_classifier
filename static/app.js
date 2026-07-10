@@ -359,14 +359,11 @@ fileInput.addEventListener('change', (e) => {
         handleFileSelection(e.target.files[0]);
     }
 });
-
 removeFileBtn.addEventListener('click', (e) => {
-    try {
-        e.stopPropagation();
-        resetIngestState();
-    } catch (err) {
-        alert("Remove failed: " + err.message);
-    }
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    resetIngestState();
 });
 
 classifyBtn.addEventListener('click', runIngestClassification);
@@ -392,8 +389,20 @@ ingestTabs.forEach(tab => {
 // --- Ingestion Web Scraper Events ---
 scrapeSubmitBtn.addEventListener('click', runWebScraperIngest);
 removeScrapeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     e.stopPropagation();
+    e.stopImmediatePropagation();
     resetIngestState();
+    // Switch back to the upload tab
+    ingestTabs.forEach(t => {
+        if (t.getAttribute('data-tab') === 'upload') {
+            t.classList.add('active');
+        } else {
+            t.classList.remove('active');
+        }
+    });
+    uploadSourceForm.style.display = 'flex';
+    scrapeSourceForm.style.display = 'none';
 });
 
 // Handle Select File
@@ -457,13 +466,13 @@ function renderIngestTable(headers, rows) {
         ingestTableHeader.appendChild(th);
     });
     
-    // Rows
+    // Body
     ingestTableBody.innerHTML = '';
-    rows.forEach(r => {
+    rows.forEach(row => {
         const tr = document.createElement('tr');
-        r.forEach(c => {
+        row.forEach(cell => {
             const td = document.createElement('td');
-            td.textContent = c;
+            td.textContent = cell;
             tr.appendChild(td);
         });
         ingestTableBody.appendChild(tr);
@@ -497,6 +506,8 @@ function resetIngestState() {
     scrapeSubmitBtn.style.display = 'inline-flex';
     scrapeSubmitBtn.classList.remove('btn-disabled');
     scrapeSubmitBtn.disabled = false;
+    
+    removeFileBtn.style.display = 'block';
     
     runRcaBtn.classList.add('btn-disabled');
     runRcaBtn.disabled = true;
