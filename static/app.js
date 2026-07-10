@@ -1,13 +1,3 @@
-// --- Global State Variables ---
-let selectedFile = null;
-let parsedCSVRows = [];
-let classifiedCSVText = "";
-let classifiedCSVBlob = null;
-let classifiedCSVRows = [];
-let incidentLogs = [];
-let activeIncident = null;
-let loaderInterval = null;
-
 // --- DOM Element Selectors ---
 // Tab Navigation
 const menuItems = document.querySelectorAll('.menu-item');
@@ -370,14 +360,10 @@ fileInput.addEventListener('change', (e) => {
     }
 });
 removeFileBtn.addEventListener('click', (e) => {
-    try {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        resetIngestState();
-    } catch (err) {
-        alert("Remove click failed: " + err.message + "\nStack: " + err.stack);
-    }
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    resetIngestState();
 });
 
 classifyBtn.addEventListener('click', runIngestClassification);
@@ -403,24 +389,20 @@ ingestTabs.forEach(tab => {
 // --- Ingestion Web Scraper Events ---
 scrapeSubmitBtn.addEventListener('click', runWebScraperIngest);
 removeScrapeBtn.addEventListener('click', (e) => {
-    try {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-        resetIngestState();
-        // Switch back to the upload tab
-        ingestTabs.forEach(t => {
-            if (t.getAttribute('data-tab') === 'upload') {
-                t.classList.add('active');
-            } else {
-                t.classList.remove('active');
-            }
-        });
-        uploadSourceForm.style.display = 'flex';
-        scrapeSourceForm.style.display = 'none';
-    } catch (err) {
-        alert("Clear click failed: " + err.message + "\nStack: " + err.stack);
-    }
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+    resetIngestState();
+    // Switch back to the upload tab
+    ingestTabs.forEach(t => {
+        if (t.getAttribute('data-tab') === 'upload') {
+            t.classList.add('active');
+        } else {
+            t.classList.remove('active');
+        }
+    });
+    uploadSourceForm.style.display = 'flex';
+    scrapeSourceForm.style.display = 'none';
 });
 
 // Handle Select File
@@ -499,51 +481,46 @@ function renderIngestTable(headers, rows) {
 
 // Reset Ingest Tab
 function resetIngestState() {
-    try {
-        selectedFile = null;
-        parsedCSVRows = [];
-        classifiedCSVText = "";
-        classifiedCSVBlob = null;
-        classifiedCSVRows = [];
-        incidentLogs = [];
-        activeIncident = null;
-        
-        fileInput.value = '';
-        dropzone.style.display = 'block';
-        fileInfoBox.style.display = 'none';
-        
-        classifyBtn.classList.add('btn-disabled');
-        classifyBtn.disabled = true;
-        
-        ingestTableWrapper.style.display = 'none';
-        ingestEmptyState.style.display = 'flex';
-        ingestLoaderView.style.display = 'none';
-        ingestRowCount.style.display = 'none';
-        ingestSuccessBox.style.display = 'none';
-        
-        scrapeSuccessBox.style.display = 'none';
-        scrapeSubmitBtn.style.display = 'inline-flex';
-        scrapeSubmitBtn.classList.remove('btn-disabled');
-        scrapeSubmitBtn.disabled = false;
-        
-        removeFileBtn.style.display = 'block';
-        
-        runRcaBtn.classList.add('btn-disabled');
-        runRcaBtn.disabled = true;
-        
-        rcaEmptyState.style.display = 'flex';
-        rcaEmptyText.textContent = "Please upload a log dataset in the Ingestion module first to enable diagnosis.";
-        rcaReport.style.display = 'none';
-        rcaLoaderView.style.display = 'none';
-        
-        if (loaderInterval) clearInterval(loaderInterval);
-        
-        try { clearDashboardData(); } catch(e) {}
-        try { clearIncidentsData(); } catch(e) {}
-    } catch (err) {
-        console.error("Error in resetIngestState:", err);
-        alert("Reset failed: " + err.message + "\nStack: " + err.stack);
-    }
+    selectedFile = null;
+    parsedCSVRows = [];
+    classifiedCSVText = "";
+    classifiedCSVBlob = null;
+    classifiedCSVRows = [];
+    incidentLogs = [];
+    activeIncident = null;
+    
+    fileInput.value = '';
+    dropzone.style.display = 'block';
+    fileInfoBox.style.display = 'none';
+    
+    classifyBtn.classList.add('btn-disabled');
+    classifyBtn.disabled = true;
+    
+    ingestTableWrapper.style.display = 'none';
+    ingestEmptyState.style.display = 'flex';
+    ingestLoaderView.style.display = 'none';
+    ingestRowCount.style.display = 'none';
+    ingestSuccessBox.style.display = 'none';
+    
+    scrapeSuccessBox.style.display = 'none';
+    scrapeSubmitBtn.style.display = 'inline-flex';
+    scrapeSubmitBtn.classList.remove('btn-disabled');
+    scrapeSubmitBtn.disabled = false;
+    
+    removeFileBtn.style.display = 'block';
+    
+    runRcaBtn.classList.add('btn-disabled');
+    runRcaBtn.disabled = true;
+    
+    rcaEmptyState.style.display = 'flex';
+    rcaEmptyText.textContent = "Please upload a log dataset in the Ingestion module first to enable diagnosis.";
+    rcaReport.style.display = 'none';
+    rcaLoaderView.style.display = 'none';
+    
+    if (loaderInterval) clearInterval(loaderInterval);
+    
+    try { clearDashboardData(); } catch(e) {}
+    try { clearIncidentsData(); } catch(e) {}
 }
 
 // --- API Call: Web Scraper ---
