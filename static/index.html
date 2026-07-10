@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartLog AI Dashboard</title>
     <meta name="description" content="Enterprise curated monitoring with AI.">
-    <link rel="stylesheet" href="/static/style.css?v=20">
+    <link rel="stylesheet" href="/static/style.css?v=25">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -284,9 +284,6 @@
                                     <div class="upload-subtitle">Accepts .csv with 'source' and 'log_message' columns</div>
                                     <button class="btn btn-secondary" style="margin-bottom: 8px;">Browse Local Files</button>
                                     <input type="file" id="fileInput" accept=".csv" style="display: none;">
-                                    <div style="font-size: 11px; color: var(--text-light);">
-                                        Need a test file? <a href="/static/sample_mixed_logs.csv" download="sample_mixed_logs.csv" style="color: var(--smartlog-primary); text-decoration: underline; font-weight: 500;">Download 1000 mixed sample logs CSV</a>
-                                    </div>
                                 </div>
 
                                 <div id="fileInfoBox" class="file-meta-box" style="display: none;">
@@ -1500,6 +1497,6 @@
     </div>
 
     <!-- Main Application Logic -->
-    <script src="/static/app.js?v=24"></script>
+    <script src="/static/app.js?v=26"></script>
 </body>
 </html>
